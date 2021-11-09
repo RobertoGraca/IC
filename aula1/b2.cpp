@@ -12,7 +12,7 @@ int main(int argc, char** argv){
 
         while(!ifs.eof()){
             string s;
-            ifs >> s;
+            getline(ifs,s);
             for(int i=0;i<s.length();i++){
                 ofs << s[i];
             }
