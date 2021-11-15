@@ -1,5 +1,5 @@
 #include <iostream>
-#include "audio/AudioFile.h"
+#include "../audio/AudioFile.h"
 
 using namespace std;
 
