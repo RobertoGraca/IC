@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 {
     if (argc != 2)
     {
-        cout << "USAGE: ./program image_name" << endl;
+        cout << "USAGE: ./program <image_name>" << endl;
         return -1;
     }
 
@@ -70,7 +70,10 @@ int main(int argc, char **argv)
     image = imread(argv[1], IMREAD_COLOR);
 
     if (image.empty())
+    {
+        cout << "Could not load or find image. Please try again!" << endl;
         return -1;
+    }
 
     calculateHistogram(image);
 
