@@ -1,23 +1,23 @@
 #include <iostream>
-#include <stdio.h>
-#include <sndfile.hh>
+#include "audio/AudioFile.h"
+
 using namespace std;
 
-int main()
-{
-    SF_INFO *info = new SF_INFO();
-    info->format = SF_FORMAT_WAV;
-    SNDFILE *in = sf_open("audio.wav", SFM_READ, info);
-    SNDFILE *out = sf_open("audio_out.wav", SFM_WRITE, info);
+int main(int argc, char* argv[]){
+    AudioFile<double> audio;
 
-    short *sample = (short *)malloc(sizeof(short *));
+    bool loaded = audio.load(argv[1]);
+         
+    /* If you hit this assert, then the file path above probably doesn't refer to a valid audio file */
+    assert(loaded);
 
-    int a = sf_read_short(in, sample, 10);
+    for (int i = 0; i < audio.getNumSamplesPerChannel(); i++){
+        for (int channel = 0; channel < audio.getNumChannels(); channel++){
+            audio.samples[channel][i] = audio.samples[channel][i];
+        }
+    }
 
-    cout << a << endl;
-
-    sf_close(in);
-    sf_close(out);
+    audio.save(argv[2], AudioFileFormat::Wave);
 
     return 0;
 }
