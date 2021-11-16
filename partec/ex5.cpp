@@ -24,6 +24,7 @@ cv::Mat plotGraph(std::vector<T>& vals, int YRange[2])
 }
 int main(){
     ifstream ifs("lusiadas.txt");
+    ofstream ofs("ex5out.txt");
 
     map<char, int> m;
 
@@ -31,23 +32,36 @@ int main(){
         string s;
         ifs >> s;
         for(int i=0;i<s.length();i++){
-            if(m.count(s[i]) == 0) m[s[i]] = 1;
-            else m[s[i]]++;
+            if(isalpha(s[i])){
+                s[i] = tolower(s[i]);
+                if(m.count(s[i]) == 0) m[s[i]] = 1;
+                else m[s[i]]++;
+            }
+            else{
+                continue;
+            }
         }
     }
     
-    int arrx[m.size()];
-    int arry[m.size()];
+    ifs.close();
+   
+    for(auto x:m){
+        ofs <<x.first << " => " << x.second<< "\n";
+    }
 
-    for(int i = 0; i < sizeof(arrx); i++)
+    ofs.close();
+
+    /* for(int i = 0; i < sizeof(arrx); i++)
     {
         arrx[i] = m[i];
+        cout<<arrx[i]<<endl;
+        
     }
+    
     vector<int> x(arrx,arrx + sizeof(arrx) / sizeof(int));
-    vector<int> y(arry,arry + sizeof(arry) / sizeof(int));
     int range[2] = {0,(int)sizeof(arry)};
     cv::Mat lineGraph = plotGraph(x,range);
     imshow("Lusiadas Plot",lineGraph);
-    waitKey();
+    waitKey(0); */
 
 }
