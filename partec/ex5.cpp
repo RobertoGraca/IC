@@ -47,7 +47,7 @@ int main(){
     vector<int> y(arry,arry + sizeof(arry) / sizeof(int));
     int range[2] = {0,(int)sizeof(arry)};
     cv::Mat lineGraph = plotGraph(x,range);
-    imshow("Lusiadas Histogram",lineGraph);
+    imshow("Lusiadas Plot",lineGraph);
     waitKey();
 
 }
