@@ -5,6 +5,25 @@
 using namespace std;
 using namespace cv;
 
+float entropy(Mat seq, Size size, int index)
+{
+    int cnt = 0;
+    float entr = 0;
+    float total_size = size.height * size.width;
+
+    for (int i = 0; i < index; i++)
+    {
+        float sym_occur = seq.at<float>(0, i);
+
+        if (sym_occur > 0)
+        {
+            cnt++;
+            entr += (sym_occur / total_size) * (log2(sym_occur / total_size));
+        }
+    }
+    return -entr;
+}
+
 void calculateHistogram(Mat image)
 {
     vector<Mat> img_channels;
@@ -53,8 +72,24 @@ void calculateHistogram(Mat image)
     }
 
     resize(image, image, Size(1080 / 2, 720 / 2));
-    imshow("", image);
+    imshow("Image", image);
     imshow("Histogram", histImage);
+    string channel_name[img_channels.size()];
+    if (img_channels.size() == 3)
+    {
+        channel_name[0] = "Blue";
+        channel_name[1] = "Green";
+        channel_name[2] = "Red";
+    }
+    else if (img_channels.size() == 1)
+    {
+        channel_name[0] = "Gray";
+    }
+    for (int i = 0; i < img_channels.size(); i++)
+    {
+        cout << channel_name[i] << " channel entropy is " << entropy(channel_hist[i], image.size(), histSize) << endl;
+    }
+    cout << "-------------------" << endl;
     waitKey();
 }
 
@@ -67,7 +102,8 @@ int main(int argc, char **argv)
     }
 
     Mat image;
-    image = imread(argv[1], IMREAD_COLOR);
+    string path = "../images/";
+    image = imread(path + argv[1], IMREAD_COLOR);
 
     if (image.empty())
     {
@@ -78,10 +114,13 @@ int main(int argc, char **argv)
     calculateHistogram(image);
 
     Mat image2;
-    image2 = imread(argv[1], IMREAD_GRAYSCALE);
+    image2 = imread(path + argv[1], IMREAD_GRAYSCALE);
 
     if (image2.empty())
+    {
+        cout << "Could not load or find image. Please try again!" << endl;
         return -1;
+    }
 
     calculateHistogram(image2);
 

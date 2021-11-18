@@ -46,8 +46,7 @@ int main()
     for (auto x : m)
     {
         prob = (double)(x.second) / letterCounter;
-        entropy += prob*log(prob);
-
+        entropy += prob * log(prob);
     }
 
     for (auto x : m)
@@ -55,6 +54,6 @@ int main()
         ofs << x.first << " => " << x.second << "\n";
     }
     entropy = -entropy;
-    cout<<"Entropy: "<<entropy<<endl;
-    ofs.close();                        //to see the histogram run ex5.py and open ex5out.png
+    cout << "Entropy: " << entropy << endl;
+    ofs.close(); // to see the histogram run ex5.py and open ex5out.png
 }
