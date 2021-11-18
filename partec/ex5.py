@@ -11,7 +11,6 @@ x = []
 y = []
 for line in open('ex5out.txt'):
     values = line.strip('=>').split()
-    #print(line.strip('=>').split())
     x.append((int(values[2])))
     y.append(values[0])
 

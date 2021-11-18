@@ -6,62 +6,55 @@
 using namespace std;
 using namespace cv;
 
-template <typename T>
-cv::Mat plotGraph(std::vector<T>& vals, int YRange[2])
+int main()
 {
-
-    auto it = minmax_element(vals.begin(), vals.end());
-    float scale = 1./ceil(*it.second - *it.first); 
-    float bias = *it.first;
-    int rows = YRange[1] - YRange[0] + 1;
-    cv::Mat image = Mat::zeros( rows, vals.size(), CV_8UC3 );
-    image.setTo(0);
-    for (int i = 0; i < (int)vals.size()-1; i++)
-    {
-        cv::line(image, cv::Point(i, rows - 1 - (vals[i] - bias)*scale*YRange[1]), cv::Point(i+1, rows - 1 - (vals[i+1] - bias)*scale*YRange[1]), Scalar(255, 0, 0), 1);
-    }
-    return image;
-}
-int main(){
     ifstream ifs("lusiadas.txt");
     ofstream ofs("ex5out.txt");
 
     map<char, int> m;
-
-    while(!ifs.eof()){
+    int letterCounter = 0;
+    double entropy = 0;
+    double prob = 0;
+    while (!ifs.eof())
+    {
         string s;
         ifs >> s;
-        for(int i=0;i<s.length();i++){
-            if(isalpha(s[i])){
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (isalpha(s[i]))
+            {
+                letterCounter++;
                 s[i] = tolower(s[i]);
-                if(m.count(s[i]) == 0) m[s[i]] = 1;
-                else m[s[i]]++;
+                if (m.count(s[i]) == 0)
+                {
+                    m[s[i]] = 1;
+                }
+                else
+                {
+                    m[s[i]]++;
+                }
             }
-            else{
+            else
+            {
                 continue;
             }
         }
     }
-    
+
     ifs.close();
-   
-    for(auto x:m){
-        ofs <<x.first << " => " << x.second<< "\n";
-    }
 
-    ofs.close();
-
-    /* for(int i = 0; i < sizeof(arrx); i++)
+    for (auto x : m)
     {
-        arrx[i] = m[i];
-        cout<<arrx[i]<<endl;
-        
-    }
-    
-    vector<int> x(arrx,arrx + sizeof(arrx) / sizeof(int));
-    int range[2] = {0,(int)sizeof(arry)};
-    cv::Mat lineGraph = plotGraph(x,range);
-    imshow("Lusiadas Plot",lineGraph);
-    waitKey(0); */
+        prob = (double)(x.second) / letterCounter;
+        entropy += prob*log(prob);
 
+    }
+
+    for (auto x : m)
+    {
+        ofs << x.first << " => " << x.second << "\n";
+    }
+    entropy = abs(entropy);
+    cout<<"Entropy: "<<entropy<<endl;
+    ofs.close();                        //to see the histogram run ex5.py and open ex5out.png
 }
