@@ -54,7 +54,7 @@ int main()
     {
         ofs << x.first << " => " << x.second << "\n";
     }
-    entropy = abs(entropy);
+    entropy = -entropy;
     cout<<"Entropy: "<<entropy<<endl;
     ofs.close();                        //to see the histogram run ex5.py and open ex5out.png
 }
