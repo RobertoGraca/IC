@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     {
         for (int i = 0; i < input.getNumSamplesPerChannel(); i++)
         {
-            int sample = input.samples[c][i] * 32768; // 2¹⁵ = 32768
+            int sample = input.samples[c][i] * 32768;
             output.samples[c][i] = (sample >> 8) << 8;
         }
     }
