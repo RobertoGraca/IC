@@ -34,7 +34,7 @@ void calculateHistogram(Mat image)
     const float *histRange[] = {range};
 
     bool uniform = true, accumulate = false;
-
+    
     Mat channel_hist[img_channels.size()];
     for (int i = 0; i < img_channels.size(); i++)
     {
@@ -53,7 +53,7 @@ void calculateHistogram(Mat image)
     {
         normalize(channel_hist[i], channel_hist[i], 0, histImage.rows, NORM_MINMAX, -1, Mat());
     }
-
+    
     for (int i = 1; i < histSize; i++)
     {
         for (int j = 0; j < img_channels.size(); j++)
