@@ -1,18 +1,23 @@
 #include <opencv2/highgui.hpp>
 #include <iostream>
 using namespace cv;
+using namespace std;
 
 int main(int argc, char **argv)
 {
     if (argc != 3)
+    {
+        cout << "USAGE: ./program <input_image> <output_image_name>" << endl;
         return -1;
+    }
 
     Mat img;
-    img = imread(argv[1], IMREAD_COLOR);
+    string path = "../images/";
+    img = imread(path + argv[1], IMREAD_COLOR);
 
     if (!img.data)
     {
-        std::cout << "Image not found or unable to open" << std::endl;
+        cout << "Image not found or unable to open" << endl;
         return -2;
     }
 
