@@ -1,10 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include <opencv2/plot.hpp>
-#include <opencv2/opencv.hpp>
+#include <cmath>
 using namespace std;
-using namespace cv;
 
 int main(int argc, char **argv)
 {
