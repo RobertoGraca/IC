@@ -12,7 +12,10 @@ int main(int argc, char **argv)
 
     AudioFile<double> input, output;
     string path = "../audio/";
-    input.load(path + argv[1]);
+    bool loaded = input.load(path + argv[1]);
+
+    /* Check if input is a valid audio file */
+    assert(loaded);
 
     output.setNumChannels(input.getNumChannels());
     output.setNumSamplesPerChannel(input.getNumSamplesPerChannel());

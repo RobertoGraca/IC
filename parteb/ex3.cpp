@@ -5,15 +5,21 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    if (argc != 3)
+    {
+        cout << "USAGE: ./program <input_audio> <output_audio>" << endl;
+        return -1;
+    }
+
     AudioFile<double> audioIn, audioOut;
 
     bool loaded = audioIn.load(argv[1]);
 
+    /* Check if input is a valid audio file */
+    assert(loaded);
+
     audioOut.setNumChannels(audioIn.getNumChannels());
     audioOut.setNumSamplesPerChannel(audioIn.getNumSamplesPerChannel());
-
-    /* If you hit this assert, then the file path above probably doesn't refer to a valid audio file */
-    assert(loaded);
 
     for (int i = 0; i < audioIn.getNumSamplesPerChannel(); i++)
     {

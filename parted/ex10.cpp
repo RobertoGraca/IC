@@ -7,14 +7,21 @@ int main(int argc, char **argv)
 {
     if (argc != 3)
     {
-        cout << "USAGE: ./program <input_audio> <output_audio>" << endl;
+        cout << "USAGE: ./program <input_audio_1> <input_audio_2>" << endl;
         return -1;
     }
 
     AudioFile<double> input, input2;
     string path = "../audio/";
-    input.load(path + argv[1]);
-    input2.load(argv[2]);
+    bool loaded1 = input.load(path + argv[1]);
+
+    /* Check if input1 is a valid audio file */
+    assert(loaded1);
+
+    bool loaded2 = input2.load(argv[2]);
+
+    /* Check if input2 is a valid audio file */
+    assert(loaded2);
 
     int num11 = input.getNumChannels();
     int num12 = input.getNumSamplesPerChannel();
