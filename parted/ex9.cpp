@@ -38,6 +38,10 @@ int main(int argc, char **argv)
     }
     imshow("Original", image);
     imshow("Reduced", image2);
+    string name = argv[1];
+    name = name.substr(0, name.length() - 4);
+    string bits = argv[2];
+    imwrite(name + "_reduced" + bits + ".ppm", image2);
     waitKey();
     return 0;
 }
