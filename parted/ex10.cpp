@@ -13,34 +13,13 @@ int main(int argc, char **argv)
 
     AudioFile<double> input, input2;
     string path = "../audio/";
-    input.load(path + argv[1]);
-    input2.load(argv[2]);
-
-    int num11 = input.getNumChannels();
-    int num12 = input.getNumSamplesPerChannel();
-    int num21 = input2.getNumChannels();
-    int num22 = input2.getNumSamplesPerChannel();
+    bool loaded1 = input.load(path + argv[1]);
+    bool loaded2 = input2.load(argv[2]);
+    assert(loaded1);
+    assert(loaded2);
 
     float mse = 0;
-    int numChannels, numSamples;
-
-    if (num11 > num21)
-    {
-        numChannels = input2.getNumChannels();
-    }
-    else
-    {
-        numChannels = input.getNumChannels();
-    }
-
-    if (num12 > num22)
-    {
-        numSamples = input2.getNumSamplesPerChannel();
-    }
-    else
-    {
-        numSamples = input.getNumSamplesPerChannel();
-    }
+    int numChannels = input.getNumChannels(), numSamples = input.getNumSamplesPerChannel();
 
     for (int c = 0; c < numChannels; c++)
     {
