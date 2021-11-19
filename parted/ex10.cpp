@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {
     if (argc != 3)
     {
-        cout << "USAGE: ./program <input_audio> <output_audio>" << endl;
+        cout << "USAGE: ./program <input_audio1> <input_audio2>" << endl;
         return -1;
     }
 
