@@ -1,0 +1,4 @@
+Hello!
+I am the file to be copied.
+Just simple, plain text.
+Last line.
