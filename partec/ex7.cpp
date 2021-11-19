@@ -34,7 +34,7 @@ void calculateHistogram(Mat image)
     const float *histRange[] = {range};
 
     bool uniform = true, accumulate = false;
-    
+
     Mat channel_hist[img_channels.size()];
     for (int i = 0; i < img_channels.size(); i++)
     {
@@ -53,18 +53,27 @@ void calculateHistogram(Mat image)
     {
         normalize(channel_hist[i], channel_hist[i], 0, histImage.rows, NORM_MINMAX, -1, Mat());
     }
-    
+
     for (int i = 1; i < histSize; i++)
     {
         for (int j = 0; j < img_channels.size(); j++)
         {
             Scalar color;
             if (j == 0)
-                color = Scalar(255, 0, 0);
+            {
+                if (img_channels.size() == 3)
+                    color = Scalar(255, 0, 0);
+                else if (img_channels.size() == 1)
+                    color = Scalar(255, 255, 255);
+            }
             else if (j == 1)
+            {
                 color = Scalar(0, 255, 0);
+            }
             else if (j == 2)
+            {
                 color = Scalar(0, 0, 255);
+            }
             line(histImage, Point(bin_w * (i - 1), hist_h - cvRound(channel_hist[j].at<float>(i - 1))),
                  Point(bin_w * (i), hist_h - cvRound(channel_hist[j].at<float>(i))),
                  color, 2, 8, 0);
@@ -102,8 +111,8 @@ int main(int argc, char **argv)
     }
 
     Mat image;
-    string path = "../images/";
-    image = imread(path + argv[1], IMREAD_COLOR);
+
+    image = imread(argv[1], IMREAD_COLOR);
 
     if (image.empty())
     {
@@ -114,7 +123,7 @@ int main(int argc, char **argv)
     calculateHistogram(image);
 
     Mat image2;
-    image2 = imread(path + argv[1], IMREAD_GRAYSCALE);
+    image2 = imread(argv[1], IMREAD_GRAYSCALE);
 
     if (image2.empty())
     {

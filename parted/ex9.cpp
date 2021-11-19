@@ -14,8 +14,7 @@ int main(int argc, char **argv)
     }
 
     Mat image;
-    string path = "../images/";
-    image = imread(path + argv[1], IMREAD_COLOR);
+    image = imread(argv[1], IMREAD_COLOR);
 
     if (image.empty())
     {
