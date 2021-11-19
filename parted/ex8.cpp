@@ -11,7 +11,8 @@ int main(int argc, char **argv)
     }
 
     AudioFile<double> input, output;
-    input.load(argv[1]);
+    string path = "../audio/";
+    input.load(path + argv[1]);
 
     output.setNumChannels(input.getNumChannels());
     output.setNumSamplesPerChannel(input.getNumSamplesPerChannel());
