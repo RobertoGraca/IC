@@ -11,8 +11,7 @@ int main(int argc, char **argv)
     }
 
     AudioFile<double> input, output;
-    string path = "../audio/";
-    bool loaded = input.load(path + argv[1]);
+    bool loaded = input.load(argv[1]);
 
     assert(loaded);
 

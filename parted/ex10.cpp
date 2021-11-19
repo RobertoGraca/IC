@@ -12,8 +12,7 @@ int main(int argc, char **argv)
     }
 
     AudioFile<double> input, input2;
-    string path = "../audio/";
-    bool loaded1 = input.load(path + argv[1]);
+    bool loaded1 = input.load(argv[1]);
     bool loaded2 = input2.load(argv[2]);
     assert(loaded1);
     assert(loaded2);
