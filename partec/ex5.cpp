@@ -6,9 +6,9 @@
 using namespace std;
 using namespace cv;
 
-int main()
+int main(int argc, char **argv)
 {
-    ifstream ifs("lusiadas.txt");
+    ifstream ifs(argv[1]);
     ofstream ofs("ex5out.txt");
 
     map<char, int> m;
