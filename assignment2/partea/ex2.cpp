@@ -1,7 +1,10 @@
 #include "BitStream.h"
 
-int main(){
-    BitStream bs("test.bits","w");
+int main()
+{
+    const char *filename = "test.bits";
+    const char *perm = "w";
+    BitStream bs(filename, perm);
 
     bs.write_bit(0);
     bs.write_bit(0);
