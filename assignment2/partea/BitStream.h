@@ -13,17 +13,49 @@ public:
 
     BitStream(const char *path, const char *perm)
     {
-        if (*perm != 'r' && *perm != 'w')
+        try
         {
-            throw "Illegal Permission Exception!";
+            if (*perm != 'r' && *perm != 'w')
+            {
+                throw *perm;
+            }
+            this->perm = perm;
+            this->file = fopen(path, this->perm);
+            this->bit_count = 0;
+
+            if (this->file == nullptr)
+            {
+                throw 0;
+            }
         }
-        this->perm = perm;
-        this->file = fopen(path, this->perm);
-        this->bit_count = 0;
+        catch (char myException)
+        {
+            if (myException == *perm)
+            {
+                cout << "Illegal Permission: " << myException << endl;
+                cout << "Only Read (r) and Write (w) are allowed!" << endl;
+                exit(1);
+            }
+        }
+        catch (int myException)
+        {
+            if (myException == 0)
+            {
+                cout << "File Does Not Exist: " << path << endl;
+                cout << "It's not possible to create or locate the specified file!" << endl;
+                exit(1);
+            }
+        }
     }
 
     bool read_bit()
     {
+        if (*this->perm != 'r')
+        {
+            cout << "Reading Permission Required" << endl;
+            exit(2);
+        }
+
         if (this->bit_count == 0)
         {
             this->current_char = fgetc(this->file);
@@ -31,43 +63,58 @@ public:
 
         if (this->current_char == EOF)
         {
+            cout << "End of file reached" << endl;
+            this->current_char = 0;
             return false;
         }
 
-        buffer.push_back((this->current_char >> this->bit_count) & 0x01);
+        buffer.push_back((this->current_char >> (7 - this->bit_count)) & 0x01);
         this->bit_count = (this->bit_count + 1) % 8;
 
         return true;
     }
 
-    bool *read_n_bits(int n)
+    void read_n_bits(int n)
     {
-        bool read_n[n];
         int i;
         for (i = 0; i < n; i++)
         {
-            read_n[i] = this->read_bit();
+            if (!this->read_bit())
+            {
+                cout << i << " of " << n << " bits read" << endl;
+                break;
+            }
         }
-        return read_n;
     }
 
     bool write_bit(bool bit)
     {
-
+        if (*this->perm != 'w')
+        {
+            cout << "Writing Permission Required" << endl;
+            exit(2);
+        }
         buffer.push_back(bit);
 
         if (this->can_write())
         {
-            return fputc(this->bool_array_to_char(), this->file);
+            char tmp = this->bool_array_to_char();
+            return fputc(tmp, this->file) == tmp;
         }
-        return false;
+        return true;
     }
 
     bool write_n_bits(vector<bool> c)
     {
+        int n = 0;
         for (auto i = c.begin(); i != c.end(); ++i)
         {
-            bool read = this->write_bit(*i);
+            if (!this->write_bit(*i))
+            {
+                cout << n << " of " << c.size() << " bits written" << endl;
+                break;
+            }
+            n++;
         }
         return true;
     }
@@ -76,6 +123,21 @@ public:
     {
         fclose(this->file);
         return 0;
+    }
+
+    void show_buffer()
+    {
+        int n = 0;
+        for (auto i = this->buffer.begin(); i != this->buffer.end(); i++)
+        {
+            if (n % 8 == 0)
+            {
+                cout << endl;
+            }
+            cout << *i << " ";
+            n++;
+        }
+        cout << endl;
     }
 
     bool buffer_is_empty()

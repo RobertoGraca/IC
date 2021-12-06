@@ -6,18 +6,12 @@ int main()
     const char *perm = "r";
     BitStream bs(filename, perm);
 
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    bs.read_bit();
-    // debug
-    // ##### TODO: currently printing backwards #####
-    for (auto i = bs.buffer.begin(); i != bs.buffer.end(); ++i)
-        std::cout << *i << ' ';
+    bs.read_n_bits(32);
+    for (int i = 0; i < 8; i++)
+    {
+        bs.read_bit();
+    }
+    bs.show_buffer();
     bs.close();
     // read 01111011 -> ASCII code for '{'
 }
