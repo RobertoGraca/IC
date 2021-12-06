@@ -1,10 +1,11 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class BitStream
 {
 public:
-    bool *buffer;
+    vector<bool> buffer;
     FILE *file;
     const char *perm;
     int bit_count;
@@ -33,8 +34,7 @@ public:
             return false;
         }
 
-        *buffer = (this->current_char >> this->bit_count) & 0x01;
-        buffer++;
+        buffer.push_back((this->current_char >> this->bit_count) & 0x01);
         this->bit_count = (this->bit_count + 1) % 8;
 
         return true;
@@ -53,25 +53,21 @@ public:
 
     bool write_bit(bool bit)
     {
-        *buffer = bit;
-        buffer++;
+
+        buffer.push_back(bit);
 
         if (this->can_write())
         {
-            fputc(this->bool_array_to_char(), this->file);
-            return true;
+            return fputc(this->bool_array_to_char(), this->file);
         }
         return false;
     }
 
-    bool write_n_bits(bool *c)
+    bool write_n_bits(vector<bool> c)
     {
-        bool read;
-        while (*c != '\0')
+        for (auto i = c.begin(); i != c.end(); ++i)
         {
-            read = this->write_bit(*c);
-            if (!read)
-                return false;
+            bool read = this->write_bit(*i);
         }
         return true;
     }
@@ -84,25 +80,26 @@ public:
 
     bool buffer_is_empty()
     {
-        return !this->buffer;
+        return this->buffer.empty();
     }
 
     bool can_write()
     {
-        return ((sizeof(this->buffer) / this->buffer[0]) >= 8);
+        return this->buffer.size() >= 8;
     }
 
     char bool_array_to_char()
     {
-        int n = 0;
-        int i;
-        for (i = 0; i < 8; i++)
+        int n = 0, i = 0;
+        for (auto it = this->buffer.begin(); it != this->buffer.end(); ++it)
         {
-            if (this->buffer[i])
+            if (*it)
             {
-                n |= (1 << (8 - i));
+                n |= (1 << (7 - i));
             }
+            i++;
         }
+        this->buffer.erase(this->buffer.begin(), this->buffer.begin() + 8);
         return (char)n;
     }
 };
