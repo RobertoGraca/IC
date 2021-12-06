@@ -2,7 +2,7 @@
 
 int main()
 {
-    const char *filename = "test.bits";
+    const char *filename = "write.bits";
     const char *perm = "w";
     BitStream bs(filename, perm);
 
@@ -15,5 +15,5 @@ int main()
     bs.write_bit(1);
     bs.write_bit(1);
     bs.close();
-    // write 00100011 -> ASCII code for #
+    // write 00100011 -> ASCII code for '#'
 }
