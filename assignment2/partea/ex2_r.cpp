@@ -14,7 +14,10 @@ int main()
     bs.read_bit();
     bs.read_bit();
     bs.read_bit();
-    cout << bs.buffer;
+    // debug
+    // ##### TODO: currently printing backwards #####
+    for (auto i = bs.buffer.begin(); i != bs.buffer.end(); ++i)
+        std::cout << *i << ' ';
     bs.close();
     // read 01111011 -> ASCII code for '{'
 }
