@@ -28,18 +28,18 @@ public:
                 throw 0;
             }
         }
-        catch (char myException)
+        catch (char my_exception)
         {
-            if (myException == *perm)
+            if (my_exception == *perm)
             {
-                cout << "Illegal Permission: " << myException << endl;
+                cout << "Illegal Permission: " << my_exception << endl;
                 cout << "Only Read (r) and Write (w) are allowed!" << endl;
                 exit(1);
             }
         }
-        catch (int myException)
+        catch (int my_exception)
         {
-            if (myException == 0)
+            if (my_exception == 0)
             {
                 cout << "File Does Not Exist: " << path << endl;
                 cout << "It's not possible to create or locate the specified file!" << endl;
@@ -107,7 +107,7 @@ public:
     bool write_n_bits(vector<bool> c)
     {
         int n = 0;
-        for (auto i = c.begin(); i != c.end(); ++i)
+        for (auto i = c.cbegin(); i != c.cend(); ++i)
         {
             if (!this->write_bit(*i))
             {
@@ -128,7 +128,7 @@ public:
     void show_buffer()
     {
         int n = 0;
-        for (auto i = this->buffer.begin(); i != this->buffer.end(); i++)
+        for (auto i = this->buffer.cbegin(); i != this->buffer.cend(); i++)
         {
             if (n % 8 == 0)
             {
@@ -153,7 +153,7 @@ public:
     char bool_array_to_char()
     {
         int n = 0, i = 0;
-        for (auto it = this->buffer.begin(); it != this->buffer.end(); ++it)
+        for (auto it = this->buffer.cbegin(); it != this->buffer.cend(); ++it)
         {
             if (*it)
             {
@@ -161,7 +161,7 @@ public:
             }
             i++;
         }
-        this->buffer.erase(this->buffer.begin(), this->buffer.begin() + 8);
+        this->buffer.erase(this->buffer.cbegin(), this->buffer.cbegin() + 8);
         return (char)n;
     }
 };

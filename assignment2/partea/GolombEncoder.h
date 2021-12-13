@@ -7,21 +7,20 @@
 
 enum GolombType
 {
-	GOLOMB, 
-	GOLOMB_RICE, 
-	EXP_GOLOMB   
+	GOLOMB,
+	GOLOMB_RICE,
+	EXP_GOLOMB
 };
 
 class GolombEncoder
 {
 public:
 
-	GolombEncoder(uint64_t m_,GolombType golombType = GolombType::GOLOMB);
+	GolombEncoder(uint64_t m_, GolombType golombType = GolombType::GOLOMB);
 
-	
-	//Se a cache não for suficientemente longa para conter L bits, o byte é preenchido e os bits restantes são armazenados em cache no BitBuffer.
-	//Os bits restantes são armazenados em cache no BitBuffer, e depois são devolvidos falsos, indicando que a cache é insuficiente para conter os elementos de código codificados.  
-	
+	// Se a cache não for suficientemente longa para conter L bits, o byte é preenchido e os bits restantes são armazenados em cache no BitBuffer.
+	// Os bits restantes são armazenados em cache no BitBuffer, e depois são devolvidos falsos, indicando que a cache é insuficiente para conter os elementos de código codificados.
+
 	bool encode(uint64_t num);
 
 	/*
@@ -125,7 +124,7 @@ bool GolombEncoder::close()
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
-// Implementação de diferentes códigos Golomb 
+// Implementação de diferentes códigos Golomb
 //
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -159,7 +158,7 @@ uint64_t GolombEncoder::exp_golombEncode(uint64_t num)
 		num = num + pow(2, k) - 1;
 
 	// 0ª ordem código exp-golom
-	auto m = static_cast<int>(log(num + 1) / log(2)); // prefixo
+	auto m = static_cast<int>(log(num + 1) / log(2));  // prefixo
 	auto info = static_cast<int>(num + 1 - pow(2, m)); // compensação
 
 	auto len = 2 * m + 1; // Comprimento dos elementos codificados após a codificação
@@ -170,7 +169,7 @@ uint64_t GolombEncoder::exp_golombEncode(uint64_t num)
 	bitStream.putBit(1);
 
 	// Escrever informação m-1 bits
-	for (int i = 0; i < m ; i++)
+	for (int i = 0; i < m; i++)
 	{
 		bitStream.putBit(static_cast<bool>(info & 0x01));
 		info >>= 1;
