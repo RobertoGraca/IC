@@ -80,6 +80,7 @@ public:
         for (auto elem = nums_to_encode.cbegin(); elem != nums_to_encode.cend(); elem++)
         {
             int n = *elem;
+            bool signal = n < 0;
             int q = floor(n / this->m);
             int r = n % this->m;
 
@@ -98,6 +99,7 @@ public:
                 enc.write_bit(*i);
                 // show.push_back(*i);
             }
+            enc.write_bit(signal);
         }
 
         enc.close();
@@ -169,11 +171,16 @@ public:
                     break;
                 r++;
             }
+
             bit_count += this->r_combs[r].size();
 
             if (bit_count > enc.buffer.size())
                 break;
-            nums.push_back((this->m * q) + r);
+
+            bool signal = enc.buffer.at(bit_count + 1);
+            bit_count++;
+
+                        nums.push_back(signal ? -1 * ((this->m * q) + r) : ((this->m * q) + r));
         }
 
         enc.close();
