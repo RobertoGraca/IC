@@ -48,6 +48,7 @@ public:
         }
     }
 
+    // reads one bit from a file
     bool read_bit()
     {
         if (*this->perm != 'r')
@@ -74,6 +75,7 @@ public:
         return true;
     }
 
+    // call the read_bit function "n" times
     bool read_n_bits(int n)
     {
         int i;
@@ -88,6 +90,7 @@ public:
         return false;
     }
 
+    // waits until the buffer has 8 bits to write a character to a file
     bool write_bit(bool bit)
     {
         if (*this->perm != 'w')
@@ -105,6 +108,7 @@ public:
         return true;
     }
 
+    // calls the write_bit function "n" times
     bool write_n_bits(vector<bool> c)
     {
         int n = 0;
@@ -115,6 +119,7 @@ public:
         return true;
     }
 
+    // closes the opened file and flushes the buffer
     bool close()
     {
         if (*this->perm == 'w')
@@ -129,6 +134,7 @@ public:
         return 0;
     }
 
+    // show the content of the buffer
     void show_buffer()
     {
         int n = 0;
@@ -144,16 +150,19 @@ public:
         cout << endl;
     }
 
+    // checks of the buffer is empty
     bool buffer_is_empty()
     {
         return this->buffer.empty();
     }
 
+    // checks if if the buffer has enough bits(8) to let the writing process start
     bool can_write()
     {
         return this->buffer.size() >= 8;
     }
 
+    // converts the first 8 elements(bits) of the buffer to a char
     char bool_array_to_char()
     {
         int n = 0, i = 0;

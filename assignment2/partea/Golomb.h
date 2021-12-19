@@ -21,8 +21,11 @@ public:
     {
         this->m = m;
         this->id = cont++;
-        this->r_bits = floor(log2(m));                             // Power of 2 lower than m
-        for (int i = 0; i < ((this->m - pow(2, r_bits)) * 2); i++) // Number of numbers that are gonna have one more bit
+        this->r_bits = floor(log2(m)); // Power of 2 lower than m
+
+        // Creation of all the possibilities for the "r" value
+        // Numbers that are going to be written with one more bit
+        for (int i = 0; i < ((this->m - pow(2, r_bits)) * 2); i++)
         {
             int j = pow(2, this->r_bits + 1) - i - 1;
             vector<bool> x;
@@ -38,7 +41,8 @@ public:
             }
         }
 
-        for (int i = this->m - this->r_combs.size() - 1; i >= 0; i--) // Number of numbers that are gonna have one less bit
+        // Numbers that are going to be written with one less bit
+        for (int i = this->m - this->r_combs.size() - 1; i >= 0; i--)
         {
             if (this->r_combs.size() >= m)
                 break;
@@ -135,6 +139,8 @@ public:
         while (1)
         {
             int q = 0, r = 0;
+
+            // reads the number of initial "0"
             for (auto i = enc.buffer.cbegin() + bit_count; i != enc.buffer.cend(); i++)
             {
                 if (!*i)
@@ -143,11 +149,15 @@ public:
                     break;
             }
             bit_count += (q + 1);
+
+            // reads the next r_bits
             vector<bool> tmp;
             for (auto i = enc.buffer.cbegin() + bit_count; i != enc.buffer.cbegin() + bit_count + this->r_bits; i++)
             {
                 tmp.push_back(*i);
             }
+
+            // if the number read is smaller than 2^(r_bits+1) - m, reads one more bit
             int n = this->bool_array_to_char(tmp);
             if (n >= (pow(2, this->r_bits + 1) - this->m) && n != this->m)
             {
@@ -170,6 +180,7 @@ public:
         return nums;
     }
 
+    // converts the binary combination in vector x to decimal
     int bool_array_to_char(vector<bool> x)
     {
         int n = 0, i = 0;
@@ -177,7 +188,7 @@ public:
         {
             if (*it)
             {
-                n |= (1 << (r_bits - 1 - i));
+                n |= (1 << (x.size() - 1 - i));
             }
             i++;
         }
@@ -202,6 +213,7 @@ public:
         cout << endl;
     }
 
+    // return the number of characters used to encode the given message
     int get_filename_num_chars()
     {
         ifstream file("encoded" + to_string(this->id) + ".bits");
