@@ -1,24 +1,30 @@
 #include <cmath>
 #include <vector>
 #include <algorithm>
-#include <algorithm>
 #include <sstream>
 #include <iterator>
+#include <string>
+#include "BitStream.h"
+#include <fstream>
 using namespace std;
 
 class Golomb
 {
-public:
-    int m;
+private:
+    int m, r_bits;
+    int id;
     vector<vector<bool>> r_combs; // vector with truncated bits combinations
+    inline static int cont = 0;
 
+public:
     Golomb(const int m)
     {
         this->m = m;
-        int r_bits = floor(log2(m));                               // Power of 2 lower than m
+        this->id = cont++;
+        this->r_bits = floor(log2(m));                             // Power of 2 lower than m
         for (int i = 0; i < ((this->m - pow(2, r_bits)) * 2); i++) // Number of numbers that are gonna have one more bit
         {
-            int j = pow(2, r_bits + 1) - i - 1;
+            int j = pow(2, this->r_bits + 1) - i - 1;
             vector<bool> x;
             this->r_combs.insert(this->r_combs.cbegin(), x);
             while (j != 0)
@@ -26,7 +32,7 @@ public:
                 this->r_combs[0].insert(this->r_combs[0].cbegin(), j % 2 == 0 ? false : true);
                 j /= 2;
             }
-            for (int i = this->r_combs[0].size(); i <= r_bits; i++)
+            for (int i = this->r_combs[0].size(); i <= this->r_bits; i++)
             {
                 this->r_combs[0].insert(this->r_combs[0].cbegin(), false);
             }
@@ -45,7 +51,7 @@ public:
                 this->r_combs[0].insert(this->r_combs[0].cbegin(), j % 2 == 0 ? false : true);
                 j /= 2;
             }
-            for (int i = this->r_combs[0].size(); i < r_bits; i++)
+            for (int i = this->r_combs[0].size(); i < this->r_bits; i++)
             {
                 this->r_combs[0].insert(this->r_combs[0].cbegin(), false);
             }
@@ -60,48 +66,152 @@ public:
         }*/
     }
 
-    vector<bool> encode(int n)
+    void encode(vector<int> nums_to_encode)
     {
-        int q = floor(n / this->m);
-        int r = n % this->m;
-        vector<bool> encoded_num;
+        string filename = "encoded" + to_string(this->id) + ".bits";
+        BitStream enc{filename.c_str(), "w"};
 
-        for (int i = 0; i < q; i++)
+        // vector<bool> show;
+
+        for (auto elem = nums_to_encode.cbegin(); elem != nums_to_encode.cend(); elem++)
         {
-            encoded_num.push_back(false);
-        }
-        encoded_num.push_back(true);
+            int n = *elem;
+            int q = floor(n / this->m);
+            int r = n % this->m;
 
-        for (auto i = r_combs[r].cbegin(); i != r_combs[r].cend(); i++)
+            vector<bool> num(q, false);
+            /*for (int i = 0; i < q; i++)
+            {
+                show.push_back(false);
+            }*/
+            num.push_back(true);
+            // show.push_back(true);
+
+            enc.write_n_bits(num);
+
+            for (auto i = r_combs[r].cbegin(); i != r_combs[r].cend(); i++)
+            {
+                enc.write_bit(*i);
+                // show.push_back(*i);
+            }
+        }
+
+        enc.close();
+
+        /*while (show.size() % 8 != 0) // flush the buffer
         {
-            encoded_num.push_back(*i);
+            show.push_back(false);
         }
 
-        return encoded_num;
+        int cont = 0;
+        cout << endl << "Encoder" << endl;
+        for (auto i = show.cbegin(); i != show.cend(); i++)
+        {
+            if (cont++ % 8 == 0)
+                cout << endl;
+            cout << *i << " ";
+        }
+
+        cout << endl;
+        print("buffer size = ", show.size());
+        show.erase(show.cbegin(), show.cend());*/
     }
 
-    int decode(vector<bool> x)
+    vector<int> decode()
     {
-        int q = 0;
+        string filename = "encoded" + to_string(this->id) + ".bits";
+        BitStream enc{filename.c_str(), "r"};
+        int bit_count = 0;
+
+        vector<int> nums;
+
+        while (!enc.read_n_bits(8))
+        {
+        }
+        // cout << endl << "Decoder" << endl;
+        //  enc.show_buffer();
+        //  print("buffer size = ", enc.buffer.size());
+
+        while (1)
+        {
+            int q = 0, r = 0;
+            for (auto i = enc.buffer.cbegin() + bit_count; i != enc.buffer.cend(); i++)
+            {
+                if (!*i)
+                    q++;
+                else
+                    break;
+            }
+            bit_count += (q + 1);
+            vector<bool> tmp;
+            for (auto i = enc.buffer.cbegin() + bit_count; i != enc.buffer.cbegin() + bit_count + this->r_bits; i++)
+            {
+                tmp.push_back(*i);
+            }
+            int n = this->bool_array_to_char(tmp);
+            if (n >= (pow(2, this->r_bits + 1) - this->m) && n != this->m)
+            {
+                tmp.push_back(*(enc.buffer.cbegin() + bit_count + this->r_bits));
+            }
+            for (auto i = this->r_combs.cbegin(); i != this->r_combs.cend(); i++)
+            {
+                if (*i == tmp)
+                    break;
+                r++;
+            }
+            bit_count += this->r_combs[r].size();
+
+            if (bit_count > enc.buffer.size())
+                break;
+            nums.push_back((this->m * q) + r);
+        }
+
+        enc.close();
+        return nums;
+    }
+
+    int bool_array_to_char(vector<bool> x)
+    {
+        int n = 0, i = 0;
+        for (auto it = x.cbegin(); it != x.cend(); ++it)
+        {
+            if (*it)
+            {
+                n |= (1 << (r_bits - 1 - i));
+            }
+            i++;
+        }
+        return n;
+    }
+
+    void print(string s, int x)
+    {
+        cout << s << x << endl;
+    }
+
+    template <typename T>
+    void show_vector(vector<T> x)
+    {
+        int n = 0;
         for (auto i = x.cbegin(); i != x.cend(); i++)
         {
-            if (!*i)
-                q++;
-            else
-                break;
+            if (n++ % 8 == 0)
+                cout << endl;
+            cout << *i << ' ';
         }
-        int r = 0;
-        vector<bool> tmp;
-        for (auto i = x.cend() - 1; i != x.cbegin() + q; i--) // TODO may need to be changed to accomodate truncated binary
+        cout << endl;
+    }
+
+    int get_filename_num_chars()
+    {
+        ifstream file("encoded" + to_string(this->id) + ".bits");
+        int char_count = 0;
+        char c;
+        while (!file.eof())
         {
-            tmp.insert(tmp.cbegin(), *i);
+            file >> c;
+            char_count++;
         }
-        for (auto i = this->r_combs.cbegin(); i != this->r_combs.cend(); i++)
-        {
-            if (*i == tmp)
-                break;
-            r++;
-        }
-        return (this->m * q) + r;
+        return char_count;
     }
 };

@@ -63,7 +63,7 @@ public:
 
         if (this->current_char == EOF)
         {
-            cout << "End of file reached" << endl;
+            // cout << "End of file reached" << endl;
             this->current_char = 0;
             return false;
         }
@@ -74,17 +74,18 @@ public:
         return true;
     }
 
-    void read_n_bits(int n)
+    bool read_n_bits(int n)
     {
         int i;
         for (i = 0; i < n; i++)
         {
             if (!this->read_bit())
             {
-                cout << i << " of " << n << " bits read" << endl;
-                break;
+                // cout << i << " of " << n << " bits read" << endl;
+                return true;
             }
         }
+        return false;
     }
 
     bool write_bit(bool bit)
@@ -109,18 +110,21 @@ public:
         int n = 0;
         for (auto i = c.cbegin(); i != c.cend(); ++i)
         {
-            if (!this->write_bit(*i))
-            {
-                cout << n << " of " << c.size() << " bits written" << endl;
-                break;
-            }
-            n++;
+            this->write_bit(*i);
         }
         return true;
     }
 
     bool close()
     {
+        if (*this->perm == 'w')
+        {
+            while (this->buffer.size() % 8 != 0) // flush the buffer
+            {
+                this->write_bit(false);
+            }
+        }
+
         fclose(this->file);
         return 0;
     }
