@@ -30,21 +30,22 @@ int main(int argc, char **argv)
     // imwrite(name + "_yuv.jpg", yuv);
 
     int matrix[yuv.cols][yuv.rows][3]; // prediction matrix
+    vector<int> Y, U, V;
     for (int y = 0; y < yuv.cols; y++)
     {
         for (int x = 0; x < yuv.rows; x++)
         {
             if (y == 0 || x == 0)
             {
-                matrix[y][x][0] = (int)yuv.at<Vec3b>(y, x)[0];
-                matrix[y][x][1] = (int)yuv.at<Vec3b>(y, x)[1];
-                matrix[y][x][2] = (int)yuv.at<Vec3b>(y, x)[2];
+                Y.push_back((int)yuv.at<Vec3b>(y, x)[0]);
+                U.push_back((int)yuv.at<Vec3b>(y, x)[1]);
+                V.push_back((int)yuv.at<Vec3b>(y, x)[2]);
                 continue;
             }
 
-            matrix[y][x][0] = jpeg_ls_prediction(matrix[y - 1][x][0], matrix[y][x - 1][0], matrix[y - 1][x - 1][0]);
-            matrix[y][x][1] = jpeg_ls_prediction(matrix[y - 1][x][1], matrix[y][x - 1][1], matrix[y - 1][x - 1][1]);
-            matrix[y][x][2] = jpeg_ls_prediction(matrix[y - 1][x][2], matrix[y][x - 1][2], matrix[y - 1][x - 1][2]);
+            Y.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 1, x)[0], (int)yuv.at<Vec3b>(y, x - 1)[0], (int)yuv.at<Vec3b>(y - 1, x - 1)[0]));
+            U.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 1, x)[1], (int)yuv.at<Vec3b>(y, x - 1)[1], (int)yuv.at<Vec3b>(y - 1, x - 1)[1]));
+            V.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 1, x)[2], (int)yuv.at<Vec3b>(y, x - 1)[2], (int)yuv.at<Vec3b>(y - 1, x - 1)[2]));
 
             // cout << (int)yuv.at<Vec3b>(y, x)[i] << "\t";
             // cout << endl;
