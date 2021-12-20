@@ -20,6 +20,12 @@ int jpeg_ls_prediction(int a, int b, int c)
 
 int main(int argc, char **argv)
 {
+    if (argc != 2)
+    {
+        cout << "USAGE: ./ex1 <image1>" << endl;
+        exit(1);
+    }
+
     Mat rgb;
     rgb = imread(argv[1], IMREAD_COLOR);
 
@@ -29,7 +35,6 @@ int main(int argc, char **argv)
     // name = name.substr(0, name.length() - 4);
     // imwrite(name + "_yuv.jpg", yuv);
 
-    int matrix[yuv.cols][yuv.rows][3]; // prediction matrix
     vector<int> Y, U, V;
     for (int y = 0; y < yuv.cols; y++)
     {
@@ -51,16 +56,9 @@ int main(int argc, char **argv)
             // cout << endl;
         }
     }
-    /*for (int y = 0; y < yuv.cols; y++)
-    {
-        for (int x = 0; x < yuv.rows; x++)
-        {
-            cout << yuv.at<Vec3b>(y, x)[0] - matrix[y][x][0] << "\t";
-            cout << yuv.at<Vec3b>(y, x)[1] - matrix[y][x][1] << "\t";
-            cout << yuv.at<Vec3b>(y, x)[2] - matrix[y][x][2] << endl;
-            ;
-        }
-    }*/
+    cout << Y.size() << endl;
+    cout << U.size() << endl;
+    cout << V.size() << endl;
     // waitKey(0);
     return 0;
 }
