@@ -81,6 +81,8 @@ public:
         {
             int n = *elem;
             bool signal = n < 0;
+            if (signal)
+                n = -n;
             int q = floor(n / this->m);
             int r = n % this->m;
 
@@ -99,7 +101,8 @@ public:
                 enc.write_bit(*i);
                 // show.push_back(*i);
             }
-            enc.write_bit(signal);
+            if (n != 0)
+                enc.write_bit(signal);
         }
 
         enc.close();
@@ -177,10 +180,14 @@ public:
             if (bit_count > enc.buffer.size())
                 break;
 
-            bool signal = enc.buffer.at(bit_count + 1);
-            bit_count++;
+            bool signal = 0;
+            if (q != 0 || r != 0)
+            {
+                signal = enc.buffer.at(bit_count + 1);
+                bit_count++;
+            }
 
-                        nums.push_back(signal ? -1 * ((this->m * q) + r) : ((this->m * q) + r));
+            nums.push_back(signal ? -1 * ((this->m * q) + r) : ((this->m * q) + r));
         }
 
         enc.close();
