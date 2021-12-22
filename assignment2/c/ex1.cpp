@@ -7,6 +7,7 @@
 #include <cmath>
 #include <map>
 #include <vector>
+#include "../a/Golomb.h"
 using namespace std;
 using namespace cv;
 
@@ -41,6 +42,37 @@ void sort_map(map<int, int> &m)
     return new_map;*/
 }
 
+_Float32 vector_mean(vector<int> x)
+{
+    _Float32 mean = 0;
+    for (auto &i : x)
+    {
+        mean += i;
+    }
+    return mean / x.size();
+}
+
+_Float32 vector_std_dev(vector<int> x)
+{
+    _Float32 var = 0;
+    _Float32 mean_x = vector_mean(x);
+    for (auto &i : x)
+    {
+        var += pow(i - mean_x, 2);
+    }
+    var /= x.size();
+    return sqrt(var);
+}
+
+void push(vector<int> &x, int *elem, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        x.push_back(elem[i]);
+    }
+}
+
+// g++ ex1.cpp -std=c++11 `pkg-config --cflags --libs opencv`
 int main(int argc, char **argv)
 {
     if (argc != 2)
@@ -48,137 +80,122 @@ int main(int argc, char **argv)
         cout << "USAGE: ./ex1 <image1>" << endl;
         exit(1);
     }
-
     Mat rgb;
     rgb = imread(argv[1], IMREAD_COLOR);
 
+    if (rgb.empty())
+    {
+        cout << "Could not load or find image. Please try again!" << endl;
+        exit(1);
+    }
+
     Mat yuv;
     cvtColor(rgb, yuv, COLOR_BGR2YUV_I420);
+    // imshow("yuv", yuv);
+    //  cout << rgb.cols << "x" << rgb.rows << endl;
+    //  cout << yuv.cols << "x" << yuv.rows << endl;
 
     vector<int> Y, U, V;
     for (int y = 0; y < yuv.cols; y++)
     {
         for (int x = 0; x < yuv.rows; x++)
         {
-            if (y == 0 || x == 0)
+            cout << y << "\t" << x << endl;
+            int elem[3] = {(int)yuv.at<Vec3b>(y, x)[0], (int)yuv.at<Vec3b>(y, x)[1], (int)yuv.at<Vec3b>(y, x)[2]};
+            if (y == 0)
             {
-                Y.push_back((int)yuv.at<Vec3b>(y, x)[0]);
-                if (y % 2 == 0 && x % 2 == 0)
+                if (x < rgb.rows)
                 {
-                    U.push_back((int)yuv.at<Vec3b>(y, x)[1]);
-                    V.push_back((int)yuv.at<Vec3b>(y, x)[2]);
+                    push(Y, elem, 3);
                 }
 
+                else if (x >= rgb.rows && x < yuv.rows - (rgb.rows / 4))
+                {
+                    push(U, elem, 3);
+                }
+
+                else
+                {
+                    push(V, elem, 3);
+                }
                 continue;
             }
-
-            Y.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 1, x)[0], (int)yuv.at<Vec3b>(y, x - 1)[0], (int)yuv.at<Vec3b>(y - 1, x - 1)[0]));
-            if (y % 2 == 0 && x % 2 == 0)
+            else
             {
-                U.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 2, x)[1], (int)yuv.at<Vec3b>(y, x - 2)[1], (int)yuv.at<Vec3b>(y - 2, x - 2)[1]));
-                V.push_back(jpeg_ls_prediction((int)yuv.at<Vec3b>(y - 2, x)[2], (int)yuv.at<Vec3b>(y, x - 2)[2], (int)yuv.at<Vec3b>(y - 2, x - 2)[2]));
+                if (x == 0)
+                {
+                    push(Y, elem, 3);
+                    continue;
+                }
+                else if (x == rgb.rows)
+                {
+                    push(U, elem, 3);
+                    continue;
+                }
+                else if (x == yuv.rows - (rgb.rows / 4))
+                {
+                    push(V, elem, 3);
+                    continue;
+                }
+            }
+            int a[3] = {(int)yuv.at<Vec3b>(y - 1, x)[0], (int)yuv.at<Vec3b>(y - 1, x)[1], (int)yuv.at<Vec3b>(y - 1, x)[2]};
+            int b[3] = {(int)yuv.at<Vec3b>(y, x - 1)[0], (int)yuv.at<Vec3b>(y, x - 1)[1], (int)yuv.at<Vec3b>(y, x - 1)[2]};
+            int c[3] = {(int)yuv.at<Vec3b>(y - 1, x - 1)[0], (int)yuv.at<Vec3b>(y - 1, x - 1)[1], (int)yuv.at<Vec3b>(y - 1, x - 1)[2]};
+            if (x < rgb.rows)
+            {
+                int pred[3];
+                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
+                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
+                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
+                push(Y, pred, 3);
+            }
+            else if (x >= rgb.rows && x < yuv.rows - (rgb.rows / 4))
+            {
+                int pred[3];
+                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
+                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
+                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
+                push(U, pred, 3);
+            }
+            else
+            {
+                int pred[3];
+                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
+                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
+                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
+                push(V, pred, 3);
             }
         }
     }
-    // Assume the channels have a Gaussian distribution
-    float mean_y = 0;
-    for (auto &i : Y)
-    {
-        mean_y += i;
-    }
-    mean_y /= Y.size(); // Y channel mean
-    float var_y = 0;
-    for (auto &i : Y)
-    {
-        var_y += pow(i - mean_y, 2);
-    }
-    var_y /= Y.size();
-    var_y = sqrt(var_y); // Y channel standard deviation
 
-    float mean_u = 0;
-    for (auto &i : U)
-    {
-        mean_u += i;
-    }
-    mean_u /= U.size(); // U channel mean
-    float var_u = 0;
-    for (auto &i : Y)
-    {
-        var_u += pow(i - mean_u, 2);
-    }
-    var_u /= Y.size();
-    var_u = sqrt(var_u); // U channel standard deviation
-
-    float mean_v = 0;
-    for (auto &i : V)
-    {
-        mean_v += i;
-    }
-    mean_v /= V.size(); // V channel mean
-    float var_v = 0;
-    for (auto &i : Y)
-    {
-        var_v += pow(i - mean_v, 2);
-    }
-    var_v /= Y.size();
-    var_v = sqrt(var_v); // V channel standard deviation
-    /*map<int, int> count_y, count_u, count_v;
+    cout << Y.size() << endl;
+    cout << U.size() << endl;
+    cout << V.size() << endl;
+    cout << (Y.size() / 4 == U.size()) << endl;
+    ofstream ofs("yuv_values.txt");
     for (int i = 0; i < Y.size(); i++)
     {
-        int tmp = Y.at(i);
-        if (count_y.count(tmp) > 0)
+        ofs << Y.at(i);
+        ofs << "\t";
+        if (i % 4 == 0)
         {
-            count_y.at(tmp) += 1;
-        }
-        else
-        {
-            count_y.emplace(tmp, 1);
-        }
-    }
-    for (int i = 0; i < U.size(); i++)
-    {
-        int tmp_u = U.at(i);
-        if (count_u.count(tmp_u) > 0)
-        {
-            count_u.at(tmp_u) += 1;
-        }
-        else
-        {
-            count_u.emplace(tmp_u, 1);
+            ofs << U.at(i / 4);
+            ofs << "\t";
+            ofs << V.at(i / 4);
         }
 
-        int tmp_v = V.at(i);
-        if (count_v.count(tmp_v) > 0)
-        {
-            count_v.at(tmp_v) += 1;
-        }
-        else
-        {
-            count_v.emplace(tmp_v, 1);
-        }
+        ofs << "\n";
     }
-    sort_map(count_y);
+    ofs.close();
+    // Assume the channels have a Gaussian distribution
+    /* _Float32 mean_y = vector_mean(Y);   // Y channel mean
+    _Float32 var_y = vector_std_dev(Y); // Y channel standard deviation
 
-    for (auto &it : count_y)
-    {
+    _Float32 mean_u = vector_mean(U);   // U channel mean
+    _Float32 var_u = vector_std_dev(U); // U channel standard deviation
 
-        cout << it.first << ' '
-             << it.second << endl;
-    }
-
-    vector<float> weight_y, weight_u, weight_v;
-    for (auto i = Y.cbegin(); i != Y.cend(); i++)
-    {
-        weight_y.push_back(count_y.at(*i) / Y.size());
-    }
-    for (auto i = U.cbegin(); i != U.cend(); i++)
-    {
-        weight_u.push_back(count_u.at(*i) / U.size());
-    }
-    for (auto i = V.cbegin(); i != V.cend(); i++)
-    {
-        weight_v.push_back(count_v.at(*i) / V.size());
-    }*/
+    _Float32 mean_v = vector_mean(V);   // V channel mean
+    _Float32 var_v = vector_std_dev(V); // V channel standard deviation */
     // waitKey(0);
     return 0;
 }

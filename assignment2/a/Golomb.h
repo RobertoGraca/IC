@@ -240,4 +240,10 @@ public:
         }
         return char_count;
     }
+
+    int delete_bin_file()
+    {
+        string filename = "encoded" + to_string(this->id) + ".bits";
+        return remove(filename.c_str());
+    }
 };
