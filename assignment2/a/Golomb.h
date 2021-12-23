@@ -15,10 +15,12 @@ private:
     int id;
     vector<vector<bool>> r_combs; // vector with truncated bits combinations
     inline static int cont = 0;
+    string filename;
 
 public:
-    Golomb(const int m)
+    Golomb(const int m, string filename)
     {
+        this->filename = filename;
         this->m = m;
         this->id = cont++;
         this->r_bits = floor(log2(m)); // Power of 2 lower than m
@@ -72,8 +74,7 @@ public:
 
     void encode(vector<int> nums_to_encode)
     {
-        string filename = "encoded" + to_string(this->id) + ".bits";
-        BitStream enc{filename.c_str(), "w"};
+        BitStream enc{this->filename.c_str(), "w"};
 
         // vector<bool> show;
 
@@ -128,8 +129,7 @@ public:
 
     vector<int> decode()
     {
-        string filename = "encoded" + to_string(this->id) + ".bits";
-        BitStream enc{filename.c_str(), "r"};
+        BitStream enc{this->filename.c_str(), "r"};
         int bit_count = 0;
 
         vector<int> nums;
@@ -230,7 +230,7 @@ public:
     // return the number of characters used to encode the given message
     int get_filename_num_chars()
     {
-        ifstream file("encoded" + to_string(this->id) + ".bits");
+        ifstream file(this->filename);
         int char_count = 0;
         char c;
         while (!file.eof())
@@ -241,9 +241,13 @@ public:
         return char_count;
     }
 
+    void set_filename(string filename)
+    {
+        this->filename = filename;
+    }
+
     int delete_bin_file()
     {
-        string filename = "encoded" + to_string(this->id) + ".bits";
-        return remove(filename.c_str());
+        return remove(this->filename.c_str());
     }
 };
