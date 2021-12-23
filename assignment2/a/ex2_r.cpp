@@ -1,17 +1,49 @@
 #include "BitStream.h"
 
-int main()
+int main(int argc, char** argv)
 {
-    const char *filename = "write.bits";
+    if (argc > 2){
+        cout << "USAGE: ./ex2_r [file_to_be_read]" << endl;
+        exit(1);
+    }
+
+    const char *filename;
+    if (argc == 2){
+        filename = argv[1];
+    } else{
+        // default filename
+        filename = "read.bits";
+    }
+
     const char *perm = "r";
     BitStream bs(filename, perm);
 
-    bs.read_n_bits(100);
-    for (int i = 0; i < 8; i++)
-    {
-        bs.read_bit();
-    }
+    // read 01111011 -> ASCII code for '{'
+    //  and 00100100 -> ASCII code for '$'
+    bs.read_n_bits(800);
+
+    /* OR: 
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    bs.read_bit();
+    */
+    
     bs.show_buffer();
     bs.close();
-    // read 01111011 -> ASCII code for '{'
+    
+    return 0;
 }
