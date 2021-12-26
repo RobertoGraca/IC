@@ -17,14 +17,8 @@ private:
     inline static int cont = 0;
     string filename;
 
-public:
-    Golomb(const int m, string filename)
+    void make_r_combs()
     {
-        this->filename = filename;
-        this->m = m;
-        this->id = cont++;
-        this->r_bits = floor(log2(m)); // Power of 2 lower than m
-
         // Creation of all the possibilities for the "r" value
         // Numbers that are going to be written with one more bit
         for (int i = 0; i < ((this->m - pow(2, r_bits)) * 2); i++)
@@ -72,11 +66,24 @@ public:
         }*/
     }
 
+public:
+    Golomb(const int m, string filename)
+    {
+        this->filename = filename;
+        this->m = m;
+        this->id = cont++;
+        this->r_bits = floor(log2(m)); // Power of 2 lower than m
+
+        make_r_combs();
+    }
+
     void encode(vector<int> nums_to_encode)
     {
         BitStream enc{this->filename.c_str(), "w"};
 
-        // vector<bool> show;
+        vector<bool> enc_m(this->m, false);
+        enc_m.push_back(true);
+        enc.write_n_bits(enc_m);
 
         for (auto elem = nums_to_encode.cbegin(); elem != nums_to_encode.cend(); elem++)
         {
@@ -140,6 +147,16 @@ public:
         // cout << endl << "Decoder" << endl;
         //  enc.show_buffer();
         //  print("buffer size = ", enc.buffer.size());
+        int new_m = 0;
+        for (auto i = enc.buffer.cbegin(); i != enc.buffer.cend(); i++)
+        {
+            if (!*i)
+                new_m++;
+            else
+                break;
+        }
+        bit_count += new_m + 1;
+        set_m(new_m);
 
         while (1)
         {
@@ -241,9 +258,27 @@ public:
         return char_count;
     }
 
+    string get_filename()
+    {
+        return this->filename;
+    }
+
     void set_filename(string filename)
     {
         this->filename = filename;
+    }
+
+    int get_m()
+    {
+        return this->m;
+    }
+
+    void set_m(int m)
+    {
+        this->m = m;
+        this->r_bits = floor(log2(m)); // Power of 2 lower than m
+        r_combs.erase(r_combs.cbegin(), r_combs.cend());
+        make_r_combs();
     }
 
     int delete_bin_file()
