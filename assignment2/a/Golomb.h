@@ -200,7 +200,7 @@ public:
             bool signal = 0;
             if (q != 0 || r != 0)
             {
-                signal = enc.buffer.at(bit_count + 1);
+                signal = enc.buffer.at(bit_count);
                 bit_count++;
             }
 
