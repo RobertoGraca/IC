@@ -95,43 +95,21 @@ public:
             int r = n % this->m;
 
             vector<bool> num(q, false);
-            /*for (int i = 0; i < q; i++)
-            {
-                show.push_back(false);
-            }*/
+
             num.push_back(true);
-            // show.push_back(true);
 
             enc.write_n_bits(num);
 
             for (auto i = r_combs[r].cbegin(); i != r_combs[r].cend(); i++)
             {
                 enc.write_bit(*i);
-                // show.push_back(*i);
             }
+
             if (n != 0)
                 enc.write_bit(signal);
         }
 
         enc.close();
-
-        /*while (show.size() % 8 != 0) // flush the buffer
-        {
-            show.push_back(false);
-        }
-
-        int cont = 0;
-        cout << endl << "Encoder" << endl;
-        for (auto i = show.cbegin(); i != show.cend(); i++)
-        {
-            if (cont++ % 8 == 0)
-                cout << endl;
-            cout << *i << " ";
-        }
-
-        cout << endl;
-        print("buffer size = ", show.size());
-        show.erase(show.cbegin(), show.cend());*/
     }
 
     vector<int> decode()
@@ -141,12 +119,10 @@ public:
 
         vector<int> nums;
 
-        while (!enc.read_n_bits(8))
+        while (!enc.read_n_bits(8000))
         {
         }
-        // cout << endl << "Decoder" << endl;
-        //  enc.show_buffer();
-        //  print("buffer size = ", enc.buffer.size());
+
         int new_m = 0;
         for (auto i = enc.buffer.cbegin(); i != enc.buffer.cend(); i++)
         {

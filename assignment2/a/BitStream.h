@@ -62,7 +62,7 @@ public:
             this->current_char = fgetc(this->file);
         }
 
-        if (this->current_char == EOF)
+        if (feof(this->file))
         {
             // cout << "End of file reached" << endl;
             this->current_char = 0;
