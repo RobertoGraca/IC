@@ -144,9 +144,27 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
     Golomb gol_v(m, filenames[2]);
     gol_v.encode(V);
 
-    cmp_vec.push_back(Y);
+    /* cmp_vec.push_back(Y);
     cmp_vec.push_back(U);
-    cmp_vec.push_back(V);
+    cmp_vec.push_back(V); */
+
+    float size = Y.size();
+    float num_chars = gol_y.get_filename_num_chars();
+    cout << size << " characters were encoded for Y" << endl;
+    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
+
+    size = U.size();
+    num_chars = gol_u.get_filename_num_chars();
+    cout << size << " characters were encoded for Cr" << endl;
+    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
+
+    size = V.size();
+    num_chars = gol_v.get_filename_num_chars();
+    cout << size << " characters were encoded for Cb" << endl;
+    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
 }
 
 void decode_image(vector<string> filenames)
@@ -206,26 +224,6 @@ void decode_image(vector<string> filenames)
             }
         }
     }
-    Mat diff;
-    absdiff(yuv, new_image, diff);
-    for (int y = 0; y < new_image.cols; y++)
-    {
-        for (int x = 0; x < new_image.rows; x++)
-        {
-            if ((int)diff.at<uchar>(y, x) != 0)
-            {
-                cout << (int)new_image.at<uchar>(y, x) << endl;
-                cout << (int)yuv.at<uchar>(y, x) << endl;
-                cout << (int)diff.at<uchar>(y, x) << endl;
-                cout << "-------------" << endl;
-            }
-        }
-    }
-    if (countNonZero(diff) == 0)
-        cout << "Images are equal!" << endl;
-    else
-        cout << "Images are different!" << endl;
-    imshow("Diff", diff);
     imshow("Original RGB", rgb);
     imshow("Original YUV", yuv);
     imshow("Restored YUV", new_image);
