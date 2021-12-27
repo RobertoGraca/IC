@@ -11,6 +11,9 @@
 using namespace std;
 using namespace cv;
 
+vector<vector<int>> cmp_vec;
+string image;
+
 int jpeg_ls_prediction(int a, int b, int c)
 {
     if (c >= max(a, b))
@@ -34,12 +37,12 @@ void sort_map(map<int, int> &m)
         v.push_back(i);
     }
     sort(v.begin(), v.end(), cmp);
-    /*map<int, int> new_map;
+    /* map<int, int> new_map;
     for (auto &i : v)
     {
         new_map.emplace(i.first, i.second);
     }
-    return new_map;*/
+    return new_map; */
 }
 
 _Float32 vector_mean(vector<int> x)
@@ -64,13 +67,209 @@ _Float32 vector_std_dev(vector<int> x)
     return sqrt(var);
 }
 
-void push(vector<int> &x, int *elem, int n)
+template <typename T>
+void show_vector(vector<T> x)
 {
-    for (int i = 0; i < n; i++)
+    int n = 0;
+    int show = 1000;
+    for (int i = show; i < show + 10; i++)
     {
-        x.push_back(elem[i]);
+        cout << x[i] << " ";
+    }
+    cout << endl;
+}
+
+template <typename T>
+int index_wrong(vector<T> x, vector<T> y)
+{
+    int size = min(x.size(), y.size());
+    for (int i = 0; i < size; i++)
+    {
+        if (x[i] != y[i])
+            return i;
     }
 }
+
+void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> &V, map<int, int> &char_count, vector<string> filenames)
+{
+    for (int y = 0; y < yuv.cols; y++)
+    {
+        for (int x = 0; x < yuv.rows; x++)
+        {
+            int elem = (int)yuv.at<uchar>(y, x);
+
+            if (char_count.count(elem) > 0)
+            {
+                char_count.at(elem) += 1;
+            }
+            else
+            {
+                char_count.emplace(elem, 1);
+            }
+
+            int a = (y == 0) ? 0 : (int)yuv.at<uchar>(y - 1, x);
+            int b = (x == 0 || x == rgb.rows || x == yuv.rows - (rgb.rows / 4)) ? 0 : (int)yuv.at<uchar>(y, x - 1);
+            int c = ((y == 0) || (x == 0 || x == rgb.rows || x == yuv.rows - (rgb.rows / 4))) ? 0 : (int)yuv.at<uchar>(y - 1, x - 1);
+            if (x < rgb.rows)
+            {
+                Y.push_back(elem - jpeg_ls_prediction(a, b, c));
+            }
+            else if (x < yuv.rows - (rgb.rows / 4))
+            {
+                U.push_back(elem - jpeg_ls_prediction(a, b, c));
+            }
+            else
+            {
+                V.push_back(elem - jpeg_ls_prediction(a, b, c));
+            }
+        }
+    }
+    const int m = 64;
+
+    Y.insert(Y.cbegin(), rgb.cols); // parameters to recover Y size
+    Y.insert(Y.cbegin(), rgb.rows);
+
+    U.insert(U.cbegin(), rgb.cols); // parameters to recover U size
+    U.insert(U.cbegin(), rgb.rows / 4);
+
+    V.insert(V.cbegin(), rgb.cols); // parameters to recover V size
+    V.insert(V.cbegin(), rgb.rows / 4);
+
+    Golomb gol_y(m, filenames[0]);
+    gol_y.encode(Y);
+
+    Golomb gol_u(m, filenames[1]);
+    gol_u.encode(U);
+
+    Golomb gol_v(m, filenames[2]);
+    gol_v.encode(V);
+
+    cmp_vec.push_back(Y);
+    cmp_vec.push_back(U);
+    cmp_vec.push_back(V);
+}
+
+void decode_image(vector<string> filenames)
+{
+    Golomb gol_y2(1, filenames[0]);
+    vector<int> Y = gol_y2.decode();
+
+    Golomb gol_u2(1, filenames[1]);
+    vector<int> U = gol_u2.decode();
+
+    Golomb gol_v2(1, filenames[2]);
+    vector<int> V = gol_v2.decode();
+
+    Mat rgb;
+    rgb = imread(image, IMREAD_COLOR);
+    Mat yuv;
+    cvtColor(rgb, yuv, COLOR_BGR2YUV_I420);
+
+    int rows = Y[0] + U[0] + V[0];
+    int cols = V[1];
+
+    Mat new_image = Mat::zeros(Size(Y[0], Y[1]), CV_8UC3);
+    cvtColor(rgb, new_image, COLOR_BGR2YUV_I420);
+
+    int i = 0, j = 0, k = 0;
+    for (int y = 0; y < new_image.cols; y++)
+    {
+        for (int x = 0; x < new_image.rows; x++)
+        {
+
+            if (x < Y[0])
+            {
+                int a = (i < Y[0]) ? 0 : (int)new_image.at<uchar>(y - 1, x);
+                int b = (i % Y[0] == 0) ? 0 : (int)new_image.at<uchar>(y, x - 1);
+                int c = (i % Y[0] == 0 || i < Y[0]) ? 0 : (int)new_image.at<uchar>(y - 1, x - 1);
+
+                char save = jpeg_ls_prediction(a, b, c) + Y.at(i++ + 2);
+                new_image.at<uchar>(y, x) = save;
+            }
+            else if (x < Y[0] + U[0])
+            {
+                int a = (j < U[0]) ? 0 : (int)new_image.at<uchar>(y - 1, x);
+                int b = (j % U[0] == 0) ? 0 : (int)new_image.at<uchar>(y, x - 1);
+                int c = (j < U[0] || j % U[0] == 0) ? 0 : (int)new_image.at<uchar>(y - 1, x - 1);
+
+                char save = jpeg_ls_prediction(a, b, c) + U.at(j++ + 2);
+                new_image.at<uchar>(y, x) = save;
+            }
+            else
+            {
+                int a = (k < V[0]) ? 0 : (int)new_image.at<uchar>(y - 1, x);
+                int b = (k % V[0] == 0) ? 0 : (int)new_image.at<uchar>(y, x - 1);
+                int c = (k < V[0] || k % V[0] == 0) ? 0 : (int)new_image.at<uchar>(y - 1, x - 1);
+
+                char save = jpeg_ls_prediction(a, b, c) + V.at(k++ + 2);
+                new_image.at<uchar>(y, x) = save;
+            }
+        }
+    }
+    Mat diff;
+    absdiff(yuv, new_image, diff);
+    for (int y = 0; y < new_image.cols; y++)
+    {
+        for (int x = 0; x < new_image.rows; x++)
+        {
+            if ((int)diff.at<uchar>(y, x) != 0)
+            {
+                cout << (int)new_image.at<uchar>(y, x) << endl;
+                cout << (int)yuv.at<uchar>(y, x) << endl;
+                cout << (int)diff.at<uchar>(y, x) << endl;
+                cout << "-------------" << endl;
+            }
+        }
+    }
+    if (countNonZero(diff) == 0)
+        cout << "Images are equal!" << endl;
+    else
+        cout << "Images are different!" << endl;
+    imshow("Diff", diff);
+    imshow("Original RGB", rgb);
+    imshow("Original YUV", yuv);
+    imshow("Restored YUV", new_image);
+    cvtColor(new_image, new_image, COLOR_YUV2BGR_I420);
+    imshow("Restored RGB", new_image);
+    waitKey(0);
+}
+
+/* int get_m(map<int, int> &x, int size)
+{
+    sort_map(x);
+    vector<int> m_values;
+    int max = 1000;
+    for (auto elem : x)
+    {
+        float n = elem.first;
+        float n_count = elem.second;
+        if (n_count == 0)
+            continue;
+        float prob = n_count / size;
+
+        long min = LONG_MAX;
+        long min_index = LONG_MAX;
+
+        for (int i = 0; i < max; i++)
+        {
+            float alpha = (float)i / (float)max;
+            float res = pow(alpha, n) * (1.0 - alpha);
+            // cout << "*** = " << abs(res - prob) << endl;
+            if (abs(res - prob) < min)
+            {
+                min = abs(res - prob);
+                min_index = i;
+                if (abs(res - prob) == 0)
+                    break;
+            }
+        }
+        cout << "min_index = " << min_index << endl;
+        m_values.push_back(min_index);
+    }
+    float alpha_mean = floor(vector_mean(m_values)) / max;
+    int m = ceil(-1 / log2(alpha_mean));
+    return m;
+} */
 
 // g++ ex1.cpp -std=c++11 `pkg-config --cflags --libs opencv`
 int main(int argc, char **argv)
@@ -80,8 +279,9 @@ int main(int argc, char **argv)
         cout << "USAGE: ./ex1 <image1>" << endl;
         exit(1);
     }
+    image = argv[1];
     Mat rgb;
-    rgb = imread(argv[1], IMREAD_COLOR);
+    rgb = imread(image, IMREAD_COLOR);
 
     if (rgb.empty())
     {
@@ -96,106 +296,16 @@ int main(int argc, char **argv)
     //  cout << yuv.cols << "x" << yuv.rows << endl;
 
     vector<int> Y, U, V;
-    for (int y = 0; y < yuv.cols; y++)
-    {
-        for (int x = 0; x < yuv.rows; x++)
-        {
-            cout << y << "\t" << x << endl;
-            int elem[3] = {(int)yuv.at<Vec3b>(y, x)[0], (int)yuv.at<Vec3b>(y, x)[1], (int)yuv.at<Vec3b>(y, x)[2]};
-            if (y == 0)
-            {
-                if (x < rgb.rows)
-                {
-                    push(Y, elem, 3);
-                }
+    map<int, int> count_char;
+    vector<string> filenames = {"y_encoded.bits", "u_encoded.bits", "v_encoded.bits"};
+    encode_image(rgb, yuv, Y, U, V, count_char, filenames);
 
-                else if (x >= rgb.rows && x < yuv.rows - (rgb.rows / 4))
-                {
-                    push(U, elem, 3);
-                }
+    cout << "Encoded channels Y, U and V of image " << argv[1] << endl
+         << endl;
 
-                else
-                {
-                    push(V, elem, 3);
-                }
-                continue;
-            }
-            else
-            {
-                if (x == 0)
-                {
-                    push(Y, elem, 3);
-                    continue;
-                }
-                else if (x == rgb.rows)
-                {
-                    push(U, elem, 3);
-                    continue;
-                }
-                else if (x == yuv.rows - (rgb.rows / 4))
-                {
-                    push(V, elem, 3);
-                    continue;
-                }
-            }
-            int a[3] = {(int)yuv.at<Vec3b>(y - 1, x)[0], (int)yuv.at<Vec3b>(y - 1, x)[1], (int)yuv.at<Vec3b>(y - 1, x)[2]};
-            int b[3] = {(int)yuv.at<Vec3b>(y, x - 1)[0], (int)yuv.at<Vec3b>(y, x - 1)[1], (int)yuv.at<Vec3b>(y, x - 1)[2]};
-            int c[3] = {(int)yuv.at<Vec3b>(y - 1, x - 1)[0], (int)yuv.at<Vec3b>(y - 1, x - 1)[1], (int)yuv.at<Vec3b>(y - 1, x - 1)[2]};
-            if (x < rgb.rows)
-            {
-                int pred[3];
-                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
-                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
-                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
-                push(Y, pred, 3);
-            }
-            else if (x >= rgb.rows && x < yuv.rows - (rgb.rows / 4))
-            {
-                int pred[3];
-                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
-                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
-                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
-                push(U, pred, 3);
-            }
-            else
-            {
-                int pred[3];
-                pred[0] = jpeg_ls_prediction(a[0], b[0], c[0]);
-                pred[1] = jpeg_ls_prediction(a[1], b[1], c[1]);
-                pred[2] = jpeg_ls_prediction(a[2], b[2], c[2]);
-                push(V, pred, 3);
-            }
-        }
-    }
+    cout << "Preparing to restore original RGB image" << endl;
 
-    cout << Y.size() << endl;
-    cout << U.size() << endl;
-    cout << V.size() << endl;
-    cout << (Y.size() / 4 == U.size()) << endl;
-    ofstream ofs("yuv_values.txt");
-    for (int i = 0; i < Y.size(); i++)
-    {
-        ofs << Y.at(i);
-        ofs << "\t";
-        if (i % 4 == 0)
-        {
-            ofs << U.at(i / 4);
-            ofs << "\t";
-            ofs << V.at(i / 4);
-        }
+    decode_image(filenames);
 
-        ofs << "\n";
-    }
-    ofs.close();
-    // Assume the channels have a Gaussian distribution
-    /* _Float32 mean_y = vector_mean(Y);   // Y channel mean
-    _Float32 var_y = vector_std_dev(Y); // Y channel standard deviation
-
-    _Float32 mean_u = vector_mean(U);   // U channel mean
-    _Float32 var_u = vector_std_dev(U); // U channel standard deviation
-
-    _Float32 mean_v = vector_mean(V);   // V channel mean
-    _Float32 var_v = vector_std_dev(V); // V channel standard deviation */
-    // waitKey(0);
     return 0;
 }
