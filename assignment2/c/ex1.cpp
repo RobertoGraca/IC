@@ -298,7 +298,7 @@ int main(int argc, char **argv)
     vector<string> filenames = {"y_encoded.bits", "u_encoded.bits", "v_encoded.bits"};
     encode_image(rgb, yuv, Y, U, V, count_char, filenames);
 
-    cout << "Encoded channels Y, U and V of image " << argv[1] << endl
+    cout << "Encoded channels Y, Cr and Cb of image " << argv[1] << endl
          << endl;
 
     cout << "Preparing to restore original RGB image" << endl;
