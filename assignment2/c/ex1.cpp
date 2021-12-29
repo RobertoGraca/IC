@@ -135,6 +135,15 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
         }
     }
 
+    file.insert(file.cbegin(), rgb.cols);
+    file.insert(file.cbegin(), rgb.rows);
+
+    file.insert(file.cbegin(), rgb.cols);
+    file.insert(file.cbegin(), rgb.rows / 4);
+
+    file.insert(file.cbegin(), rgb.cols);
+    file.insert(file.cbegin(), rgb.rows / 4);
+
     Y.insert(Y.cbegin(), rgb.cols); // parameters to recover Y size
     Y.insert(Y.cbegin(), rgb.rows);
 
@@ -166,14 +175,14 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
 
     size = U.size();
     num_chars = gol_u.get_filename_num_chars();
-    cout << size << " characters were encoded for Cr" << endl;
+    cout << size << " characters were encoded for Cb" << endl;
     cout << "Space used is " << num_chars << " bytes. " << endl;
     cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
          << endl;
 
     size = V.size();
     num_chars = gol_v.get_filename_num_chars();
-    cout << size << " characters were encoded for Cb" << endl;
+    cout << size << " characters were encoded for Cr" << endl;
     cout << "Space used is " << num_chars << " bytes. " << endl;
     cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
          << endl;
