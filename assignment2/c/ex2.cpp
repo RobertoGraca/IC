@@ -13,6 +13,7 @@ using namespace cv;
 
 vector<vector<int>> cmp_vec;
 string image;
+int m;
 int bits_to_reduce;
 Mat rgb;
 Mat yuv;
@@ -160,7 +161,6 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
             }
         }
     }
-    const int m = 64;
 
     file.insert(file.cbegin(), rgb.cols);
     file.insert(file.cbegin(), rgb.rows);
@@ -342,13 +342,14 @@ void decode_image(vector<string> filenames)
 // g++ ex1.cpp -std=c++11 `pkg-config --cflags --libs opencv`
 int main(int argc, char **argv)
 {
-    if (argc != 3)
+    if (argc != 4)
     {
-        cout << "USAGE: ./ex1 <image1> <bits_to_reduce>" << endl;
+        cout << "USAGE: ./ex1 <image1> <golomb_m_value> <bits_to_reduce>" << endl;
         exit(1);
     }
     image = argv[1];
-    bits_to_reduce = stoi(argv[2]);
+    m = atoi(argv[2]);
+    bits_to_reduce = atoi(argv[3]);
 
     rgb = imread(image, IMREAD_COLOR);
 
