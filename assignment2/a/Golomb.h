@@ -132,7 +132,8 @@ public:
                 break;
         }
         bit_count += new_m + 1;
-        set_m(new_m);
+        if (new_m != this->m)
+            set_m(new_m);
 
         while (1)
         {
