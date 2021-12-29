@@ -13,6 +13,8 @@ using namespace cv;
 
 vector<vector<int>> cmp_vec;
 string image;
+Mat rgb;
+Mat yuv;
 
 int jpeg_ls_prediction(int a, int b, int c)
 {
@@ -92,6 +94,7 @@ int index_wrong(vector<T> x, vector<T> y)
 
 void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> &V, map<int, int> &char_count, vector<string> filenames)
 {
+    vector<int> file;
     for (int y = 0; y < yuv.cols; y++)
     {
         for (int x = 0; x < yuv.rows; x++)
@@ -112,15 +115,21 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
             int c = ((y == 0) || (x == 0 || x == rgb.rows || x == yuv.rows - (rgb.rows / 4))) ? 0 : (int)yuv.at<uchar>(y - 1, x - 1);
             if (x < rgb.rows)
             {
-                Y.push_back(elem - jpeg_ls_prediction(a, b, c));
+                int enc = elem - jpeg_ls_prediction(a, b, c);
+                Y.push_back(enc);
+                file.push_back(enc);
             }
             else if (x < yuv.rows - (rgb.rows / 4))
             {
-                U.push_back(elem - jpeg_ls_prediction(a, b, c));
+                int enc = elem - jpeg_ls_prediction(a, b, c);
+                U.push_back(enc);
+                file.push_back(enc);
             }
             else
             {
-                V.push_back(elem - jpeg_ls_prediction(a, b, c));
+                int enc = elem - jpeg_ls_prediction(a, b, c);
+                V.push_back(enc);
+                file.push_back(enc);
             }
         }
     }
@@ -151,37 +160,63 @@ void encode_image(Mat rgb, Mat yuv, vector<int> &Y, vector<int> &U, vector<int> 
     float size = Y.size();
     float num_chars = gol_y.get_filename_num_chars();
     cout << size << " characters were encoded for Y" << endl;
-    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
-    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
+    cout << "Space used is " << num_chars << " bytes. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
+         << endl;
 
     size = U.size();
     num_chars = gol_u.get_filename_num_chars();
     cout << size << " characters were encoded for Cr" << endl;
-    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
-    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
+    cout << "Space used is " << num_chars << " bytes. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
+         << endl;
 
     size = V.size();
     num_chars = gol_v.get_filename_num_chars();
     cout << size << " characters were encoded for Cb" << endl;
-    cout << "Space used is " << num_chars * 8 << " bits. " << endl;
-    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl;
+    cout << "Space used is " << num_chars << " bytes. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
+         << endl;
+
+    cout << "----- Full Image ------" << endl
+         << endl;
+
+    cout << "Original" << endl
+         << endl;
+
+    Golomb tmp(1, image);
+    num_chars = tmp.get_filename_num_chars();
+    cout << "Space used is " << num_chars << " bytes. " << endl
+         << endl;
+
+    cout << "Compressed" << endl
+         << endl;
+    Golomb f(m, "full_image.bits");
+    f.encode(file);
+
+    size = file.size();
+    num_chars = f.get_filename_num_chars();
+    cout << size << " characters were encoded for the full image" << endl;
+    cout << "Space used is " << num_chars << " bytes. " << endl;
+    cout << "Entropy is " << num_chars * 8 / size << " bits/char" << endl
+         << endl;
+
+    f.delete_bin_file();
 }
 
 void decode_image(vector<string> filenames)
 {
     Golomb gol_y2(1, filenames[0]);
     vector<int> Y = gol_y2.decode();
+    gol_y2.delete_bin_file();
 
     Golomb gol_u2(1, filenames[1]);
     vector<int> U = gol_u2.decode();
+    gol_u2.delete_bin_file();
 
     Golomb gol_v2(1, filenames[2]);
     vector<int> V = gol_v2.decode();
-
-    Mat rgb;
-    rgb = imread(image, IMREAD_COLOR);
-    Mat yuv;
-    cvtColor(rgb, yuv, COLOR_BGR2YUV_I420);
+    gol_v2.delete_bin_file();
 
     int rows = Y[0] + U[0] + V[0];
     int cols = V[1];
@@ -244,10 +279,8 @@ void decode_image(vector<string> filenames)
         if (n_count == 0)
             continue;
         float prob = n_count / size;
-
         long min = LONG_MAX;
         long min_index = LONG_MAX;
-
         for (int i = 0; i < max; i++)
         {
             float alpha = (float)i / (float)max;
@@ -278,7 +311,7 @@ int main(int argc, char **argv)
         exit(1);
     }
     image = argv[1];
-    Mat rgb;
+
     rgb = imread(image, IMREAD_COLOR);
 
     if (rgb.empty())
@@ -286,8 +319,6 @@ int main(int argc, char **argv)
         cout << "Could not load or find image. Please try again!" << endl;
         exit(1);
     }
-
-    Mat yuv;
     cvtColor(rgb, yuv, COLOR_BGR2YUV_I420);
     // imshow("yuv", yuv);
     //  cout << rgb.cols << "x" << rgb.rows << endl;
