@@ -14,6 +14,7 @@ using namespace cv;
 vector<vector<int>> cmp_vec;
 string image;
 int m;
+int bits_to_reduce;
 Mat rgb;
 Mat yuv;
 
@@ -90,6 +91,32 @@ int index_wrong(vector<T> x, vector<T> y)
     {
         if (x[i] != y[i])
             return i;
+    }
+}
+
+void shift_right(Mat &image)
+{
+    for (int y = 0; y < image.cols; y++)
+    {
+        for (int x = 0; x < image.rows; x++)
+        {
+            image.at<Vec3b>(y, x)[0] = image.at<Vec3b>(y, x)[0] >> bits_to_reduce;
+            image.at<Vec3b>(y, x)[1] = image.at<Vec3b>(y, x)[1] >> bits_to_reduce;
+            image.at<Vec3b>(y, x)[2] = image.at<Vec3b>(y, x)[2] >> bits_to_reduce;
+        }
+    }
+}
+
+void shift_left(Mat &image)
+{
+    for (int y = 0; y < image.cols; y++)
+    {
+        for (int x = 0; x < image.rows; x++)
+        {
+            image.at<Vec3b>(y, x)[0] = image.at<Vec3b>(y, x)[0] << bits_to_reduce;
+            image.at<Vec3b>(y, x)[1] = image.at<Vec3b>(y, x)[1] << bits_to_reduce;
+            image.at<Vec3b>(y, x)[2] = image.at<Vec3b>(y, x)[2] << bits_to_reduce;
+        }
     }
 }
 
@@ -272,6 +299,7 @@ void decode_image(vector<string> filenames)
     imshow("Original YUV", yuv);
     imshow("Restored YUV", new_image);
     cvtColor(new_image, new_image, COLOR_YUV2BGR_I420);
+    shift_left(new_image);
     imshow("Restored RGB", new_image);
     waitKey(0);
 }
@@ -314,13 +342,14 @@ void decode_image(vector<string> filenames)
 // g++ ex1.cpp -std=c++11 `pkg-config --cflags --libs opencv`
 int main(int argc, char **argv)
 {
-    if (argc != 3)
+    if (argc != 4)
     {
-        cout << "USAGE: ./ex1 <image1> <golomb_m_value>" << endl;
+        cout << "USAGE: ./ex1 <image1> <golomb_m_value> <bits_to_reduce>" << endl;
         exit(1);
     }
     image = argv[1];
     m = atoi(argv[2]);
+    bits_to_reduce = atoi(argv[3]);
 
     rgb = imread(image, IMREAD_COLOR);
 
@@ -329,6 +358,8 @@ int main(int argc, char **argv)
         cout << "Could not load or find image. Please try again!" << endl;
         exit(1);
     }
+    imshow("RGB", rgb);
+    shift_right(rgb);
     cvtColor(rgb, yuv, COLOR_BGR2YUV_I420);
     // imshow("yuv", yuv);
     //  cout << rgb.cols << "x" << rgb.rows << endl;
