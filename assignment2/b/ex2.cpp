@@ -35,7 +35,6 @@ double *predictor(int arr_size, double *sample)
 double *residual(int arr_size, double *sample, int arr2_size, double *pred_array)
 {
     assert(arr_size == arr2_size);
-    map<char, int> m;
     double *residual = (double *)malloc(arr_size * sizeof(double));
     for (int i = 0; i < arr_size; i++)
     {
@@ -65,7 +64,7 @@ int main(int argc, char *argv[])
     double *resiChannel0 = (double *)malloc(arr_size * sizeof(double));
     double *pred_arrayChannel1 = (double *)malloc(arr_size * sizeof(double));
     double *resiChannel1 = (double *)malloc(arr_size * sizeof(double));
-    cout << num_channels << endl;
+    //cout << num_channels << endl;
     for (int nSamples = 0; nSamples < audio.getNumSamplesPerChannel(); nSamples++)
     {
         double currenteSampleChannel0 = audio.samples[0][nSamples];

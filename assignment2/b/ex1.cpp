@@ -7,11 +7,14 @@
 #include <string.h>
 #include <map>
 #include <chrono>
+#include <filesystem>
+
 using namespace std;
 using std::chrono::duration;
 using std::chrono::duration_cast;
 using std::chrono::high_resolution_clock;
 using std::chrono::milliseconds;
+
 
 #define assertm(exp, msg) assert(((void)msg, exp))
 
@@ -43,7 +46,6 @@ double *predictor(int arr_size, double *sample)
 double *residual(int arr_size, double *sample, int arr2_size, double *pred_array)
 {
     assert(arr_size == arr2_size);
-    map<char, int> m;
     double *residual = (double *)malloc(arr_size * sizeof(double));
     for (int i = 0; i < arr_size; i++)
     {
@@ -56,11 +58,11 @@ int main(int argc, char *argv[])
 {
     vector<int> encIntCh0;
     vector<int> encDecCh0;
-    assertm(argc > 1, "Use ./ex1 <path to the input audio file> <path to the output encoded file> ");
+    assertm(argc != 2, "Use ./ex1 <path to the input audio file> <path to the output encoded file(.wav file)> ");
     AudioFile<double> audio;
     AudioFile<double> audioOut;
     bool loaded = audio.load(argv[1]);
-    ofstream ofs(argv[2]);
+    string outputfile = argv[2];
     assert(loaded);
     int arr_size = audio.getNumSamplesPerChannel();
     int num_channels = audio.getNumChannels();
@@ -70,11 +72,20 @@ int main(int argc, char *argv[])
     double *resiChannel0 = (double *)malloc(arr_size * sizeof(double));
     double *pred_arrayChannel1 = (double *)malloc(arr_size * sizeof(double));
     double *resiChannel1 = (double *)malloc(arr_size * sizeof(double));
+    double *outputChannel0 = (double *)malloc(arr_size * sizeof(double));
+    double *outputChannel1 = (double *)malloc(arr_size * sizeof(double));
 
+    cout << "Started -> Lossless predictive audio codec for a " << (num_channels == 1 ? "mono" : "stereo") << " audio file with " << audio.getBitDepth()*num_channels* arr_size << " bits \n"
+         << endl;
+    audioOut.setNumChannels(audio.getNumChannels());
+    audioOut.setNumSamplesPerChannel(audio.getNumSamplesPerChannel());
+    audioOut.setBitDepth(audio.getBitDepth());
+    audioOut.setSampleRate(audio.getSampleRate());
     for (int nSamples = 0; nSamples < audio.getNumSamplesPerChannel(); nSamples++)
     {
         double currentSampleChannel0 = audio.samples[0][nSamples];
         samplesChannel0[nSamples] = currentSampleChannel0;
+        // cout<<currentSampleChannel0<<endl;
 
         if (num_channels == 2)
         {
@@ -83,24 +94,32 @@ int main(int argc, char *argv[])
         }
     }
     pred_arrayChannel0 = predictor(arr_size, samplesChannel0);
+    /* double *ptr = &pred_arrayChannel0[0];
+    for(int i = 0; i<arr_size;i++){
+        cout<< *ptr <<endl;
+        ptr++;
+    } */
     resiChannel0 = residual(arr_size, samplesChannel0, arr_size, pred_arrayChannel0);
     for (int i = 0; i < arr_size; i++)
     {
         int b = pred_arrayChannel0[i];
         double a = b - pred_arrayChannel0[i];
         string s = to_string(a);
-        int size = s.length() - 2;
+        int countN0 = 0;
+        int size = 0;
+        size = s.length() - 2;
+        encDecCh0.push_back(-(a * pow(10, size)));
         encIntCh0.push_back(b);
-        encDecCh0.push_back(a * pow(10, size));
     }
 
     /* for(auto x: encIntCh0){
         cout<<x<<endl;
-    } */
-    /* for(auto x: encDecCh0){
+    }
+    for(auto x: encDecCh0){
         cout<<x<<endl;
-    }  */
-    vector<int> dec;
+    }   */
+    vector<int> decIntCh0;
+    vector<int> decDecCh0;
     Golomb gIntCh0(128, "gInt.bits");
     cout << "Channel0" << endl;
     auto t1 = high_resolution_clock::now();
@@ -116,48 +135,74 @@ int main(int argc, char *argv[])
     cout << ms_int.count() << "ms to encode" << endl;
 
     Golomb gDecCh0(4096, "gDec.bits");
-    //cout << "ECONDER DEC" << endl;
+    // cout << "ECONDER DEC" << endl;
     t1 = high_resolution_clock::now();
     gDecCh0.encode(encDecCh0);
     t2 = high_resolution_clock::now();
     ms_int = duration_cast<milliseconds>(t2 - t1);
-   /*  for (auto i = encDecCh0.cbegin(); i != encDecCh0.cend(); i++)
-    {
-        cout << *i << " ";
-    }
-    cout << endl; */
+    /*  for (auto i = encDecCh0.cbegin(); i != encDecCh0.cend(); i++)
+     {
+         cout << *i << " ";
+     }
+     cout << endl; */
     cout << ms_int.count() << "ms to encode" << endl;
     t1 = high_resolution_clock::now();
-    dec = gIntCh0.decode();
+    decIntCh0 = gIntCh0.decode();
     t2 = high_resolution_clock::now();
     ms_int = duration_cast<milliseconds>(t2 - t1);
-    cout << "Decoded the values: ";
-    /* for (auto i = dec.cbegin(); i != dec.cend(); i++)
+    /* cout << "Decoded the values: ";
+    for (auto i = dec.cbegin(); i != dec.cend(); i++)
     {
-        cout << *i << " ";
+        decIntCh0.push_back(*i);
     }
-    cout << endl; */
-    dec.erase(dec.cbegin(), dec.cend());
+    cout << endl;
+    dec.erase(dec.cbegin(), dec.cend()); */
     cout << "Encoded file used " << gIntCh0.get_filename_num_chars() * 8 << " bits and took " << ms_int.count() << "ms to decode" << endl;
 
     gIntCh0.delete_bin_file();
 
     t1 = high_resolution_clock::now();
-    dec = gDecCh0.decode();
+    decDecCh0 = gDecCh0.decode();
     t2 = high_resolution_clock::now();
     ms_int = duration_cast<milliseconds>(t2 - t1);
-    cout << "Decoded the values: ";
-    /* for (auto i = dec.cbegin(); i != dec.cend(); i++)
+    /*cout << "Decoded the values: ";
+     for (auto i = dec.cbegin(); i != dec.cend(); i++)
     {
         cout << *i << " ";
     }
-    cout << endl; */
-    dec.erase(dec.cbegin(), dec.cend());
+    cout << endl;
+    dec.erase(dec.cbegin(), dec.cend());*/
     cout << "Encoded file used " << gDecCh0.get_filename_num_chars() * 8 << " bits and took " << ms_int.count() << "ms to decode" << endl;
     gDecCh0.delete_bin_file();
+    int count = 0;
+    double *ptres = &resiChannel0[0];
+    for (auto i = decIntCh0.cbegin(); i != decIntCh0.end(); i++)
+    {
+        double sample = *i;
+        int decimal = decDecCh0.at(count);
+        string s = to_string(decimal);
+        if (s[0] == '-')
+        {
+            int size = s.length() - 1;
+        }
+        int size = s.length();
+        double decimalPart = decimal * pow(10, -size);
+        double samplefinal = sample + decimalPart + *ptres;
+        ptres++;
+        //cout << samplefinal << endl;
+        outputChannel0[count] = samplefinal;
+        count++;
+        // audioOut.samples[0][count] = samplefinal;
+    }
+
+    /* for(auto i = decDecCh0.cbegin(); i!= decDecCh0.end();i++){
+        cout<< *i << endl;
+    }  */
 
     if (num_channels == 2)
     {
+        vector<int> decIntCh1;
+        vector<int> decDecCh1;
         vector<int> encIntCh1;
         vector<int> encDecCh1;
         pred_arrayChannel1 = predictor(arr_size, samplesChannel1);
@@ -178,7 +223,7 @@ int main(int argc, char *argv[])
         /* for(auto x: encDecCh1){
             cout<<x<<endl;
         }  */
-     
+
         Golomb gIntCh1(128, "gInt.bits");
         cout << "Channel1" << endl;
         auto t1 = high_resolution_clock::now();
@@ -195,19 +240,19 @@ int main(int argc, char *argv[])
         cout << ms_int.count() << "ms to encode" << endl;
 
         Golomb gDecCh1(4096, "gDec.bits");
-        //cout << "ECONDER DEC" << endl;
+        // cout << "ECONDER DEC" << endl;
         t1 = high_resolution_clock::now();
         gDecCh1.encode(encDecCh1);
         t2 = high_resolution_clock::now();
         ms_int = duration_cast<milliseconds>(t2 - t1);
-       /*  for (auto i = encDecCh1.cbegin(); i != encDecCh1.cend(); i++)
-        {
-            cout << *i << " ";
-        }
-        cout << endl; */
+        /*  for (auto i = encDecCh1.cbegin(); i != encDecCh1.cend(); i++)
+         {
+             cout << *i << " ";
+         }
+         cout << endl; */
         cout << ms_int.count() << "ms to encode" << endl;
         t1 = high_resolution_clock::now();
-        dec = gIntCh1.decode();
+        decIntCh1 = gIntCh1.decode();
         t2 = high_resolution_clock::now();
         ms_int = duration_cast<milliseconds>(t2 - t1);
         cout << "Decoded the values: ";
@@ -216,13 +261,12 @@ int main(int argc, char *argv[])
             cout << *i << " ";
         }
         cout << endl; */
-        dec.erase(dec.cbegin(), dec.cend());
         cout << "Encoded file used " << gIntCh1.get_filename_num_chars() * 8 << " bits and took " << ms_int.count() << "ms to decode" << endl;
 
         gIntCh1.delete_bin_file();
 
         t1 = high_resolution_clock::now();
-        dec = gDecCh1.decode();
+        decDecCh1 = gDecCh1.decode();
         t2 = high_resolution_clock::now();
         ms_int = duration_cast<milliseconds>(t2 - t1);
         cout << "Decoded the values: ";
@@ -231,9 +275,44 @@ int main(int argc, char *argv[])
             cout << *i << " ";
         }
         cout << endl; */
-        dec.erase(dec.cbegin(), dec.cend());
         cout << "Encoded file used " << gDecCh1.get_filename_num_chars() * 8 << " bits and took " << ms_int.count() << "ms to decode" << endl;
         gDecCh1.delete_bin_file();
+        int count = 0;
+        double *ptres = &resiChannel1[0];
+        for (auto i = decIntCh1.cbegin(); i != decIntCh1.end(); i++)
+        {
+            double sample = *i;
+            int decimal = decDecCh1.at(count);
+            string s = to_string(decimal);
+            if (s[0] == '-')
+            {
+                int size = s.length() - 1;
+            }
+            int size = s.length();
+            double decimalPart = decimal * pow(10, -size);
+            double samplefinal = sample + decimalPart + *ptres;
+            ptres++;
+            //cout << samplefinal << endl;
+            outputChannel1[count] = samplefinal;
+            count++;
+
+        }
+        
     }
 
+    double *ptoCh0 = &outputChannel0[0];
+    double *ptoCh1 = &outputChannel1[0];
+    for (int i = 0; i < audioOut.getNumSamplesPerChannel(); i++)
+    {
+        audioOut.samples[0][i] = *ptoCh0;
+        *ptoCh0++;
+
+        if(num_channels == 2){
+           
+            audioOut.samples[1][i] = *ptoCh1;
+            *ptoCh1++;
+        }
+          
+    }
+    audioOut.save(outputfile, AudioFileFormat::Wave);
 }
