@@ -30,8 +30,13 @@ public:
 
     void read_file(string path)
     {
-        this->get_alphabet_from_file(path);
         ifstream ifs(path);
+        if (!ifs.good())
+        {
+            cout << "File \"" << path << "\" could not be located." << endl;
+            exit(1);
+        }
+        this->get_alphabet_from_file(path);
         for (int i = 0; i < this->num_chars - this->k; i++)
         {
             string context = this->make_context(i);
