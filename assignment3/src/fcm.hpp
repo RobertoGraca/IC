@@ -5,14 +5,16 @@
 #include <algorithm>
 #include <vector>
 #include <assert.h>
+#include <cmath>
 using namespace std;
 
 class FCM
 {
 private:
     int k;                             // model order (context size)
-    int alpha;                         // smoothing parameter
+    float alpha;                       // smoothing parameter
     map<string, map<char, int>> index; // saves the number of symbol ocurrences for a context
+    map<string, int> count_ctx;        // counts the numbers of ocurrences of a context
     set<char> alphabet;                // characters present in a file
     long num_chars;
     vector<char> text;
@@ -24,12 +26,18 @@ public:
         assert(alpha > 0 && alpha <= 100);
 
         this->k = k;
-        this->alpha = alpha / 100;
-        this->num_chars = 0;
+        this->alpha = (float)alpha / 100.0;
     }
 
+    // fills the map with the number of symbols associated with a context
     void read_file(string path)
     {
+        this->index.erase(this->index.cbegin(), this->index.cend());
+        this->count_ctx.erase(this->count_ctx.cbegin(), this->count_ctx.cend());
+        this->alphabet.erase(this->alphabet.cbegin(), this->alphabet.cend());
+        this->num_chars = 0;
+        this->text.erase(this->text.cbegin(), this->text.cend());
+
         ifstream ifs(path);
         if (!ifs.good())
         {
@@ -45,6 +53,36 @@ public:
         }
     }
 
+    // calculates the model entropy based on the weighted probability of the appearance of a context
+    float get_model_entropy()
+    {
+        float entropy = 0;
+        for (auto i = this->index.cbegin(); i != this->index.cend(); i++)
+        {
+            entropy += ((float)this->get_context_entropy(i->first) * (float)this->get_context_probability(i->first));
+        }
+        return entropy;
+    }
+
+    // prints the information on the index dictionary
+    void show_index()
+    {
+        for (auto i = this->index.cbegin(); i != this->index.cend(); i++)
+        {
+            cout << "Context = " << i->first << endl
+                 << endl;
+            for (auto j = i->second.cbegin(); j != i->second.cend(); j++)
+            {
+                if (j->first == '\n')
+                    cout << "\\n - " << j->second << endl;
+                else if (j->first == ' ')
+                    cout << "\\w - " << j->second << endl;
+                else
+                    cout << j->first << " - " << j->second << endl;
+            }
+        }
+    }
+
     // counts the number of ocurrences of symbol after a specific context
     void add_to_index(string context, char symbol)
     {
@@ -54,6 +92,7 @@ public:
             tmp.emplace(symbol, 1);
 
             this->index.emplace(context, tmp);
+            this->count_ctx.emplace(context, 1);
         }
         else
         {
@@ -65,6 +104,7 @@ public:
             {
                 this->index[context][symbol]++;
             }
+            this->count_ctx[context]++;
         }
     }
 
@@ -79,7 +119,7 @@ public:
         return s;
     }
 
-    // Gets every character present in a file
+    // gets every character present in a file
     void get_alphabet_from_file(string path)
     {
         ifstream ifs(path);
@@ -99,21 +139,54 @@ public:
         }
     }
 
-    void show_index()
+    // calculates the entropy of a specific symbol for a specific context
+    float get_symbol_entropy(string ctx, char symbol)
     {
-        for (auto i = this->index.cbegin(); i != this->index.cend(); i++)
+        float prob = this->get_symbol_probability(ctx, symbol);
+        return prob * log2(prob);
+    }
+
+    // calculates the apparition of a specific symbol for a specific context
+    float get_symbol_probability(string ctx, char symbol)
+    {
+        return ((float)this->index[ctx][symbol] + (float)this->alpha) / ((float)this->count_ctx[ctx] + ((float)this->alpha * (float)this->alphabet.size()));
+    }
+
+    // counts the number of contexts (repeated and not repeated) in a text file
+    int get_total_ocurrences()
+    {
+        int cont = 0;
+        for (auto i = this->count_ctx.cbegin(); i != this->count_ctx.cend(); i++)
         {
-            cout << "Context = " << i->first << endl
-                 << endl;
-            for (auto j = i->second.cbegin(); j != i->second.cend(); j++)
-            {
-                if (j->first == '\n')
-                    cout << "\\n - " << j->second << endl;
-                else if (j->first == ' ')
-                    cout << "\\w - " << j->second << endl;
-                else
-                    cout << j->first << " - " << j->second << endl;
-            }
+            cont += i->second;
+        }
+        return cont;
+    }
+
+    // calculates the entropy of a specific context of the model
+    float get_context_entropy(string ctx)
+    {
+        map<char, int> tmp = this->index[ctx];
+        float entropy = 0;
+        for (auto i = tmp.cbegin(); i != tmp.cend(); i++)
+        {
+            entropy += (float)this->get_symbol_entropy(ctx, i->first);
+        }
+        cout << entropy << endl;
+        return -entropy;
+    }
+
+    // calculates the probability of a specific context of the model
+    float get_context_probability(string ctx)
+    {
+        return (float)this->count_ctx[ctx] / (float)this->get_total_ocurrences();
+    }
+
+    void show_ctx_ocurrences()
+    {
+        for (auto i = this->count_ctx.cbegin(); i != this->count_ctx.cend(); i++)
+        {
+            cout << i->first << " - " << i->second << endl;
         }
     }
 };
