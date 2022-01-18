@@ -6,6 +6,7 @@
 #include <vector>
 #include <assert.h>
 #include <cmath>
+#include <chrono>
 using namespace std;
 
 class FCM
@@ -29,7 +30,7 @@ public:
         this->alpha = (float)alpha / 100.0;
     }
 
-    // fills the map with the number of symbols associated with a context
+    // fills the map with the ocurrences of symbols associated with a context
     void read_file(string path)
     {
         ifstream ifs(path);
@@ -39,36 +40,8 @@ public:
             exit(1);
         }
 
-        for (int i = 0; i < this->k; i++)
-        {
-            char x = ifs.get();
-            if (x == '\n' || x == EOF)
-                continue;
-
-            string character = "";
-            character += x;
-            if ((int)x == -61)
-            {
-                x = ifs.get();
-                character += x;
-            }
-            else if ((int)x < 0)
-            {
-                char peek = ifs.peek();
-                while ((int)peek != -61 && (int)peek != -1)
-                {
-                    x = ifs.get();
-                    character += x;
-                    peek = ifs.peek();
-                }
-            }
-
-            this->alphabet.insert(character);
-            this->text.push_back(character);
-            this->num_chars++;
-        }
-
         long i = -1;
+        auto start = chrono::high_resolution_clock::now();
         while (!ifs.eof())
         {
             char x = ifs.get();
@@ -85,7 +58,7 @@ public:
             else if ((int)x < 0)
             {
                 char peek = ifs.peek();
-                while ((int)peek != -61 && (int)peek != -1)
+                while ((int)peek != -61 && (int)peek != -1 && (int)peek < 0)
                 {
                     x = ifs.get();
                     character += x;
@@ -97,21 +70,30 @@ public:
             this->text.push_back(character);
             this->num_chars++;
 
+            if (this->text.size() < this->k + 1)
+                continue;
             string context = this->make_context(++i);
             string symbol = this->text[i + this->k];
             this->add_to_index(context, symbol);
         }
-        cout << "Finished reading file!" << endl;
+        auto stop = chrono::high_resolution_clock::now();
+        auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
+        cout << "Reading and indexing the file took " << duration.count() << " seconds." << endl;
     }
 
     // calculates the model entropy based on the weighted probability of the appearance of a context
     float get_model_entropy()
     {
+        auto start = chrono::high_resolution_clock::now();
         float entropy = 0;
         for (auto i = this->index.cbegin(); i != this->index.cend(); i++)
         {
+            // cout << "\ncontext = " << i->first << endl;
             entropy += ((float)this->get_context_entropy(i->first) * (float)this->get_context_probability(i->first));
         }
+        auto stop = chrono::high_resolution_clock::now();
+        auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
+        cout << "Calculating entropy of the model took " << duration.count() << " seconds." << endl;
         return entropy;
     }
 
@@ -177,13 +159,17 @@ public:
     float get_symbol_entropy(string ctx, string symbol)
     {
         float prob = this->get_symbol_probability(ctx, symbol);
-        return prob * log2(prob);
+        float res = prob * log2(prob);
+        // cout << "symbol_entropy = " << res << endl;
+        return res;
     }
 
     // calculates the apparition of a specific symbol for a specific context
     float get_symbol_probability(string ctx, string symbol)
     {
-        return ((float)this->index[ctx][symbol] + (float)this->alpha) / ((float)this->count_ctx[ctx] + ((float)this->alpha * (float)this->alphabet.size()));
+        float res = ((float)this->index[ctx][symbol] + (float)this->alpha) / ((float)this->count_ctx[ctx] + ((float)this->alpha * (float)this->alphabet.size()));
+        // cout << "symbol_prob = " << res << endl;
+        return res;
     }
 
     // counts the number of contexts (repeated and not repeated) in a text file
@@ -204,16 +190,19 @@ public:
         float entropy = 0;
         for (auto i = tmp.cbegin(); i != tmp.cend(); i++)
         {
+            // cout << "symbol = " << i->first << endl;
             entropy += (float)this->get_symbol_entropy(ctx, i->first);
         }
-        cout << entropy << endl;
+        // cout << "context_entropy = " << -entropy << endl;
         return -entropy;
     }
 
     // calculates the probability of a specific context of the model
     float get_context_probability(string ctx)
     {
-        return (float)this->count_ctx[ctx] / (float)this->get_total_ocurrences();
+        float res = (float)this->count_ctx[ctx] / (float)this->get_total_ocurrences();
+        // cout << "context_prob = " << res << endl;
+        return res;
     }
 
     void show_ctx_ocurrences()
