@@ -58,7 +58,7 @@ public:
             else if ((int)x < 0)
             {
                 char peek = ifs.peek();
-                while ((int)peek != -61 && (int)peek != -1 && (int)peek < 0)
+                while ((int)peek != -61 && (int)peek < -1)
                 {
                     x = ifs.get();
                     character += x;
@@ -79,6 +79,7 @@ public:
         auto stop = chrono::high_resolution_clock::now();
         auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
         cout << "Reading and indexing the file took " << duration.count() << " seconds." << endl;
+        cout << "Index has " << this->index.size() << " entries." << endl;
     }
 
     // calculates the model entropy based on the weighted probability of the appearance of a context
@@ -155,15 +156,6 @@ public:
         return s;
     }
 
-    // calculates the entropy of a specific symbol for a specific context
-    float get_symbol_entropy(string ctx, string symbol)
-    {
-        float prob = this->get_symbol_probability(ctx, symbol);
-        float res = prob * log2(prob);
-        // cout << "symbol_entropy = " << res << endl;
-        return res;
-    }
-
     // calculates the apparition of a specific symbol for a specific context
     float get_symbol_probability(string ctx, string symbol)
     {
@@ -191,10 +183,11 @@ public:
         for (auto i = tmp.cbegin(); i != tmp.cend(); i++)
         {
             // cout << "symbol = " << i->first << endl;
-            entropy += (float)this->get_symbol_entropy(ctx, i->first);
+            float prob = (float)this->get_symbol_probability(ctx, i->first);
+            entropy += (prob * -log2(prob));
         }
         // cout << "context_entropy = " << -entropy << endl;
-        return -entropy;
+        return entropy;
     }
 
     // calculates the probability of a specific context of the model
