@@ -45,7 +45,8 @@ public:
         while (!ifs.eof())
         {
             char x = ifs.get();
-            string character = "" + x;
+            string character = "";
+            character = character + x;
 
             // reads multi-character characters
             /* if (x == '\n' || x == EOF)
