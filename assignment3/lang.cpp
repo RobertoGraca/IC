@@ -8,7 +8,8 @@ int main(int argc, char **argv)
         exit(1);
     }
 
-    int estimated_n_bits = 0;
+    float estimated_n_bits = 0;
+    string ctx = "";
     char c;
 
     // create a model of the reference text
@@ -28,8 +29,34 @@ int main(int argc, char **argv)
     /* while  PERCORRER TODOS OS CARACTERES E CHAMAR A FUNÇÃO GET_CTX E SOMAR */
     while (ifs.get(c))
     {
-        /* estimated_n_bits += - log2(probability char); */
-        estimated_n_bits += 1;
+        cout << "" << ctx << "" << endl;
+        if (ref_text.get_context(ctx) == ctx)
+        {
+            cout << "breakpoint 1" << endl;
+            if (1) // ver se o símbolo existe a seguir ao contexto, no ref_text
+            {
+                estimated_n_bits += (float)(-log2(ref_text.get_symbol_probability(ctx, "" + c)));
+            }
+            else
+            {
+                estimated_n_bits += (float)(-log2(
+                                        atoi(argv[4]) 
+                                            / (ref_text.get_ctx_num_occurrunces(ctx)
+                                                + atoi(argv[4]) * (float)ref_text.get_alphabet_size()
+                                            )
+                                        )
+                                    );
+            }
+        }
+        else
+        {
+            estimated_n_bits += (float)(-log2(1.0 / (float)ref_text.get_alphabet_size()));
+        }
+        ctx += c;
+        if (ctx.length() > atoi(argv[3]))
+        {
+            ctx.erase(ctx.begin(), ctx.begin() + 1);
+        }
     }
 
     // close target text file
