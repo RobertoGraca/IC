@@ -45,7 +45,10 @@ public:
         while (!ifs.eof())
         {
             char x = ifs.get();
-            if (x == '\n' || x == EOF)
+            string character = "" + x;
+
+            // reads multi-character characters
+            /* if (x == '\n' || x == EOF)
                 continue;
 
             string character = "";
@@ -64,7 +67,7 @@ public:
                     character += x;
                     peek = ifs.peek();
                 }
-            }
+            } */
 
             this->alphabet.insert(character);
             this->text.push_back(character);
@@ -96,6 +99,21 @@ public:
         auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
         cout << "Calculating entropy of the model took " << duration.count() << " seconds." << endl;
         return entropy;
+    }
+
+    void write_index_to_file(string path)
+    {
+        for (pair<string, map<string, int>> entry : this->index)
+        {
+            string to_write = entry.first + "\t";
+            for (pair<string, int> symbol : entry.second)
+            {
+                to_write += symbol.first;
+                to_write += "\t";
+                to_write += symbol.second;
+                to_write += "\t";
+            }
+        }
     }
 
     // prints the information on the index dictionary
@@ -143,6 +161,16 @@ public:
             }
             this->count_ctx[context]++;
         }
+    }
+
+    // returns context if exists
+    string get_context(string ctx)
+    {
+        if (this->index.count(ctx) == 0)
+        {
+            return "";
+        }
+        return ctx;
     }
 
     // creates a new context based on the given text
