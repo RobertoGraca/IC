@@ -174,6 +174,18 @@ public:
         return ctx;
     }
 
+    // returns alphabet size
+    int get_alphabet_size()
+    {
+        return this->alphabet.size();
+    }
+
+    // returns alphabet size
+    int get_ctx_num_occurrunces(string ctx)
+    {
+        return this->count_ctx[ctx];
+    }
+
     // creates a new context based on the given text
     string make_context(int x)
     {
