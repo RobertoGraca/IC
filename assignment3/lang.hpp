@@ -4,7 +4,6 @@ class lang
 {
 private:
     float estimated_n_bits = 0;
-    
 
 public:
     lang(string reference, string target, int k, int alpha)
@@ -26,6 +25,8 @@ public:
             exit(1);
         }
 
+        alpha = (float)alpha / 100.0;
+
         /* while  PERCORRER TODOS OS CARACTERES E CHAMAR A FUNÇÃO GET_CTX E SOMAR */
         while (ifs.get(c))
         {
@@ -33,7 +34,7 @@ public:
             if (ref_text.get_context(ctx) == ctx)
             {
                 //cout << "---------- BREAKPOINT 1 ----------" << endl;
-                if (1) // ver se o símbolo existe a seguir ao contexto, no ref_text
+                if (1) // TODO: ver se o símbolo existe a seguir ao contexto, no ref_text
                 {
                     //cout << "---------- BREAKPOINT 2 ----------" << endl;
                     estimated_n_bits += (float)(-log2(ref_text.get_symbol_probability(ctx, "" + c)));
