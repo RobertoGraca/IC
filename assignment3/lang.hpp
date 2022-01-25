@@ -64,7 +64,7 @@ public:
         cout << "Estimated number of bits: " << estimated_n_bits << endl;
     }
 
-    float estimated_bits()
+    float get_estimated_bits()
     {
         // TODO: Check if it is necessary to round the estimated number of bits to the closest int
         return this->estimated_n_bits;
