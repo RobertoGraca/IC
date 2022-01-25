@@ -1,0 +1,364 @@
+ A	 	3	c	1	i	1	s	1	
+ C	a	1	
+ G	o	1	
+ I	n	1	
+ N	e	1	o	2	u	1	ã	1	
+ O	 	4	
+ P	o	2	
+ T	o	1	
+ a	 	42	b	1	c	3	d	3	f	1	g	2	i	1	l	3	m	2	n	2	o	3	p	5	q	1	s	6	t	9	u	3	v	2	ç	1	
+ c	a	4	e	2	l	2	o	36	r	3	u	2	
+ d	a	24	e	52	i	11	o	30	ú	2	
+ e	 	6	f	1	m	5	n	9	q	2	s	13	v	1	x	8	
+ f	a	4	e	1	i	1	l	1	o	5	u	4	
+ g	a	1	e	4	l	2	r	1	
+ h	e	1	i	1	
+ i	d	1	m	8	n	12	
+ j	u	1	á	1	
+ l	a	1	e	4	i	1	o	2	
+ m	a	6	e	9	i	1	o	8	u	3	é	1	í	1	
+ n	a	8	e	3	o	11	ã	3	í	2	
+ o	 	18	b	4	f	1	p	2	r	4	s	2	u	1	
+ p	a	14	e	4	o	15	r	24	
+ q	u	22	
+ r	e	18	
+ s	e	8	i	4	o	3	u	3	
+ t	a	1	e	4	o	2	r	1	u	1	é	1	
+ u	m	10	t	1	
+ v	a	4	e	5	i	3	
+ É	 	2	
+ à	 	1	s	3	
+ é	 	4	
+ í	n	1	
+ ó	r	1	
+, 	a	8	c	1	d	1	e	1	l	1	n	1	o	6	q	1	u	1	é	1	
+-n	o	1	
+. 	A	6	C	1	G	1	N	5	O	4	P	2	T	1	É	2	
+.A	s	1	
+.D	o	1	
+.E	v	1	
+.P	e	2	o	1	
+.T	o	1	
+A 	c	1	n	1	p	1	
+Ac	i	1	
+Ai	n	1	
+As	 	1	s	1	
+Ca	r	1	
+De	s	1	
+Do	 	1	
+Ev	i	1	
+Go	s	1	
+In	t	1	
+Ne	s	1	
+No	 	2	
+Nu	n	1	
+Nã	o	1	
+O 	c	1	e	1	i	1	q	1	
+Pe	n	1	r	1	
+Po	d	1	r	2	
+To	d	2	
+a 	I	1	a	22	c	14	d	18	e	6	f	1	g	1	h	1	i	4	l	3	m	8	n	4	o	2	p	10	q	2	r	6	t	1	u	3	v	5	à	1	é	1	
+a,	 	2	
+a-	n	1	
+a.	 	2	T	1	
+ab	e	3	
+ac	a	1	i	5	o	1	t	2	u	2	
+ad	a	4	e	15	i	1	m	1	o	16	r	3	
+af	e	1	i	2	
+ag	e	2	i	1	r	1	
+ai	 	1	n	1	s	13	
+al	 	11	,	2	.	3	a	1	c	1	i	8	m	1	o	2	t	3	v	1	
+am	 	3	a	1	b	1	e	12	i	1	
+an	a	2	c	3	d	1	e	2	h	1	i	2	s	3	t	12	u	1	á	1	ç	2	
+ao	 	2	s	1	
+ap	a	1	e	1	i	1	o	1	r	4	
+aq	u	1	
+ar	 	16	a	11	c	1	i	2	o	2	q	1	r	1	t	5	
+as	 	49	,	2	.	6	s	4	
+at	i	10	o	1	r	1	u	3	é	1	í	1	
+au	m	1	s	1	x	2	
+av	a	4	e	1	i	1	
+ax	i	1	
+az	 	1	e	1	o	2	
+aç	ã	30	õ	5	
+ba	l	2	
+be	l	2	m	1	r	1	
+bi	e	1	l	3	
+bj	e	2	
+bl	e	1	
+br	a	2	e	2	i	1	
+bs	t	2	
+bu	i	2	
+ca	 	2	.	1	d	3	g	1	i	1	n	1	p	2	r	2	s	2	u	1	ç	5	
+ce	 	2	b	1	d	1	i	1	l	1	n	5	p	1	r	2	s	8	
+ci	a	15	c	1	d	1	l	1	m	4	o	8	p	2	s	2	
+cl	a	3	
+cn	i	1	o	1	
+co	 	1	,	1	m	13	n	19	r	5	s	3	t	1	
+cr	e	1	i	1	í	1	
+ct	o	2	
+cu	i	1	l	2	m	2	r	1	ç	1	
+da	 	10	d	16	m	2	n	1	r	1	s	25	v	1	ç	1	
+de	 	50	c	2	f	1	l	1	m	5	n	3	p	2	r	3	s	11	t	2	v	2	
+di	a	3	c	1	d	1	f	3	g	1	m	2	r	4	s	2	v	3	á	1	ç	2	
+dm	i	1	
+do	 	25	,	4	.	1	l	1	r	3	s	26	t	1	x	1	ç	1	
+dr	o	3	
+du	t	2	
+dê	n	1	
+dú	v	2	
+e 	a	24	c	5	d	14	e	5	f	3	g	2	i	3	m	4	n	5	o	10	p	7	q	4	r	3	s	2	t	4	u	4	v	1	à	1	é	1	
+e,	 	3	
+e.	 	1	
+ea	v	1	
+eb	e	1	
+ec	e	5	i	7	n	1	o	2	u	2	
+ed	i	1	
+ee	s	1	
+ef	e	3	i	1	o	1	
+eg	a	2	e	1	r	1	u	1	
+ei	r	2	s	2	t	1	
+ej	a	1	
+el	 	2	a	3	e	2	h	3	m	1	o	2	ê	1	
+em	 	7	a	5	b	1	e	3	o	8	p	2	
+en	c	4	d	5	f	2	h	2	o	2	s	3	t	53	v	4	á	1	ç	1	ô	1	
+ep	a	3	e	1	r	1	ç	1	
+eq	u	3	
+er	 	2	a	7	c	4	e	5	i	2	m	2	n	4	s	2	t	3	ê	1	
+es	 	26	,	1	.	4	a	2	c	2	e	4	m	2	o	1	p	3	q	1	s	12	t	18	u	1	
+et	 	1	a	4	e	3	i	4	o	5	r	1	u	1	
+ev	a	3	e	2	i	2	o	1	
+ex	c	1	e	1	i	4	p	3	
+ez	 	3	
+eç	õ	1	
+fa	c	1	t	2	z	2	
+fe	n	1	r	4	t	2	
+fi	a	2	c	7	n	2	
+fl	u	2	
+fo	r	8	
+fr	e	1	
+fu	n	3	t	1	
+ga	 	2	m	1	n	2	r	1	v	1	ç	1	
+ge	 	1	m	3	n	1	r	3	s	1	
+gi	a	1	c	2	d	1	l	1	m	1	r	1	
+gl	o	2	
+gm	a	1	
+gn	i	1	
+go	 	3	s	1	
+gr	a	2	e	2	u	1	
+gu	i	1	
+gã	o	1	
+ha	 	1	m	1	
+he	c	1	g	1	
+hi	e	1	
+ho	 	1	r	3	
+i 	p	2	
+ia	 	10	,	1	.	2	d	2	i	3	l	3	m	2	n	1	r	1	s	6	ç	4	
+ib	i	2	u	2	
+ic	a	12	e	1	i	2	l	1	o	4	u	1	
+id	a	22	e	3	i	1	o	5	
+ie	n	1	r	1	
+if	e	1	i	7	
+ig	a	1	e	2	i	1	m	1	n	1	o	1	
+il	i	9	
+im	 	2	,	1	a	1	e	10	i	1	p	8	u	1	
+in	a	3	c	2	d	4	e	1	f	3	g	1	i	2	o	1	t	4	v	1	í	1	
+io	 	3	n	7	
+ip	a	2	e	1	
+ir	 	1	a	2	e	3	i	1	t	1	
+is	 	12	,	1	.	2	a	1	e	1	l	1	s	1	t	5	ã	3	ó	1	
+it	a	4	i	2	o	1	u	2	
+iv	a	5	e	2	i	4	o	5	u	1	
+iz	a	13	e	1	
+iá	l	1	v	1	
+iç	ã	3	õ	5	
+iê	n	1	
+ja	m	1	
+je	t	2	
+ju	l	1	
+já	 	1	
+l 	a	2	d	4	e	1	f	1	m	1	n	1	o	2	r	1	
+l,	 	2	
+l.	 	3	
+la	 	1	c	1	d	2	g	1	r	2	t	1	v	1	ç	3	
+lc	a	1	
+ld	a	1	
+le	c	2	m	2	v	3	x	1	
+lg	a	2	
+lh	o	3	
+li	a	4	d	6	f	1	s	2	t	3	z	5	
+lm	e	2	
+lo	 	2	b	2	g	2	n	2	r	2	
+lt	a	4	e	1	
+lu	m	1	x	1	ç	2	ê	1	
+lv	e	1	i	4	
+lê	n	1	
+lí	t	2	
+ló	g	1	
+m 	a	3	c	1	d	3	g	1	i	1	m	2	p	3	q	1	r	2	t	2	
+m,	 	1	
+ma	 	9	i	4	l	1	n	3	s	4	t	1	x	1	ç	4	
+mb	i	1	r	2	
+me	 	1	l	3	n	30	r	2	s	3	t	3	
+mi	g	1	l	1	n	3	z	1	
+mo	 	5	,	1	b	1	d	6	n	3	s	5	t	1	v	1	
+mp	a	4	e	2	l	1	o	6	r	3	
+mu	d	1	l	4	n	3	
+mé	r	1	t	1	
+mí	d	1	
+na	 	8	c	1	i	4	l	2	m	1	n	1	r	1	s	1	t	1	ç	2	
+nc	a	2	e	4	i	14	
+nd	a	3	e	5	i	7	o	2	u	1	ê	1	
+ne	c	3	g	1	i	1	j	1	t	1	
+nf	a	1	l	1	o	2	r	1	
+ng	i	1	o	2	
+nh	a	2	e	1	o	1	
+ni	a	1	c	2	d	1	f	1	s	1	z	5	ç	1	
+no	 	5	l	1	r	2	s	5	v	4	
+ns	a	3	e	3	i	1	o	2	t	3	u	2	ã	2	
+nt	a	11	e	30	i	5	o	23	r	5	u	1	í	2	
+nu	a	1	o	1	t	1	
+nv	e	2	i	1	o	4	
+ná	l	1	r	1	
+nã	o	3	
+nç	a	1	o	1	ã	1	
+ní	c	1	v	2	
+nô	m	1	
+o 	a	12	c	7	d	54	e	16	f	4	g	3	i	7	j	1	l	2	m	6	n	3	o	3	p	13	q	3	r	2	s	8	t	1	u	1	v	1	à	1	
+o,	 	8	
+o.	 	4	D	1	P	1	
+ob	a	2	i	1	j	1	l	1	r	3	s	2	
+oc	e	5	i	1	
+od	a	2	e	6	i	1	o	8	u	1	
+of	e	1	
+og	i	1	o	1	r	2	
+ol	i	1	o	1	u	2	v	4	í	2	ó	1	
+om	 	2	e	2	o	4	p	5	u	1	é	1	
+on	a	7	d	5	g	2	h	1	i	3	s	10	t	7	v	2	
+op	e	1	o	3	r	1	
+or	 	7	a	3	e	2	g	2	i	4	m	10	n	1	p	1	r	4	t	7	ç	1	
+os	 	49	,	2	.	5	i	4	s	3	t	4	
+ot	a	1	i	2	
+ou	 	1	t	1	
+ov	a	5	e	1	o	1	
+ox	a	1	
+oç	ã	1	
+pa	c	3	d	1	n	3	p	1	r	16	s	1	ç	1	
+pe	i	1	l	2	n	3	r	4	s	2	t	1	
+pi	c	1	t	1	
+pl	e	1	
+po	 	1	d	3	l	2	n	5	r	9	s	8	
+pr	a	2	e	13	i	1	o	16	á	1	
+pç	ã	1	
+qu	a	7	e	17	i	3	ê	1	
+r 	a	7	c	4	d	1	m	1	n	1	o	4	p	2	q	3	s	2	v	1	
+ra	 	10	,	1	-	1	d	3	l	4	m	2	n	2	r	4	s	5	t	3	z	2	ç	3	
+rc	a	1	e	2	i	3	
+re	 	7	a	1	c	6	e	1	f	3	g	2	l	3	m	1	n	7	p	3	s	12	t	6	v	2	ç	1	
+rg	a	2	i	1	ã	1	
+ri	a	7	b	2	f	1	g	2	o	1	z	2	á	1	ê	1	
+rm	a	8	i	2	u	2	
+rn	a	2	e	1	i	1	o	1	
+ro	 	2	.	1	b	1	c	5	d	1	g	2	m	2	n	1	p	3	s	3	u	1	v	2	
+rp	o	1	
+rq	u	1	
+rr	e	5	
+rs	a	1	o	2	
+rt	a	4	e	2	i	4	o	1	u	3	â	2	
+ru	p	1	t	4	
+rá	t	1	
+rç	a	1	
+rê	n	1	
+rí	t	1	
+s 	a	11	c	13	d	23	e	14	f	6	g	1	h	1	i	4	j	1	l	2	m	6	n	11	o	5	p	18	q	5	r	4	s	6	t	2	u	1	v	2	à	1	é	1	í	1	ó	1	
+s,	 	6	
+s.	 	12	A	1	E	1	P	2	
+sa	 	2	f	2	l	2	m	1	n	2	r	2	s	1	ç	1	
+sc	e	2	
+se	 	3	g	1	m	1	n	9	q	1	t	2	
+si	b	2	d	4	g	1	m	3	s	2	t	2	ç	3	
+sl	u	1	
+sm	o	2	
+so	 	5	.	1	b	2	c	1	l	2	s	2	
+sp	e	2	o	1	
+sq	u	1	
+ss	a	5	e	1	i	8	o	5	u	2	
+st	a	9	e	6	i	4	r	8	u	3	ã	1	õ	1	
+su	a	2	b	1	l	2	m	2	r	1	
+sã	o	5	
+só	r	1	
+t 	e	1	
+ta	 	12	b	2	c	1	d	2	i	1	l	3	m	3	n	7	r	4	s	4	
+te	 	16	,	3	.	1	c	1	m	7	n	5	r	7	s	7	
+ti	c	7	d	4	f	2	l	1	m	3	n	2	o	1	t	2	v	14	z	1	
+to	 	20	,	1	.	1	d	5	r	4	s	5	
+tr	a	5	e	3	i	3	o	2	u	4	
+tu	a	7	d	3	m	1	n	1	r	7	
+tâ	n	2	
+tã	o	1	
+té	c	1	g	1	
+tí	n	2	p	1	
+tõ	e	1	
+u 	c	1	
+ua	 	1	d	3	l	9	n	1	s	1	ç	2	
+ub	j	1	
+ud	a	1	e	1	o	2	
+ue	 	14	c	1	s	2	
+ui	 	1	a	1	d	1	n	1	p	1	ç	2	
+ul	a	4	d	1	g	2	i	1	t	2	
+um	 	5	a	5	b	1	e	3	o	1	p	1	u	1	
+un	c	3	d	3	i	2	
+uo	 	1	
+up	o	1	
+ur	a	6	g	1	o	1	s	1	
+us	a	1	
+ut	a	1	e	1	i	2	r	1	u	5	
+ux	i	2	o	1	
+uç	ã	2	õ	1	
+uê	n	2	
+va	 	1	d	1	i	1	l	4	m	1	n	4	r	3	s	4	ç	2	
+ve	 	2	i	2	l	2	n	3	r	4	s	1	z	3	
+vi	a	1	d	10	m	2	n	1	r	1	s	3	
+vo	 	2	l	5	s	4	
+vu	l	1	
+xa	s	1	
+xc	e	1	
+xe	c	1	
+xi	d	1	g	2	l	2	m	1	s	1	
+xo	 	1	
+xp	a	2	e	1	
+z 	m	1	p	1	q	1	v	1	
+za	 	2	c	1	d	4	r	1	ç	5	
+ze	m	1	s	1	
+zo	,	1	.	1	
+É 	c	1	i	1	
+à 	a	1	
+às	 	3	
+á 	v	1	
+ál	i	1	o	1	
+ár	i	1	
+át	i	1	
+áv	e	1	
+ân	c	2	
+ão	 	47	.	1	s	1	
+ça	 	1	m	1	
+ço	 	1	
+çã	o	38	
+çõ	e	12	
+é 	d	1	f	1	q	1	u	1	
+éc	n	1	
+ég	i	1	
+ér	c	1	
+ét	o	1	
+ên	c	6	
+íc	i	1	
+íd	i	1	
+ín	d	1	u	2	
+íp	i	1	
+ít	i	3	
+ív	e	2	
+óg	i	1	
+ór	g	1	i	1	
+ôm	e	1	
+õe	s	13	
+úv	i	2	

@@ -45,13 +45,21 @@ public:
         while (!ifs.eof())
         {
             char x = ifs.get();
-            string character = "";
-            character = character + x;
 
-            // reads multi-character characters
-            /* if (x == '\n' || x == EOF)
+            if (x == '\n' || x == EOF || x == '\t')
                 continue;
 
+            string character = "";
+            character += x;
+
+            if ((int)x < -1)
+            {
+                x = ifs.get();
+                character += x;
+            }
+
+            // reads multi-character characters
+            /*
             string character = "";
             character += x;
             if ((int)x == -61)
@@ -84,6 +92,8 @@ public:
         auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
         cout << "Reading and indexing the file took " << duration.count() << " seconds." << endl;
         cout << "Index has " << this->index.size() << " entries." << endl;
+
+        this->text.erase(this->text.cbegin(), this->text.cend());
     }
 
     // calculates the model entropy based on the weighted probability of the appearance of a context
@@ -102,19 +112,78 @@ public:
         return entropy;
     }
 
-    void write_index_to_file(string path)
+    // writes the model context and respective symbol appearance on a file
+    void write_index(string path)
     {
+        ofstream ofs(path);
+
+        if (!ofs.good())
+        {
+            cout << "Could not locate specified path." << endl;
+            exit(2);
+        }
+
         for (pair<string, map<string, int>> entry : this->index)
         {
-            string to_write = entry.first + "\t";
+            ofs << entry.first << "\t";
             for (pair<string, int> symbol : entry.second)
             {
-                to_write += symbol.first;
-                to_write += "\t";
-                to_write += symbol.second;
-                to_write += "\t";
+                ofs << symbol.first;
+                ofs << "\t";
+                ofs << symbol.second;
+                ofs << "\t";
             }
+            ofs << endl;
         }
+        ofs.close();
+    }
+
+    void load_index(string path)
+    {
+        this->reset_fcm();
+        ifstream ifs(path);
+        string line;
+
+        if (!ifs.good())
+        {
+            cout << "Could not locate specified path." << endl;
+            exit(2);
+        }
+
+        while (getline(ifs, line))
+        {
+            size_t pos = line.find("\t");
+            string ctx = line.substr(0, pos);
+            this->k = ctx.length();
+            line.erase(line.cbegin(), line.cbegin() + pos + 1);
+
+            for (auto i = ctx.cbegin(); i != ctx.cend(); i++)
+            {
+                string s = "";
+                s += *i;
+                this->alphabet.insert(s);
+            }
+
+            map<string, int> tmp;
+
+            this->count_ctx.emplace(ctx, 0);
+
+            while (line.find("\t") != string::npos)
+            {
+                pos = line.find("\t");
+                string symbol = line.substr(0, pos);
+                line.erase(line.cbegin(), line.cbegin() + pos + 1);
+                pos = line.find("\t");
+                int count = stoi(line.substr(0, pos));
+                line.erase(line.cbegin(), line.cbegin() + pos + 1);
+                tmp.emplace(symbol, count);
+
+                this->count_ctx[ctx] += count;
+                this->alphabet.insert(symbol);
+            }
+            this->index.emplace(ctx, tmp);
+        }
+        ifs.close();
     }
 
     // prints the information on the index dictionary
