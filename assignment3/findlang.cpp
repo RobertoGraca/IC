@@ -3,7 +3,7 @@
 
 // USAGE:
 // $ g++ findlang.cpp -std=c++17
-// $ ./a.out langs example.txt 4 50
+// $ ./a.out langs/ example.txt 4 50
 
 int main(int argc, char **argv)
 {
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
         cout << "File: " << path << endl;
 
         // creates the new 'lang' object
-        lang temp(path, argv[2], atoi(argv[3]), atoi(argv[4]));
+        lang temp(path, argv[2], atoi(argv[3]), (float)atoi(argv[4]));
 
         // calculates and stores the estimated number of bits and the corresponding language on the map
         langs.emplace(temp.get_estimated_bits(), path.substr(0, path.find_last_of(".")).substr(path.find("/") + 1));

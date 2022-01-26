@@ -21,7 +21,7 @@ private:
     vector<string> text;
 
 public:
-    FCM(int k, int alpha)
+    FCM(int k, float alpha)
     {
         assert(k > 0);
         assert(alpha > 0 && alpha <= 100);

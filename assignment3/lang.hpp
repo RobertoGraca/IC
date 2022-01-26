@@ -6,7 +6,7 @@ private:
     float estimated_n_bits = 0;
 
 public:
-    lang(string reference, string target, int k, int alpha)
+    lang(string reference, string target, int k, float alpha)
     {
         string ctx = "";
         char c;
@@ -43,7 +43,7 @@ public:
                 {
                     //cout << "---------- BREAKPOINT 3 ----------" << endl;
                     estimated_n_bits += (float)(-log2(
-                        alpha / (ref_text.get_ctx_num_occurrunces(ctx) + alpha * (float)ref_text.get_alphabet_size())));
+                        alpha / ((float)ref_text.get_ctx_num_occurrunces(ctx) + alpha * (float)ref_text.get_alphabet_size())));
                 }
             }
             else
