@@ -34,7 +34,7 @@ public:
             if (ref_text.get_context(ctx) == ctx)
             {
                 //cout << "---------- BREAKPOINT 1 ----------" << endl;
-                if (1) // TODO: ver se o símbolo existe a seguir ao contexto, no ref_text
+                if (ref_text.get_index(ctx, "" + c) != 0) // TODO: ver se o símbolo existe a seguir ao contexto, no ref_text
                 {
                     //cout << "---------- BREAKPOINT 2 ----------" << endl;
                     estimated_n_bits += (float)(-log2(ref_text.get_symbol_probability(ctx, "" + c)));

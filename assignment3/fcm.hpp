@@ -255,6 +255,12 @@ public:
         return this->count_ctx[ctx];
     }
 
+    // TODO: new, need to verify this
+    int get_index(string ctx, string c)
+    {
+        return this->index[ctx].count(c);
+    }
+
     // creates a new context based on the given text
     string make_context(int x)
     {
