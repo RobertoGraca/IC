@@ -1,9 +1,9 @@
 #include "lang.hpp"
-#include <filesystem>
+#include <dirent.h>
 
 // USAGE:
-// $ g++ findlang.cpp -std=c++17
-// $ ./a.out langs/ example.txt 4 50
+// $ g++ findlang.cpp
+// $ ./a.out cache example.txt 4 50
 
 int main(int argc, char **argv)
 {
@@ -13,7 +13,44 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+    DIR *dir;
+    struct dirent *ent;
+    string path;
+    string directory;
     map<float, string> langs;
+
+    directory = argv[1];
+    directory += "/k";
+    directory += argv[3];
+
+    if ((dir = opendir(directory.c_str())) != NULL)
+    {
+        /* print all the files and directories within directory */
+        while ((ent = readdir(dir)) != NULL)
+        {
+            path = ent->d_name;
+
+            if (path == ".." || path == ".")
+                continue;
+
+            cout << "File: " << path << endl;
+
+            // creates the new 'lang' object
+            lang temp(directory + "/" + path, argv[2], atoi(argv[3]), (float)atoi(argv[4]));
+
+            // calculates and stores the estimated number of bits and the corresponding language on the map
+            langs.emplace(temp.get_estimated_bits(), path.substr(0, path.find_last_of(".")).substr(path.find("/") + 1));
+        }
+        closedir(dir);
+    }
+    else
+    {
+        /* could not open directory */
+        perror("Could not open directory!");
+        return EXIT_FAILURE;
+    }
+
+    /* map<float, string> langs;
     string path;
 
     // iterates over all files in the folder passed as argument
@@ -29,14 +66,14 @@ int main(int argc, char **argv)
 
         // calculates and stores the estimated number of bits and the corresponding language on the map
         langs.emplace(temp.get_estimated_bits(), path.substr(0, path.find_last_of(".")).substr(path.find("/") + 1));
-    }
+    } */
 
     // prints the estimated number of bits for every language
     cout << "" << endl;
     cout << "Results:" << endl;
-    for (const auto &[key, value] : langs)
+    for (auto item : langs)
     {
-        cout << value << " -> " << key << endl;
+        cout << item.second << " -> " << item.first << endl;
     }
     cout << "" << endl;
 

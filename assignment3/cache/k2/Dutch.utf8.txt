@@ -1,0 +1,2645 @@
+ "	.	2	1	1	2	1	5	1	A	3	B	5	C	4	D	13	E	22	G	1	H	9	I	11	J	47	K	2	L	4	M	6	N	4	O	4	P	2	R	1	S	7	T	3	V	4	W	10	[	1	_	3	a	10	b	13	c	3	d	30	e	10	g	9	h	7	i	12	j	3	k	6	l	6	m	11	n	16	o	18	p	3	r	4	s	6	t	14	v	12	w	8	z	3	é	2	Α	1	Κ	1	Υ	1	
+ &	 	2	
+ '	 	1	2	1	9	1	A	1	B	2	C	1	D	1	E	13	H	3	I	8	J	4	L	1	M	1	P	3	R	2	S	10	T	1	V	3	W	1	a	6	b	13	c	15	d	27	e	7	f	3	g	13	h	12	i	5	j	6	k	5	l	5	m	14	n	13	o	8	p	2	r	2	s	26	t	19	u	4	v	12	w	6	z	3	à	1	
+ (	 	1	"	6	'	2	.	3	1	4	2	19	3	3	4	3	5	2	6	2	8	1	9	1	<	1	A	12	B	28	C	40	D	5	E	182	F	8	G	53	H	4	I	41	J	3	K	34	L	3	M	22	N	11	O	19	P	8	R	14	S	22	T	10	U	5	V	13	W	16	Z	1	a	16	b	36	c	4	d	51	e	24	f	1	g	21	h	11	i	22	j	1	k	5	m	17	n	6	o	16	p	7	r	5	s	14	t	8	u	4	v	25	w	17	z	18	Β	2	
+ ,	 	6	
+ -	 	1799	,	45	.	1	:	1	V	1	a	2	b	18	c	5	d	8	e	1	f	1	g	2	h	2	i	3	k	2	o	32	p	7	r	4	s	6	t	2	v	6	w	2	
+ .	 	2	.	27	I	2	
+ 0	 	4	,	10	0	108	
+ 1	 	70	%	3	)	8	,	28	.	3	/	1	0	76	1	29	2	59	3	19	4	45	5	44	6	26	7	31	8	19	9	138	:	2	
+ 2	 	25	)	10	,	29	-	1	.	5	0	1373	1	30	2	22	3	35	4	33	5	59	6	19	7	71	8	17	9	14	:	3	
+ 3	 	46	)	7	,	19	-	1	.	3	0	72	1	30	2	4	3	8	4	7	5	14	6	13	7	11	8	4	9	2	:	4	a	1	
+ 4	 	26	)	6	,	16	0	42	1	2	2	11	3	12	4	4	5	6	6	6	8	13	9	3	:	1	
+ 5	 	57	%	1	+	1	,	8	-	1	0	58	1	6	2	3	4	6	5	6	6	2	7	2	8	2	
+ 6	 	18	,	4	-	1	0	35	1	3	2	3	3	8	4	1	5	7	6	3	7	3	8	5	9	4	
+ 7	 	16	,	4	0	28	1	4	2	1	3	6	4	11	5	23	6	5	7	2	8	7	9	2	k	1	
+ 8	 	18	%	1	,	8	.	1	0	46	1	1	2	4	3	3	5	4	6	11	7	6	9	4	e	1	
+ 9	 	34	,	3	.	2	0	25	1	3	2	10	3	4	5	9	6	6	7	4	8	4	9	15	e	2	
+ :	 	1	
+ ?	(	1	
+ A	 	1	.	2	A	2	C	6	E	2	G	1	I	2	L	15	M	11	R	1	S	1	T	1	a	6	b	34	c	49	d	3	f	59	g	82	i	1	k	19	l	149	m	53	n	61	r	80	s	104	t	23	u	49	x	1	y	1	z	53	
+ B	 	3	7	1	B	6	P	1	R	3	T	4	U	1	a	238	e	158	h	1	i	31	l	6	o	63	r	153	u	299	ö	2	ü	7	ă	1	
+ C	'	1	7	49	C	1	E	10	I	12	O	33	P	1	R	1	a	213	e	103	h	79	i	13	l	6	o	2186	r	8	u	34	v	8	y	11	é	1	
+ D	 	1	.	2	C	11	D	1	G	2	N	1	a	185	e	315	i	104	j	1	m	1	o	45	r	11	u	157	à	3	
+ E	 	1	.	10	A	14	B	20	C	42	D	7	E	5	F	31	G	19	H	12	I	5	L	3	M	4	N	7	O	9	P	27	R	1	S	12	T	8	U	1883	V	6	W	7	a	1	c	51	d	8	e	30	f	5	g	47	i	5	k	2	l	20	m	3	n	51	r	56	s	14	u	6250	v	3	x	7	y	2	é	19	
+ F	A	14	D	1	I	1	R	1	Y	4	a	37	e	31	i	55	j	4	l	2	o	114	r	208	u	26	ü	7	
+ G	,	2	-	3	2	14	7	5	8	13	A	1	B	13	D	1	G	2	H	5	L	80	M	5	N	17	O	1	P	2	U	7	V	17	a	86	d	1	e	144	i	13	l	6	o	59	r	386	u	37	y	16	á	2	ö	5	ü	1	
+ H	.	3	1	3	a	98	e	199	i	25	o	335	u	45	y	1	ö	7	ü	2	
+ I	 	5	,	5	-	1	?	1	A	55	C	8	E	1	H	2	I	30	J	8	L	1	M	64	N	4	O	14	T	17	V	5	X	2	a	2	d	1	e	70	g	1	h	1	k	122	l	1	m	2	n	400	o	2	r	23	s	59	t	79	v	4	
+ J	B	2	a	154	e	24	i	2	o	40	u	55	
+ K	C	2	G	1	M	36	P	8	R	1	a	65	e	7	h	17	i	15	l	20	o	119	r	60	u	8	w	6	y	2	á	5	ó	1	ö	1	
+ L	)	1	E	1	G	5	I	2	T	2	U	1	a	106	e	74	i	321	o	36	u	29	y	3	á	5	ä	1	ó	1	ö	1	ø	1	
+ M	'	1	E	21	F	23	H	13	I	1	K	70	O	2	V	5	a	248	b	8	c	2	e	82	h	9	i	169	l	2	o	86	u	13	y	1	á	1	
+ N	A	38	E	2	F	1	I	1	U	1	a	111	e	86	i	37	o	101	u	5	ü	1	
+ O	&	13	1	1	D	4	E	6	F	1	I	1	L	3	O	1	P	1	S	5	V	10	b	9	c	13	d	1	e	97	f	6	j	1	l	12	m	33	n	74	o	97	p	24	r	27	s	4	t	1	u	2	v	18	
+ P	7	1	B	1	E	2	L	2	P	18	R	2	S	2	V	3	a	1845	e	12	h	1	i	18	l	10	o	220	r	92	u	4	y	3	
+ Q	a	2	u	2	
+ R	&	1	A	2	E	2	F	1	O	3	S	2	a	1029	e	346	h	8	i	91	o	215	u	262	y	1	z	1	é	1	
+ S	&	8	A	7	B	4	E	3	G	5	I	9	V	1	a	115	c	353	e	66	h	9	i	23	k	2	l	19	m	26	o	122	p	84	r	38	t	242	u	48	v	1	w	6	y	61	z	5	á	3	ã	20	
+ T	A	2	D	1	E	7	F	1	N	1	O	1	R	1	a	39	e	18	h	12	i	21	o	88	r	30	s	40	u	85	w	7	y	10	z	2	ő	2	
+ U	 	125	,	2	D	1	H	1	K	5	N	9	S	5	d	2	i	9	l	1	n	1590	r	5	w	1	
+ V	 	2	E	2	I	6	K	5	N	124	S	44	V	1	W	6	a	27	e	637	i	46	l	7	o	360	r	8	ó	1	
+ W	E	3	H	4	K	8	T	62	a	107	e	217	i	74	o	17	
+ X	 	1	I	3	X	2	
+ Y	a	1	o	4	u	1	
+ Z	a	50	e	70	i	16	o	31	r	1	s	1	u	100	v	10	w	37	
+ [	.	7	1	2	R	1	S	36	a	1	b	1	e	1	g	1	h	2	m	2	o	3	v	3	
+ \	l	3	
+ a	 	3	)	1	,	1	a	8366	b	150	c	1103	d	351	e	2	f	1613	g	301	i	6	k	184	l	6273	m	382	n	1587	p	70	q	8	r	780	s	314	t	22	u	364	v	7	x	1	
+ b	)	2	a	967	b	120	e	19401	i	4070	l	824	n	5	o	924	r	940	t	8	u	1560	é	1	ü	1	
+ c	.	1	a	158	e	183	h	82	i	152	l	38	o	4325	r	1240	u	370	v	1	y	19	
+ d	'	1	,	1	.	1	a	13597	e	47826	h	1	i	10598	o	4418	r	897	u	1540	w	44	y	33	á	2	é	2	í	1	
+ e	 	1	-	11	.	1	a	1	c	2394	d	12	e	13239	f	505	g	1	i	962	l	601	m	67	n	20885	p	22	q	2	r	4329	s	242	t	146	u	530	v	782	x	617	y	1	
+ f	a	369	e	569	i	1293	l	111	n	1	o	369	r	259	u	368	y	29	
+ g	a	1354	e	16059	g	1	i	96	l	68	o	1273	r	2916	u	67	é	2	
+ h	a	2157	e	28746	i	1082	o	2513	t	2	u	2141	y	27	é	3	
+ i	)	2	.	1	T	1	c	1	d	251	e	491	i	4	j	7	k	2748	l	125	m	387	n	18068	r	10	s	7566	t	2	v	1	
+ j	a	974	e	157	l	1	o	366	u	649	
+ k	a	2386	e	805	i	470	l	809	m	18	n	23	o	1661	r	867	u	1989	w	1019	ú	1	
+ l	a	3242	e	2015	i	2715	o	557	u	205	y	1	é	1	
+ m	a	5745	e	9661	i	4158	k	33	o	7377	u	176	y	3	é	6	ó	1	
+ n	.	1	a	3909	e	1013	g	11	i	5329	o	2792	r	43	u	1035	á	1	ó	2	ú	1	
+ o	b	109	c	34	e	30	f	1584	g	87	k	30	l	75	m	7201	n	9685	o	3354	p	10129	r	425	u	101	v	4839	z	1	
+ p	a	1426	e	843	h	2	i	136	l	1194	o	1137	r	4336	s	9	u	495	
+ q	u	18	
+ r	a	775	e	5412	i	882	o	665	u	200	
+ s	a	1128	c	1170	e	678	f	13	h	9	i	610	k	15	l	1017	m	19	n	292	o	1288	p	1272	t	6907	u	329	y	464	
+ t	/	1	a	464	e	15089	h	126	i	798	o	6032	r	1125	s	8	u	1015	v	2	w	809	y	39	é	2	
+ u	 	975	,	57	.	8	:	4	?	1	i	4414	l	9	n	201	p	7	r	23	s	4	t	2	u	25	w	225	z	3	
+ v	a	28526	e	13746	i	1424	l	319	o	15537	r	1780	u	32	ó	106	
+ w	a	5620	e	9629	h	1	i	3923	o	6298	r	8	u	4	é	5	
+ x	e	4	
+ y	 	3	
+ z	 	1	'	8	,	1	a	1800	e	3015	i	7415	o	5098	u	956	w	254	é	1	ó	4	
+ °	C	1	
+ Á	d	1	g	4	
+ É	é	2	
+ à	 	8	-	1	
+ á	l	1	
+ è	n	3	
+ é	c	2	n	4	é	257	
+ ó	f	2	
+ ü	b	10	
+ Š	e	13	
+ Ţ	i	5	
+ ʺ	h	1	
+ κ	α	1	
+! 	A	3	C	1	D	9	E	2	G	1	H	5	I	9	K	1	L	2	M	4	N	2	O	1	U	1	V	2	W	5	Z	2	
+!"	 	2	.	1	
+!-	 	1	
+!.	 	1	
+!A	l	1	
+!D	a	4	e	1	i	1	
+!E	e	1	
+!I	k	3	n	2	
+!K	o	1	
+!L	a	1	
+!M	e	2	
+!N	e	1	u	1	
+!S	o	1	
+!T	o	1	
+!W	a	4	e	3	i	1	
+" 	(	7	,	1	-	6	.	1	A	1	D	4	E	2	H	2	I	2	J	1	M	1	W	2	\	3	a	8	b	5	c	1	d	5	e	27	g	6	h	2	i	13	k	6	l	2	m	5	n	2	o	5	p	1	r	2	s	2	t	13	u	3	v	14	w	10	z	6	
+""	.	1	J	1	
+")	 	3	,	2	
+",	 	46	
+".	 	65	"	1	'	1	.	1	A	4	B	1	D	5	E	4	G	1	H	1	I	5	M	1	O	1	W	1	Z	1	
+"1	.	1	
+"2	8	1	
+"5	0	1	
+":	 	1	
+";	 	1	
+"?	 	1	H	1	Z	1	
+"A	a	1	c	1	v	1	
+"B	e	2	o	3	u	1	
+"C	o	1	u	3	
+"D	a	2	e	13	i	2	o	1	
+"E	e	12	r	3	u	9	
+"G	e	1	r	1	
+"H	e	11	i	2	o	1	
+"I	k	2	m	1	n	9	s	1	
+"J	a	2	e	45	o	1	
+"K	i	1	o	1	
+"L	I	2	a	3	
+"M	a	2	e	3	i	2	
+"N	a	3	e	1	
+"O	n	1	v	3	
+"P	a	2	
+"R	&	1	
+"S	A	1	a	1	l	1	m	3	t	2	
+"T	o	3	r	1	
+"U	i	1	
+"V	e	1	o	2	r	2	
+"W	e	5	i	5	
+"[	H	1	
+"_	p	3	
+"a	a	3	c	1	f	3	g	1	l	2	m	1	
+"b	e	8	i	2	l	10	
+"c	h	1	o	2	
+"d	a	2	e	25	i	3	u	1	
+"e	e	8	n	1	r	1	
+"g	e	5	o	3	r	1	
+"h	e	5	i	2	
+"i	e	1	n	11	s	2	
+"j	a	1	u	2	
+"k	i	1	r	3	w	2	
+"l	a	4	e	1	o	1	u	1	
+"m	a	4	e	3	i	2	o	3	
+"n	a	4	e	6	i	3	o	3	
+"o	f	1	m	4	n	8	p	3	v	3	
+"p	a	3	o	1	r	3	
+"r	e	2	o	2	
+"s	c	2	t	4	u	2	y	1	
+"t	e	5	i	2	r	5	u	1	w	1	
+"v	e	5	i	1	o	5	r	11	
+"w	a	1	e	6	i	2	
+"z	e	2	i	1	o	1	
+"é	é	2	
+"Α	π	1	
+"Κ	α	1	
+"Υ	π	1	
+% 	e	2	g	1	i	4	l	1	n	1	o	2	p	2	t	1	v	11	w	1	z	1	
+%,	 	3	
+%.	 	1	S	1	
+& 	T	1	Y	1	
+&D	 	1	"	1	)	1	-	8	
+&I	)	1	-	2	
+&O	 	5	&	3	)	2	,	2	-	3	.	1	
+' 	'	1	(	2	-	2	E	1	a	4	b	9	d	9	e	19	g	8	h	7	i	16	k	4	l	1	m	11	n	6	o	8	s	2	t	24	u	2	v	24	w	13	z	10	
+')	 	2	,	1	;	1	
+',	 	50	
+'-	b	11	e	2	m	2	p	4	v	3	
+'.	 	19	D	1	E	1	L	1	
+'2	8	1	
+'9	0	1	
+':	 	2	
+';	 	1	
+'?	 	2	
+'A	r	1	
+'B	a	1	u	1	
+'C	o	1	
+'D	a	1	e	3	i	1	
+'E	e	6	i	1	r	2	u	6	
+'H	e	3	
+'I	n	7	r	1	
+'J	a	1	e	4	
+'L	i	1	
+'M	K	1	
+'O	r	1	
+'P	I	1	a	2	
+'R	o	2	
+'S	a	1	c	1	m	6	t	2	
+'T	r	1	
+'V	a	2	e	1	
+'W	e	1	
+'a	a	1	c	2	l	1	n	1	r	1	
+'b	a	2	b	1	e	3	i	2	l	2	u	3	
+'c	a	1	h	1	l	1	o	9	r	1	u	2	
+'d	e	24	i	1	r	1	u	1	
+'e	c	3	e	2	n	2	r	1	
+'f	a	1	i	1	l	1	
+'g	e	9	o	1	r	2	u	1	
+'h	a	2	e	6	i	1	o	1	u	2	
+'i	d	1	e	1	n	4	
+'j	a	6	
+'k	e	1	i	1	l	2	w	1	
+'l	a	2	e	2	o	1	
+'m	a	6	e	6	i	3	o	1	
+'n	 	67	a	3	e	6	o	3	u	1	
+'o	f	1	m	2	n	2	p	1	u	1	v	1	
+'p	e	1	o	1	
+'r	e	2	
+'s	 	793	"	1	'	1	)	19	,	137	.	93	:	2	;	3	?	2	c	1	i	7	l	3	o	1	p	2	t	6	
+'t	a	1	e	8	o	2	r	9	
+'u	i	3	r	1	
+'v	a	2	e	5	i	1	o	1	r	3	
+'w	a	2	e	3	i	1	
+'z	a	1	e	1	w	1	
+'à	 	1	
+( 	I	1	
+("	B	1	E	1	L	1	U	1	o	1	w	1	
+('	m	2	
+(.	.	3	
+(1	)	1	2	1	5	1	9	1	
+(2	)	1	0	49	1	1	2	1	3	4	8	1	
+(3	 	1	)	1	2	1	
+(4	)	1	0	1	9	1	
+(5	)	1	4	1	
+(6	)	1	0	1	
+(8	,	1	
+(9	,	1	
+(<	1	1	
+(A	E	1	F	2	M	5	S	1	V	1	l	2	r	1	
+(B	2	4	7	17	B	1	N	2	e	3	r	1	
+(C	7	1	A	1	D	1	E	6	I	1	O	2	P	1	e	1	h	24	v	2	
+(D	C	1	E	1	e	8	o	1	
+(E	A	3	B	8	C	14	D	2	E	7	F	18	G	36	I	3	L	5	M	7	N	3	O	7	P	3	Q	1	R	3	S	13	T	3	U	10	V	9	W	3	a	2	c	1	n	1	r	3	u	16	x	1	
+(F	A	4	D	1	o	1	r	2	
+(G	A	1	B	13	L	10	M	2	N	6	P	5	T	2	V	11	a	1	r	2	
+(H	I	1	a	1	e	2	
+(I	A	19	C	3	L	1	M	8	O	4	S	1	T	3	n	3	
+(J	a	1	e	2	
+(K	M	9	P	12	R	1	e	1	w	11	
+(L	I	2	a	1	
+(M	D	1	E	1	F	10	K	8	R	1	V	1	
+(N	A	9	F	1	L	3	P	1	
+(O	&	3	-	1	E	3	F	1	I	1	L	3	S	1	V	2	f	2	n	1	v	1	
+(P	B	1	M	1	V	1	r	5	
+(R	A	1	E	3	F	1	K	1	O	1	S	3	e	3	u	1	
+(S	&	1	A	5	B	2	C	1	G	5	I	3	M	1	U	1	V	1	a	1	p	9	
+(T	A	1	E	4	R	1	e	2	o	1	r	1	u	1	
+(U	N	2	i	2	w	1	
+(V	E	1	N	2	V	1	W	2	a	2	e	4	o	2	
+(W	E	1	H	1	K	3	N	1	T	10	
+(Z	e	1	
+(a	a	3	f	1	k	1	l	3	r	7	s	1	
+(b	.	1	a	1	b	17	e	6	i	6	n	1	o	4	
+(c	h	1	o	3	
+(d	a	3	e	40	i	7	o	1	
+(e	)	1	a	1	e	4	l	1	n	14	u	1	v	1	x	2	
+(f	e	1	
+(g	e	20	l	1	
+(h	e	6	i	2	o	1	y	2	
+(i	)	1	i	2	k	3	l	1	m	1	n	14	
+(j	a	1	
+(k	m	1	o	4	
+(m	a	2	e	9	i	1	k	3	o	2	
+(n	a	2	g	1	o	2	u	1	
+(o	f	3	n	5	o	1	p	4	u	1	v	2	
+(p	r	1	u	6	
+(r	e	4	i	1	
+(s	a	2	c	1	e	1	i	1	l	1	o	1	p	2	t	4	u	1	
+(t	e	5	o	2	r	1	
+(u	i	4	
+(v	a	7	e	8	i	2	o	8	
+(w	a	15	e	2	
+(z	e	1	i	3	o	13	u	1	
+(Β	7	2	
+) 	(	5	-	9	2	1	4	1	9	1	A	1	B	1	E	3	H	2	I	3	J	1	K	1	M	3	O	2	P	2	R	1	S	4	V	6	a	13	b	18	d	46	e	117	f	2	g	12	h	26	i	62	j	1	k	5	l	8	m	18	n	47	o	30	p	2	r	4	s	5	t	36	u	1	v	47	w	20	z	15	
+)(	D	5	I	1	S	8	T	1	V	1	
+))	(	1	,	1	.	6	
+),	 	155	d	2	m	1	v	3	
+)-	d	1	m	1	
+).	 	103	"	1	.	1	A	9	D	8	E	2	H	2	I	14	M	1	O	2	S	2	V	4	d	1	m	1	n	1	v	1	
+)0	2	1	9	36	
+):	 	11	
+);	 	5	
+)D	e	1	
+)I	k	1	n	1	
+)S	c	1	
+)]	 	3	
+)e	f	2	
+)s	t	1	
++ 	o	1	
++)	 	1	
++-	p	1	s	3	
++0	+	3	
++5	)	1	
++A	7	3	
++D	O	3	
++R	E	3	
++V	0	3	
++X	M	3	
+, 	"	8	'	7	(	4	-	3	1	5	2	15	3	3	4	1	5	1	6	1	8	1	9	1	A	29	B	19	C	24	D	18	E	45	F	15	G	19	H	3	I	42	J	14	K	7	L	24	M	15	N	12	O	7	P	20	R	30	S	34	T	19	U	2	V	11	W	4	Z	11	[	1	a	824	b	564	c	213	d	3273	e	2793	f	50	g	402	h	1042	i	1186	j	60	k	270	l	188	m	2703	n	619	o	1778	p	123	r	131	s	324	t	705	u	152	v	858	w	1929	z	1664	Á	1	é	11	ó	1	
+,"	 	7	
+,'	 	1	
+,,	 	1	
+,-	 	1	
+,.	 	1	E	1	
+,/	t	1	
+,0	6	1	
+,1	 	10	1	1	7	1	8	1	
+,2	 	7	2	1	4	1	5	3	
+,3	 	9	2	1	
+,4	 	6	8	1	
+,5	 	26	5	1	
+,6	 	12	
+,7	 	12	.	1	
+,8	 	12	
+,9	 	9	
+,d	e	3	
+,h	e	1	
+,m	o	1	
+,r	a	1	
+,v	a	2	i	1	
+,w	a	1	
+- 	"	5	'	1	(	1	,	4	-	46	1	1	2	7	4	2	5	3	9	2	B	6	C	124	D	9	E	17	G	3	H	4	I	1	J	1	M	9	N	4	O	1	R	6	S	2	T	4	U	2	V	3	W	1	a	52	b	51	c	8	d	246	e	857	f	1	g	25	h	91	i	115	j	2	k	13	l	14	m	87	n	51	o	162	p	9	r	8	s	14	t	42	u	17	v	64	w	101	z	88	é	1	
+-)	 	1	
+-,	 	80	
+--	u	1	
+-.	D	1	
+-/	/	3	o	1	v	1	
+-0	0	2	1	6	2	45	3	21	
+-1	8	1	9	1	
+-2	-	1	0	69	2	1	4	2	7	2	
+-7	,	1	
+-8	,	1	
+-:	 	1	
+-A	.	1	b	1	f	42	l	11	m	4	r	5	s	4	t	15	z	4	
+-B	a	9	e	10	l	1	o	1	r	20	u	1	
+-C	a	5	i	1	o	3	y	2	
+-D	e	12	u	8	
+-E	U	4	V	1	n	1	u	81	
+-F	a	1	e	7	o	3	r	50	
+-G	a	2	o	2	r	5	
+-H	a	1	o	1	
+-I	e	4	n	1	s	1	t	3	
+-J	a	6	e	1	á	1	
+-K	a	11	h	1	l	1	o	26	
+-L	a	1	i	4	u	1	y	1	ø	1	
+-M	a	5	e	4	i	4	o	3	u	1	
+-N	A	2	a	11	e	1	
+-O	e	1	n	1	o	30	s	3	
+-P	R	1	a	13	e	2	i	6	
+-Q	a	4	u	2	
+-R	a	10	i	1	o	1	u	23	
+-S	a	1	c	15	o	10	t	8	u	60	z	1	
+-T	)	2	-	4	h	1	i	1	u	5	
+-U	n	53	
+-V	)	2	S	1	e	32	l	1	o	1	r	1	
+-W	a	1	o	4	
+-Z	e	4	v	1	
+-a	a	2	b	1	c	8	d	2	f	12	g	14	k	1	l	1	m	3	n	2	p	1	r	1	t	1	
+-b	a	32	e	193	i	5	n	1	o	2	r	5	u	27	y	1	
+-c	a	3	o	41	r	9	u	1	y	1	
+-d	a	4	e	17	i	26	o	23	u	4	w	1	
+-e	a	2	c	112	e	1	f	49	i	15	l	2	m	13	n	7	r	2	s	1	t	7	v	5	x	5	
+-f	a	3	e	1	i	10	l	6	o	24	r	7	u	3	
+-g	a	2	e	79	o	17	r	5	
+-h	a	10	e	11	o	6	y	3	
+-i	d	1	m	5	n	100	
+-j	a	1	
+-k	a	10	e	1	i	1	r	1	w	4	
+-l	a	29	e	18	i	76	o	3	
+-m	a	31	e	12	i	28	o	5	
+-n	a	12	e	5	i	38	o	5	u	1	
+-o	b	19	c	1	f	3	m	1	n	30	o	3	p	36	r	3	u	6	v	16	
+-p	a	35	c	2	e	1	i	1	l	2	o	5	r	100	
+-q	u	2	
+-r	a	8	e	36	i	26	o	2	
+-s	c	7	e	9	h	2	o	3	p	1	t	257	u	1	y	17	
+-t	a	40	e	12	i	2	o	22	r	5	y	1	
+-u	i	37	n	4	p	25	
+-v	a	2	e	57	i	15	l	10	o	15	r	8	u	2	
+-w	a	7	e	42	i	3	o	1	
+-z	a	1	e	4	i	1	u	1	
+. 	"	7	'	4	(	2	-	1	.	1	1	33	2	11	3	5	5	3	6	2	7	1	8	2	9	8	?	1	A	28	B	20	C	4	D	276	E	86	F	1	G	1	H	147	I	121	J	2	K	6	L	5	M	46	N	19	O	47	P	6	R	5	S	11	T	23	U	125	V	26	W	105	Z	30	b	1	c	7	d	2	e	6	g	1	h	2	i	2	l	1	o	1	v	2	Á	1	É	2	
+."	 	14	"	2	D	4	E	1	H	5	I	2	M	1	S	1	T	1	V	1	i	1	s	1	
+.'	D	4	E	2	J	1	
+.(	A	1	
+.)	 	7	(	2	.	1	D	1	
+.,	 	2	
+..	 	11	"	2	)	4	.	60	A	1	C	1	D	7	G	1	H	4	I	4	L	1	N	2	O	2	T	3	V	2	W	2	Z	1	]	7	u	1	
+.0	0	3	5	1	
+.1	)	1	
+.2	0	1	6	1	
+.3	0	1	
+.4	5	1	
+.5	0	1	2	1	
+.6	1	1	
+.9	9	1	
+.A	a	143	c	6	f	14	g	1	l	497	m	2	n	37	r	4	s	2	z	3	
+.B	a	5	e	72	i	96	l	2	o	153	r	5	u	18	
+.C	.	1	a	11	e	6	h	2	i	1	o	73	r	4	u	10	
+.D	a	1154	e	2444	i	609	o	112	r	6	u	35	
+.E	H	1	c	13	d	1	e	268	f	10	i	6	l	14	n	123	r	399	s	1	t	2	u	77	v	19	x	4	é	8	
+.F	a	1	e	11	i	6	l	1	o	3	r	7	u	1	
+.G	.	3	a	6	e	136	i	10	l	1	o	10	r	22	u	2	
+.H	a	13	e	1965	i	121	o	142	u	22	
+.I	A	1	d	1	e	23	k	2396	l	5	m	11	n	959	r	1	s	13	t	2	
+.J	a	22	e	12	o	9	u	21	
+.K	P	1	a	2	e	4	i	13	l	10	o	12	r	9	u	3	w	1	
+.L	a	95	e	8	i	13	o	12	u	2	
+.M	a	182	e	376	i	286	o	29	
+.N	a	178	e	37	i	61	o	22	u	62	
+.O	N	1	e	1	f	19	m	238	n	143	o	199	p	198	u	3	v	55	
+.P	a	17	e	15	l	3	o	20	r	20	u	7	
+.Q	u	1	
+.R	a	4	e	20	i	10	o	7	u	16	
+.S	a	20	c	9	e	1	i	24	l	6	o	36	p	6	r	1	t	33	u	3	y	4	
+.T	a	2	e	364	h	2	i	35	o	274	r	11	s	1	u	5	w	14	y	3	
+.U	 	19	i	78	w	4	
+.V	O	1	a	98	e	164	i	10	o	296	r	11	ó	1	
+.W	a	378	e	933	i	458	o	1	
+.Y	o	1	
+.Z	a	2	e	104	i	92	o	247	u	8	
+.]	 	7	
+.a	.	2	l	1	
+.b	r	1	
+.c	o	3	
+.d	a	1	e	1	o	3	
+.e	.	1	e	2	n	2	u	10	
+.g	e	1	
+.h	e	48	
+.i	n	2	
+.m	o	2	
+.n	a	3	
+.o	v	1	
+.q	.	1	
+.r	a	4	
+.t	e	1	
+.u	i	1	
+.v	.	2	a	2	i	1	o	1	
+.w	.	1	
+.z	.	1	
+.”	 	3	
+/ 	h	1	
+//	E	3	N	3	T	3	w	3	
+/0	2	1	3	2	8	1	
+/1	1	9	2	2	3	2	5	12	7	1	8	3	
+/2	0	101	5	5	7	1	9	3	
+/3	5	2	7	7	9	3	
+/4	/	1	0	4	1	5	3	3	4	3	6	3	
+/5	2	1	5	2	7	1	9	4	
+/6	0	1	2	2	4	1	6	1	8	3	
+/7	/	1	2	3	3	2	8	2	9	5	
+/8	0	4	
+/9	3	2	5	1	7	6	8	5	9	1	
+/A	L	8	z	1	
+/B	u	1	
+/C	o	1	
+/E	C	2	E	51	G	41	P	3	U	2	c	1	u	1	
+/G	8	1	
+/H	V	1	
+/I	M	4	
+/K	o	1	
+/L	e	1	
+/N	G	5	L	3	o	5	
+/T	E	3	r	1	
+/V	o	1	r	7	
+/a	s	2	
+/b	a	1	
+/g	e	3	
+/h	o	16	
+/i	n	2	
+/m	 	1	o	1	
+/o	f	17	p	1	
+/r	é	1	
+/s	i	3	t	1	
+/t	e	1	
+/v	e	1	i	3	
+/w	e	1	w	3	
+0 	'	1	-	49	0	56	1	1	2	1	3	3	B	1	E	6	L	3	M	28	R	1	T	5	V	1	a	10	b	16	c	1	d	34	e	58	f	3	g	12	h	23	i	33	j	17	k	15	l	1	m	146	n	16	o	17	p	184	s	15	t	34	u	9	v	27	w	10	z	13	à	1	
+0%	 	9	,	1	.	2	
+0(	N	1	
+0)	 	5	,	3	0	36	
+0+	0	1	D	3	
+0,	 	22	1	2	2	2	3	1	4	1	5	2	6	1	7	1	8	1	
+0-	 	3	)	1	2	8	S	1	a	1	b	1	d	14	i	1	l	1	m	1	p	2	s	201	t	2	v	2	
+0.	 	3	A	2	D	9	E	1	H	1	I	5	M	5	N	1	O	2	T	2	U	1	V	2	W	5	
+0/	/	3	0	3	1	7	2	14	6	2	7	5	9	2	E	16	
+00	 	261	,	2	.	1	/	9	0	131	1	8	2	8	3	19	4	14	5	18	6	44	7	62	8	73	9	283	:	1	s	1	
+01	 	4	/	4	0	231	1	142	2	63	3	128	4	39	5	29	7	2	9	1	
+02	 	10	/	5	0	309	1	14	2	6	3	10	4	10	5	4	7	3	9	2	
+03	 	10	.	1	/	10	0	14	1	6	2	1	6	1	7	1	8	1	9	2	
+04	 	11	)	1	/	3	5	2	:	1	
+05	 	16	,	2	-	1	.	1	/	2	0	7	
+06	 	28	(	1	,	7	.	2	/	9	
+07	 	22	)	1	,	4	-	27	.	1	/	9	
+08	 	60	)	2	,	4	-	1	.	4	/	3	2	1	8	1	
+09	 	159	)	4	,	54	-	3	.	48	/	3	6	36	:	13	
+0:	 	6	
+0?	 	2	T	1	
+0e	 	4	
+0s	t	1	
+1 	(	4	0	4	1	1	2	6	3	2	4	1	6	2	7	1	8	2	a	5	b	5	d	22	e	21	f	1	g	4	h	10	i	11	j	23	k	1	m	23	n	5	o	9	p	39	r	3	t	8	v	19	w	6	z	6	
+1"	 	1	G	1	
+1%	 	2	,	1	
+1)	 	10	,	9	.	14	0	1	:	1	
+1+	0	1	
+1,	 	27	0	1	1	2	2	4	3	2	4	2	5	5	6	2	7	1	8	1	9	2	
+1-	 	1	0	3	2	9	A	1	e	1	p	2	
+1.	 	7	4	1	5	1	A	3	D	3	E	1	H	1	O	1	T	1	Z	1	
+1/	2	10	3	2	5	2	9	3	E	5	r	1	
+10	 	197	%	2	)	40	,	12	-	6	.	13	/	6	0	31	2	1	3	1	4	2	5	1	8	1	:	1	e	2	
+11	 	89	)	25	,	17	-	14	.	14	/	4	0	5	1	1	3	1	4	8	5	5	9	1	;	1	
+12	 	69	)	2	,	8	.	7	/	5	0	7	1	15	2	1	3	3	4	3	6	2	9	8	
+13	 	96	"	1	'	1	)	3	,	14	-	2	.	22	/	5	0	2	2	2	3	1	6	1	7	2	8	2	:	1	
+14	 	46	)	1	,	2	-	10	.	5	/	8	1	2	2	1	3	4	6	5	7	1	8	1	9	10	;	1	
+15	 	43	%	1	)	1	,	10	.	9	/	19	0	13	2	1	3	2	4	4	6	1	7	5	9	1	
+16	 	9	%	1	,	2	.	2	/	2	0	5	1	3	2	1	6	1	7	1	9	1	
+17	 	19	,	2	-	1	/	4	0	2	1	1	2	1	4	3	5	3	8	2	9	1	e	1	
+18	 	18	,	1	-	1	/	3	1	2	4	1	5	2	
+19	 	13	,	3	/	2	0	2	1	2	2	1	3	1	4	9	5	5	6	9	7	20	8	26	9	50	:	1	e	1	
+1:	 	1	2	1	
+1;	 	1	
+1N	1	3	
+1_	d	2	
+1e	 	6	
+1s	t	2	
+2 	(	1	-	3	0	9	5	4	6	1	8	2	9	1	V	1	a	4	b	6	c	1	d	10	e	14	f	4	g	3	h	3	i	16	j	7	k	2	l	2	m	21	n	1	o	4	p	21	s	3	t	9	u	1	v	10	w	3	z	8	°	1	
+2)	 	12	.	1	
+2+	0	1	
+2,	 	25	2	3	3	2	5	4	6	5	7	3	8	2	9	1	
+2-	-	1	a	2	e	11	h	1	m	1	o	1	q	1	r	4	u	3	v	4	
+2.	 	6	0	1	D	5	H	1	I	1	M	1	O	1	
+2/	1	1	2	10	6	3	7	5	8	4	E	10	
+20	 	131	%	2	(	1	)	3	+	1	,	7	-	233	.	21	/	6	0	572	1	627	2	311	3	1	4	1	5	7	8	1	:	4	?	1	e	1	
+21	 	22	,	1	/	2	0	1	1	1	2	1	3	2	4	1	5	12	6	2	7	3	8	3	9	2	e	6	s	2	
+22	 	19	,	4	/	1	0	4	2	1	6	1	7	3	9	1	
+23	 	36	,	4	-	1	0	3	1	1	2	1	3	1	4	1	5	1	6	1	7	1	8	1	9	1	
+24	 	36	0	1	1	1	2	1	3	1	4	2	5	1	6	1	7	1	8	1	9	3	
+25	 	56	%	3	,	1	/	5	0	3	1	1	2	1	8	1	s	1	
+26	 	16	,	3	.	1	/	1	0	1	2	1	
+27	 	67	,	6	/	1	0	2	1	3	2	1	7	1	
+28	 	11	,	2	6	3	7	3	e	3	
+29	 	13	,	7	/	1	0	4	8	4	9	1	
+2:	 	2	1	1	
+2B	)	2	
+2C	)	2	
+2_	d	1	
+2e	)	1	
+3 	(	1	-	43	0	7	3	1	4	1	9	1	F	1	G	3	a	8	b	11	d	9	e	20	f	1	g	5	h	5	i	7	j	10	k	4	l	2	m	36	n	10	o	11	p	34	r	1	s	1	t	10	u	3	v	23	w	5	z	3	à	1	é	1	
+3"	 	1	
+3'	,	1	
+3)	 	9	,	1	.	1	
+3,	 	22	1	2	3	2	4	2	5	8	6	1	7	4	8	2	
+3-	1	1	2	3	v	1	
+3.	 	2	5	1	A	2	D	8	E	3	H	3	I	3	M	2	N	1	T	1	
+3/	1	1	2	10	3	7	4	2	E	4	
+30	 	59	%	1	.	2	/	3	0	16	1	2	2	1	3	3	4	1	5	1	6	2	7	1	9	1	
+31	 	26	/	2	0	1	1	2	2	1	3	2	4	1	5	1	7	1	8	1	
+32	 	6	+	1	,	1	/	4	2	1	5	1	
+33	 	7	/	1	0	1	1	1	6	1	
+34	 	5	,	2	/	1	7	1	9	1	
+35	 	6	,	2	/	1	0	4	2	2	4	2	
+36	 	9	%	1	,	1	/	1	0	1	3	1	9	1	s	2	
+37	 	8	,	5	/	8	0	1	
+38	 	5	/	1	0	1	7	1	
+39	 	2	,	1	/	1	1	1	6	3	7	1	
+3:	 	5	
+3a	 	1	
+4 	(	2	-	3	0	1	6	1	9	1	E	1	a	1	c	3	d	6	e	12	f	4	g	2	h	5	i	6	j	23	k	1	l	1	m	26	n	1	o	7	p	15	s	3	t	3	u	5	v	11	w	6	z	3	
+4%	 	2	
+4)	 	7	.	1	:	1	
+4,	 	14	3	1	4	1	6	1	7	1	8	2	9	4	
+4-	2	10	
+4.	 	1	3	1	D	1	H	1	W	1	
+4/	1	10	2	7	9	1	E	12	
+40	 	34	%	1	/	1	0	11	2	4	?	1	
+41	 	4	+	1	/	4	4	1	5	6	
+42	 	10	/	2	7	1	
+43	 	13	,	1	/	1	2	4	3	1	
+44	 	2	,	2	/	5	
+45	 	5	.	1	/	2	0	1	5	1	
+46	 	6	/	4	6	2	7	3	
+47	 	1	/	1	5	1	
+48	 	13	,	1	/	1	0	3	9	1	
+49	 	8	)	1	,	9	/	1	8	1	
+4:	1	1	H	1	
+4;	 	1	
+4e	 	1	
+4s	t	1	
+5 	(	1	-	1	0	17	1	1	5	1	8	1	G	2	a	2	b	4	d	4	e	23	f	1	g	2	h	2	i	4	j	22	k	1	l	4	m	24	n	2	o	5	p	97	s	3	t	15	u	3	v	12	w	3	z	2	à	3	
+5"	 	1	
+5%	 	7	
+5)	 	2	,	1	
+5+	5	1	
+5,	 	16	-	1	2	1	5	3	6	2	7	1	8	1	
+5-	 	1	2	2	
+5.	0	1	A	1	D	2	E	2	H	1	I	1	N	1	T	1	W	1	
+5/	2	21	5	5	9	2	E	11	
+50	 	54	%	2	.	1	/	9	0	22	2	1	
+51	 	5	,	1	/	1	
+52	 	5	/	3	3	1	9	1	
+53	 	2	
+54	 	5	%	1	,	1	/	2	1	3	e	1	s	1	
+55	 	8	/	1	0	1	
+56	 	6	,	1	/	1	
+57	 	3	,	1	/	4	5	1	7	1	
+58	 	1	/	1	0	1	
+59	/	4	3	1	
+5s	t	1	
+6 	(	2	-	3	0	4	5	1	V	2	a	5	b	6	c	1	d	3	e	12	f	4	g	3	h	6	i	8	j	5	k	1	l	3	m	26	n	3	o	1	p	11	r	1	s	3	t	4	v	8	w	4	
+6%	 	3	
+6(	N	1	
+6)	 	1	
+6,	 	17	1	1	2	1	3	1	8	2	
+6-	v	1	
+6.	 	1	D	2	I	2	
+6/	1	8	2	10	4	8	7	2	9	2	E	7	
+60	 	36	/	1	0	9	?	1	
+61	 	4	2	3	
+62	 	2	.	1	/	2	8	2	
+63	 	46	-	1	
+64	 	1	%	1	/	1	
+65	 	5	,	1	4	1	
+66	 	1	/	3	e	1	s	2	
+67	 	2	,	3	.	1	/	3	3	1	9	1	
+68	 	4	,	1	2	2	3	2	
+69	 	4	%	1	/	1	
+6e	 	1	
+6s	t	4	
+7 	-	1	0	3	5	2	7	2	E	4	[	1	a	7	b	9	c	1	d	8	e	9	g	4	h	5	i	5	j	6	k	1	l	34	m	13	n	8	o	8	p	22	s	3	t	6	u	2	v	15	w	1	z	4	
+7(	N	1	
+7)	 	9	,	1	.	1	
+7,	 	17	1	4	4	1	5	3	7	1	
+7-	0	70	1	1	2	30	j	1	p	1	
+7.	 	1	D	1	E	1	I	1	
+7/	2	12	4	8	6	1	7	1	9	3	E	14	G	1	
+70	 	17	%	1	)	1	,	2	/	5	0	10	e	1	
+71	 	5	/	2	7	1	
+72	,	1	/	1	0	3	1	1	
+73	 	9	,	1	/	4	
+74	 	6	/	8	0	2	
+75	 	27	%	1	,	1	/	3	
+76	 	5	/	3	0	1	
+77	 	2	(	1	.	1	/	1	
+78	 	4	,	3	.	1	/	3	
+79	 	4	/	5	0	2	
+7_	T	1	
+7e	 	1	
+7k	 	1	
+8 	0	3	4	1	6	1	a	6	b	7	d	2	e	19	f	1	g	3	h	11	i	10	j	2	k	2	l	1	m	19	n	4	o	4	p	16	r	1	s	4	t	7	u	3	v	26	w	9	z	5	
+8%	 	2	,	1	
+8)	 	2	,	2	
+8,	 	18	3	1	5	2	7	1	8	1	
+8-	2	2	l	2	p	1	t	1	
+8.	 	3	D	1	I	2	O	1	V	1	
+8/	1	2	2	7	9	2	E	6	
+80	 	28	%	3	/	9	0	15	7	1	
+81	 	1	.	1	/	2	
+82	 	5	0	1	e	1	
+83	 	1	/	2	4	2	
+84	 	1	,	1	8	1	
+85	 	3	%	1	-	1	/	1	2	1	6	1	
+86	 	10	,	4	/	8	0	1	
+87	 	11	-	1	/	5	
+88	/	1	
+89	 	5	/	3	4	1	
+8e	 	3	,	1	
+9 	"	1	(	3	-	6	0	1	2	2	6	1	9	1	[	27	a	4	b	14	d	5	e	15	f	1	g	12	h	16	i	15	j	13	l	1	m	18	n	4	o	20	p	30	r	2	s	8	t	5	u	4	v	24	w	10	z	5	
+9%	 	2	
+9)	 	2	,	1	.	1	S	1	
+9,	 	74	1	2	2	1	9	2	
+9-	2	3	
+9.	 	1	0	2	A	3	B	1	D	3	G	17	H	5	I	10	M	5	O	1	W	2	
+9/	0	1	2	8	3	3	4	1	5	1	6	2	E	9	
+90	 	30	.	1	0	5	5	1	
+91	 	3	,	2	/	1	4	1	9	1	
+92	 	10	,	1	.	2	/	10	9	1	
+93	 	3	,	4	/	1	9	1	
+94	 	6	/	1	0	1	1	3	8	2	9	2	
+95	 	10	/	5	6	4	7	2	
+96	 	10	%	1	/	5	0	1	3	38	4	1	7	4	8	1	
+97	 	10	/	2	0	4	3	5	4	2	5	4	6	4	7	1	9	2	
+98	 	13	%	2	/	4	0	1	1	1	4	2	5	2	6	9	7	7	9	4	
+99	 	17	%	1	,	1	/	4	0	3	1	2	2	13	3	1	4	5	5	6	6	7	7	3	8	5	9	6	
+9:	 	13	4	1	
+9e	 	3	
+: 	"	70	'	7	(	1	1	8	2	2	3	2	4	1	5	1	7	1	B	3	C	4	D	4	E	10	F	3	G	5	H	6	I	5	J	1	K	1	M	4	N	2	O	1	R	4	S	8	T	2	V	2	W	4	a	32	b	12	c	7	d	171	e	71	f	3	g	12	h	107	i	66	j	7	k	10	l	12	m	28	n	19	o	40	p	6	r	2	s	9	t	29	u	11	v	40	w	96	z	46	é	1	
+:/	/	3	
+:1	 	1	.	1	
+:2	.	1	
+:4	0	1	
+:A	a	1	
+:B	i	1	
+:H	4	1	
+:I	k	2	
+:M	e	1	
+:N	a	1	u	1	
+; 	(	6	2	6	3	7	4	3	8	1	G	1	[	1	a	12	b	11	c	1	d	89	e	47	g	3	h	57	i	24	j	4	k	4	l	5	m	14	n	5	o	22	s	4	t	18	u	5	v	14	w	38	z	14	
+;"	v	1	
+;I	k	1	n	2	
+;P	u	1	
+;d	a	1	e	3	
+<1	0	1	
+=-	/	3	
+? 	-	2	1	1	A	20	B	10	D	70	E	25	G	15	H	57	I	65	J	1	K	14	L	2	M	19	N	12	O	29	P	2	S	2	T	9	U	9	V	16	W	74	Z	36	
+?"	 	1	,	1	.	1	
+?'	,	1	
+?(	D	1	
+?A	a	2	c	1	l	1	
+?B	a	1	e	4	
+?C	o	5	
+?D	a	3	e	4	i	1	u	2	
+?E	n	2	
+?F	a	1	
+?G	e	1	
+?H	e	3	o	20	
+?I	k	5	n	2	s	12	
+?K	a	7	o	1	u	2	w	1	
+?L	e	1	
+?M	a	4	e	1	i	7	o	1	
+?N	a	1	u	1	
+?O	n	3	p	1	v	1	
+?P	a	1	
+?S	t	1	
+?T	e	9	o	1	
+?U	 	1	
+?V	a	1	e	1	i	2	o	2	
+?W	a	22	e	9	i	2	o	2	
+?Z	a	1	i	1	o	3	w	1	
+?p	u	3	
+A 	a	2	b	1	d	3	e	7	g	1	h	2	i	4	m	2	o	10	s	1	t	3	v	1	w	1	z	2	
+A"	)	2	
+A)	 	27	,	7	.	4	
+A,	 	13	
+A-	P	1	a	1	b	2	c	2	g	1	l	3	o	1	p	1	r	1	s	1	
+A.	 	3	D	2	H	1	S	1	W	1	
+A7	-	3	
+AA	-	2	A	2	
+AB	 	10	)	6	,	1	;	1	
+AC	'	1	)	1	H	1	S	6	
+AD	C	7	E	1	
+AE	A	8	E	3	O	1	X	1	
+AF	 	2	)	4	-	1	C	2	T	3	
+AG	H	1	
+AI	O	2	
+AK	 	1	
+AL	)	1	A	1	D	14	E	8	
+AM	R	16	
+AN	)	2	.	1	
+AO	 	29	'	1	)	11	,	2	-	29	.	2	
+AP	 	1	)	2	+	4	
+AR	 	2	A	1	G	2	T	2	
+AS	 	3	)	4	A	1	E	2	F	3	
+AT	)	1	D	1	O	3	S	1	T	1	
+AV	B	2	N	1	O	46	
+Aa	n	153	r	1	
+Ab	b	4	c	3	d	6	y	22	
+Ac	a	3	h	7	t	47	
+Ad	a	1	m	1	n	1	
+Af	g	24	r	89	s	1	w	1	
+Ag	e	81	r	1	u	1	
+Ai	r	1	
+Ak	e	2	k	13	r	1	t	3	
+Al	 	25	-	5	a	1	b	26	d	2	e	1	g	24	h	2	i	6	l	146	m	2	p	11	s	405	t	1	v	5	
+Am	a	1	b	1	e	52	n	2	p	1	r	1	s	1	
+An	a	4	c	1	d	74	g	2	i	1	n	2	t	14	
+Ar	a	40	b	31	c	1	m	9	s	3	t	7	
+As	h	77	s	33	
+At	h	4	l	23	o	9	t	2	
+Au	d	18	s	4	t	27	
+Av	a	2	
+Ax	e	1	
+Ay	l	1	
+Az	e	46	i	14	o	1	
+B 	(	1	-	1	a	5	b	4	d	9	e	17	g	6	h	7	i	17	l	2	m	21	n	13	o	9	p	2	r	1	s	1	t	21	u	2	v	9	w	10	z	8	
+B'	e	1	s	8	
+B)	 	45	,	10	-	1	.	8	
+B,	 	14	
+B-	b	9	d	2	e	2	g	4	h	2	m	3	o	1	p	5	r	11	s	2	v	1	w	1	
+B.	 	1	A	1	C	1	D	3	E	2	H	2	I	3	L	1	N	1	T	2	V	1	e	1	
+B2	B	2	C	2	
+B7	-	18	
+B:	 	1	
+B;	 	1	
+BA	 	16	)	5	,	2	-	1	.	1	
+BB	P	7	
+BC	B	4	
+BE	 	1	)	2	
+BL	)	1	,	1	-	1	
+BN	I	1	P	1	
+BO	 	1	)	1	
+BP	 	7	)	1	,	1	;	1	
+BR	I	3	
+BT	 	3	)	1	-	3	W	4	
+BU	D	1	
+BV	B	22	
+BW	,	1	O	1	
+BY	-	1	
+BZ	-	2	
+Ba	c	2	g	3	h	11	i	1	k	2	l	68	n	65	r	81	s	15	t	2	y	2	z	2	
+Be	a	2	c	4	d	6	g	15	h	11	i	21	l	104	m	2	n	31	o	1	p	2	r	22	s	14	t	12	w	6	y	1	z	1	
+Bh	u	1	
+Bi	b	1	j	91	l	3	n	31	s	2	
+Bl	a	2	i	3	o	3	u	1	
+Bo	a	1	c	1	e	11	g	2	l	5	m	1	n	6	r	4	s	28	t	1	v	157	w	4	
+Br	a	6	e	5	i	76	o	8	u	83	ú	1	
+Bu	c	1	d	1	i	38	l	174	n	4	r	56	s	42	z	5	
+Bö	g	1	l	1	
+Bü	t	7	
+Bă	s	1	
+C 	-	1	b	1	e	1	h	3	p	1	t	1	v	2	
+C'	s	2	
+C(	2	36	
+C)	 	13	,	2	.	2	
+C+	X	3	
+C,	 	4	
+C-	b	4	c	2	g	1	k	1	l	2	m	1	n	1	s	1	u	4	v	1	
+C.	 	1	,	1	
+C7	-	50	
+CA	)	1	E	1	P	1	T	1	
+CB	 	18	)	7	,	2	-	3	
+CC	A	1	C	1	D	1	T	1	
+CD	A	1	C	10	U	1	
+CE	 	1	)	1	B	4	C	2	D	1	F	1	P	1	T	10	
+CH	,	2	-	1	A	1	O	1	
+CI	 	6	)	3	+	1	,	1	-	1	.	1	;	2	A	6	P	7	
+CO	 	1	)	4	-	2	2	33	M	1	R	1	
+CP	 	1	A	2	
+CR	 	4	)	1	,	4	-	8	;	1	A	2	E	1	
+CS	-	5	/	1	R	1	
+CT	)	1	,	1	-	5	B	1	
+Ca	d	4	l	12	m	7	n	147	p	3	r	13	s	24	t	17	ï	3	
+Ce	c	1	d	9	n	96	r	3	t	1	
+Ch	a	4	e	1	i	63	o	7	r	30	
+Ci	o	8	r	1	t	1	z	5	
+Cl	e	5	u	1	
+Co	a	1	d	2	e	18	h	27	l	16	m	2141	n	44	o	2	p	2	r	10	s	1	t	4	u	1	ö	1	
+Cr	e	3	i	10	
+Cu	b	12	l	32	r	3	
+Cv	d	10	
+Cy	p	13	
+Cé	u	1	
+D 	3	1	Q	1	d	2	e	1	g	1	i	1	o	1	r	1	t	1	
+D"	 	1	
+D)	 	3	,	2	
+D,	 	2	
+D-	F	9	f	1	t	1	
+D.	 	1	C	1	D	1	V	1	
+DA	)	3	,	1	-	2	
+DB	 	10	)	10	,	3	-	2	.	2	
+DC	 	8	)	7	,	2	I	12	
+DD	 	5	)	3	.	2	R	1	
+DE	 	3	)	1	-	11	4	1	F	1	O	7	R	1	
+DF	,	1	
+DG	 	3	'	1	
+DH	R	1	
+DI	 	1	H	1	P	1	
+DM	R	1	
+DN	A	1	
+DO	C	3	
+DP	)	1	-	1	”	1	
+DR	 	1	
+DS	,	1	
+DU	)	1	
+Da	a	736	c	1	g	4	l	17	m	34	n	86	p	2	r	15	t	440	u	7	v	8	
+De	 	2278	a	3	b	3	e	9	f	6	g	11	h	1	l	2	m	50	n	21	p	1	r	21	s	22	t	1	u	1	v	5	z	354	ß	14	
+Di	a	1	e	117	g	19	m	6	o	2	r	4	s	6	t	561	v	3	
+Dj	o	1	
+Dm	i	1	
+Do	c	3	d	1	e	25	h	6	m	8	n	7	o	110	r	2	
+Dr	a	10	i	4	o	2	u	1	
+Du	b	17	f	1	i	149	n	2	r	4	s	26	u	3	
+Dà	t	3	
+E 	"	2	b	2	d	1	e	6	h	1	i	1	m	3	o	1	t	1	v	1	
+E)	 	7	.	3	]	3	
+E,	 	6	
+E-	 	1	F	29	m	1	p	1	v	1	
+E.	 	7	B	1	I	2	O	1	c	2	
+E/	N	5	
+E4	 	1	
+EA	 	4	)	7	-	1	B	15	C	1	D	1	N	2	S	2	V	2	
+EB	 	7	'	4	)	1	-	12	A	19	C	4	T	4	W	1	
+EC	(	36	)	2	-	13	A	1	B	26	D	10	E	4	H	2	R	14	S	1	
+ED	A	1	E	8	F	1	S	1	
+EE	A	5	G	58	H	1	S	1	Z	1	
+EF	 	1	D	2	F	1	G	19	I	1	O	1	R	15	S	11	
+EG	 	78	)	40	,	10	.	7	E	1	N	21	T	2	
+EH	E	13	P	1	
+EI	B	5	D	1	T	4	
+EL	-	1	E	1	F	8	O	1	
+EM	A	6	C	1	E	1	I	1	S	1	U	3	
+EN	 	1	)	1	-	9	B	3	E	1	I	1	P	1	R	3	S	4	
+EO	 	4	)	2	-	1	.	1	F	12	R	4	
+EP	 	15	)	2	-	8	.	1	/	3	:	1	C	1	I	2	O	5	P	1	S	1	
+EQ	L	1	
+ER	 	11	,	1	-	4	A	2	C	1	D	1	
+ES	,	1	-	3	A	2	B	1	C	3	F	19	M	4	O	10	S	1	
+ET	-	1	2	2	A	11	F	6	G	1	I	2	S	2	W	1	
+EU	 	1030	)	11	,	90	-	610	.	131	/	5	:	7	;	3	?	3	F	3	N	3	R	14	]	1	
+EV	A	2	F	10	P	1	R	3	
+EW	D	10	
+EX	,	3	.	1	T	3	
+EZ	 	1	
+Ea	r	2	s	1	
+Ec	h	10	o	56	
+Ed	i	5	m	1	o	1	u	2	
+Ee	n	303	r	15	
+Ef	f	15	
+Eg	n	1	y	46	
+Ei	g	3	l	2	n	6	o	1	
+Ek	 	1	,	1	
+El	 	11	d	1	e	2	f	1	i	2	k	12	m	2	t	1	z	2	
+Em	i	2	o	1	
+En	 	126	B	1	c	1	e	15	g	16	i	2	k	10	r	3	s	1	t	2	v	1	
+Er	 	425	a	28	g	2	i	2	k	2	m	2	n	1	t	1	
+Es	c	1	p	1	s	1	t	12	
+Et	i	2	
+Eu	r	6440	
+Ev	a	3	e	19	
+Ex	c	1	p	3	t	8	
+Ey	n	2	
+Eé	n	27	
+F 	(	1	-	2	a	1	b	6	d	3	e	20	f	1	g	2	h	3	i	10	k	1	m	2	n	5	o	6	t	5	v	2	w	2	z	2	
+F)	 	16	,	13	.	10	
+F,	 	9	
+F-	b	1	d	3	f	1	i	1	m	1	p	2	s	1	
+F.	D	3	E	1	I	3	O	2	V	1	W	2	
+F/	2	1	
+FA	 	1	O	17	P	1	
+FB	 	1	
+FC	O	2	
+FD	-	2	A	1	P	1	
+FE	-	1	
+FF	 	3	)	2	,	1	-	1	I	1	
+FG	 	13	)	3	,	1	-	2	
+FI	)	1	D	2	F	1	S	1	
+FK	 	18	)	10	,	3	.	1	
+FO	P	1	R	3	
+FP	'	2	O	8	
+FR	O	16	
+FS	A	7	F	3	M	1	
+FT	 	1	A	3	P	1	
+FY	R	4	
+Fa	b	1	c	12	i	1	l	6	r	7	s	1	t	9	y	3	
+Fe	d	7	e	1	i	20	r	20	s	1	
+Fi	d	6	g	2	l	1	n	47	o	2	r	2	s	1	
+Fj	e	4	
+Fl	e	3	
+Fo	l	1	n	95	o	4	r	19	x	2	
+Fr	a	221	i	1	o	45	
+Fu	k	26	n	1	
+Fü	l	7	
+G 	-	2	R	1	a	3	b	5	e	7	g	2	h	1	i	7	l	1	o	2	t	1	u	1	v	56	w	5	
+G'	s	1	
+G)	 	40	,	2	.	1	
+G,	 	13	
+G-	2	1	7	1	8	1	v	2	
+G.	 	3	D	1	G	1	I	2	R	3	
+G2	0	14	
+G7	 	4	/	1	
+G8	 	7	,	1	-	4	.	2	
+GA	T	2	
+GB	 	2	L	2	P	2	T	3	V	22	
+GD	P	1	
+GE	N	1	T	2	
+GG	O	2	
+GH	 	1	z	5	
+GL	-	5	B	90	
+GM	 	1	E	1	O	4	S	1	
+GN	O	21	S	23	
+GO	 	2	'	2	S	1	
+GP	 	5	)	5	A	1	S	6	
+GR	E	1	
+GS	'	1	
+GT	I	2	S	2	
+GU	E	7	
+GV	B	1	D	27	
+Ga	 	1	a	14	b	2	e	1	l	34	r	19	s	1	u	7	y	1	z	15	
+Gd	a	1	
+Ge	a	9	b	2	c	4	d	4	e	8	g	2	h	1	i	1	k	2	l	31	m	57	n	30	o	53	r	7	s	4	v	2	w	2	z	63	ï	1	
+Gi	e	7	l	3	n	1	o	1	r	1	s	10	
+Gl	a	1	o	6	
+Go	d	3	e	11	l	35	m	2	o	5	r	2	u	12	v	1	
+Gr	a	7	e	4	i	320	o	81	u	3	ä	1	
+Gu	a	22	c	7	e	1	i	7	n	2	
+Gy	u	3	ö	5	ő	8	
+Gá	l	2	
+Gö	d	1	n	3	t	1	
+Gü	n	1	
+H 	U	1	
+H,	 	4	
+H-	E	1	
+H.	G	3	
+H1	N	3	
+H4	 	1	
+HA	 	3	)	2	,	2	
+HC	R	4	
+HE	C	13	
+HF	-	1	
+HH	,	2	
+HI	P	1	
+HO	 	5	)	1	
+HP	,	1	
+HR	 	1	)	1	
+HV	)	1	
+Ha	a	7	b	1	d	2	g	4	h	5	j	1	k	1	l	3	m	22	n	42	r	16	u	2	v	2	w	2	z	1	ï	2	
+He	a	2	b	4	e	12	i	2	j	1	l	41	r	33	t	2090	
+Hi	e	108	g	1	j	32	r	2	s	1	t	4	
+Ho	c	1	e	178	f	42	g	4	l	1	m	2	n	242	o	22	p	3	u	3	w	1	
+Hu	g	1	i	46	l	2	m	5	n	13	
+Hy	a	1	
+Hz	 	6	,	1	-	10	.	1	
+Hö	k	7	
+Hü	b	2	
+I 	-	9	1	1	B	1	a	1	b	2	d	1	e	4	g	3	h	2	i	4	m	1	n	1	o	1	t	1	v	7	w	2	
+I'	s	2	
+I)	 	5	,	3	.	1	
+I+	)	1	
+I,	 	15	
+I-	c	1	d	1	p	3	r	2	v	5	
+I.	E	1	H	1	
+I;	 	2	
+I?	 	1	
+IA	 	4	,	1	.	1	B	3	C	1	E	9	O	56	S	6	
+IB	 	2	)	1	,	2	E	3	
+IC	 	1	)	1	,	1	-	4	A	1	C	1	E	1	I	1	O	1	P	1	R	2	T	7	
+ID	)	1	-	1	H	1	
+IE	R	1	
+IF	A	1	E	1	
+IG	S	1	
+IH	H	2	R	1	
+II	 	22	)	1	,	5	-	5	.	1	I	11	
+IJ	s	7	z	1	
+IL	O	2	
+IM	B	1	F	76	
+IN	N	1	T	3	
+IO	 	2	O	17	T	1	
+IP	 	5	"	1	)	1	,	3	-	1	.	1	C	1	s	1	
+IR	E	1	
+IS	 	7	)	2	,	2	-	2	A	2	M	1	
+IT	)	1	-	2	E	13	I	1	O	2	R	5	
+IV	 	4	.	1	
+IX	 	3	
+Ia	c	2	
+Id	e	2	
+Ie	d	18	r	77	t	2	
+Ig	n	1	
+Ih	n	1	
+Ik	 	2530	z	2	
+Il	i	1	l	5	
+Im	m	11	p	3	
+In	 	919	d	191	e	1	f	4	g	5	i	4	k	3	m	7	n	63	s	9	t	151	v	30	z	1	
+Io	a	1	t	1	
+Ir	a	24	e	1	
+Is	 	42	a	2	l	5	r	37	
+It	a	80	h	1	ä	3	
+Iv	e	1	o	3	
+J)	 	1	
+JB	Z	2	
+Ja	,	17	a	7	c	5	h	2	m	4	n	8	p	138	r	4	s	1	
+Je	 	15	a	4	g	2	m	5	r	3	s	4	u	55	
+Ji	b	1	m	1	
+Jo	 	5	e	16	h	4	n	10	r	6	s	7	ã	2	
+Js	h	1	l	6	
+Ju	a	3	b	3	d	2	i	18	l	3	n	2	r	4	s	40	t	1	
+Jz	e	1	
+Já	r	1	
+K 	T	1	a	2	d	1	e	4	g	1	m	5	n	1	o	1	t	4	u	1	v	2	w	1	z	1	
+K)	 	9	.	1	
+K,	 	3	
+K.	I	1	
+KB	 	48	'	1	)	10	,	2	-	10	.	8	
+KC	I	2	
+KG	B	1	
+KI	P	4	
+KM	O	45	
+KO	 	6	)	3	,	2	
+KP	7	18	8	3	
+KR	W	2	
+KV	 	1	
+Ka	c	1	d	13	h	5	l	8	m	17	n	13	p	2	r	15	s	2	u	5	z	4	
+Ke	l	1	n	2	r	7	y	2	
+Kh	a	18	
+Ki	-	3	d	1	e	4	j	8	n	12	p	1	
+Kl	a	2	e	20	i	8	u	1	
+Ko	a	2	c	1	e	2	m	6	n	71	o	14	p	19	r	27	s	14	u	1	v	3	z	1	
+Kr	a	3	e	6	i	3	o	55	u	3	
+Ku	h	2	n	11	
+Kw	a	6	e	1	i	12	
+Ky	o	2	
+Ká	m	1	r	4	
+Kó	s	1	
+Kö	v	1	
+L"	 	3	
+L)	 	3	.	1	
+L+	V	3	
+L,	 	1	
+L-	F	4	b	1	f	1	m	1	
+LA	F	6	R	1	
+LB	 	57	)	10	,	3	-	13	.	6	:	1	
+LD	E	14	
+LE	)	3	-	8	A	1	X	1	
+LF	P	8	
+LG	B	3	O	2	
+LI	B	3	C	2	F	1	
+LO	 	2	)	1	-	1	D	1	
+LS	)	1	
+LT	T	2	
+LU	X	1	
+La	 	1	a	23	b	2	d	5	g	10	m	22	n	65	s	2	t	77	
+Le	 	3	a	6	b	3	c	1	d	2	e	2	g	7	h	5	i	17	n	2	o	12	p	2	r	1	s	4	t	11	v	2	w	7	
+Li	b	97	c	3	d	12	e	8	f	1	g	6	m	2	n	13	o	4	p	1	s	154	t	38	
+Lo	b	3	e	24	k	2	n	5	r	7	s	7	
+Lu	c	3	d	4	i	10	k	1	n	1	t	1	x	12	
+Ly	o	4	
+Lá	s	5	
+Lä	n	1	
+Ló	p	1	
+Lö	v	1	
+Lø	k	2	
+M 	d	1	e	2	h	1	m	1	v	1	w	1	z	1	
+M'	s	1	
+M(	2	1	
+M)	 	3	,	1	
+M.	W	1	
+MA	 	2	)	3	.	1	K	1	R	1	
+MB	Y	1	
+MC	C	1	
+MD	G	1	
+ME	B	20	D	1	L	1	S	1	X	1	
+MF	 	47	)	8	,	2	-	7	.	12	B	1	K	32	
+MH	z	13	
+MI	C	2	S	2	
+MK	B	79	
+ML	+	3	
+MO	'	44	)	3	-	2	D	1	N	1	
+MR	 	9	)	5	-	2	.	1	S	1	
+MS	)	1	-	1	A	1	
+MU	 	1	)	2	
+MV	 	1	O	5	
+Ma	a	206	c	10	d	28	g	27	h	1	j	7	l	48	n	22	r	50	s	2	t	4	u	31	y	1	z	4	
+Mb	 	1	e	2	p	5	
+Mc	A	1	C	1	
+Me	a	1	c	1	d	16	e	29	i	1	l	4	n	46	r	18	t	247	v	105	x	2	
+Mh	z	9	
+Mi	c	7	d	88	g	5	j	275	k	7	l	29	n	18	q	3	r	2	s	32	t	3	
+Ml	a	2	
+Mo	a	2	b	5	c	4	d	1	e	5	g	2	h	2	l	8	m	12	n	50	o	2	r	13	s	8	t	5	u	1	
+Mu	h	2	m	1	n	3	r	2	s	2	ñ	4	
+My	t	1	
+Má	l	1	
+N 	-	1	B	1	a	3	d	3	e	12	g	1	h	4	i	5	l	1	m	1	n	2	o	5	s	1	t	4	v	2	
+N)	 	2	,	2	
+N,	 	12	
+N-	 	1	H	1	M	1	O	1	R	3	T	6	V	21	a	1	b	2	f	1	g	2	h	1	k	1	l	2	m	1	o	1	p	2	r	4	s	2	v	11	
+N.	 	6	B	1	D	1	E	1	I	1	T	1	W	1	
+N/	E	2	
+N1	-	3	
+NA	-	1	F	3	V	46	
+NB	)	1	-	2	
+ND	P	1	
+NE	)	1	P	1	R	1	S	2	
+NF	)	1	P	2	
+NG	L	5	
+NH	C	4	
+NI	)	1	-	1	C	4	M	1	S	1	
+NL	"	3	E	3	
+NM	I	1	
+NN	O	1	
+NO	J	1	S	21	V	1	
+NP	)	1	I	1	T	1	
+NR	A	3	W	2	
+NS	E	1	R	3	S	23	
+NT	A	3	E	1	
+NU	C	1	T	1	
+Na	 	42	a	80	b	3	d	7	g	7	h	1	i	1	l	1	m	6	o	1	p	3	r	1	s	10	t	135	u	4	v	3	
+Ne	a	3	d	57	e	17	g	1	m	1	p	1	r	2	t	37	v	1	w	6	
+Ni	c	3	e	76	j	1	k	4	s	1	v	2	z	11	
+No	b	1	c	2	e	1	g	18	o	83	r	7	u	4	v	12	
+Nu	 	66	,	2	c	2	
+Nü	r	1	
+O 	(	1	-	1	3	1	5	1	V	2	a	4	b	4	c	1	d	4	e	30	h	6	i	13	k	1	l	1	m	5	n	2	o	9	r	1	s	2	t	6	u	1	v	9	w	9	z	2	
+O&	I	3	O	16	
+O'	s	47	
+O)	 	43	,	17	.	8	
+O,	 	25	
+O-	0	1	V	2	a	4	b	3	c	8	e	1	f	3	g	1	i	3	k	1	l	6	m	1	n	4	o	11	r	4	s	2	t	2	u	1	v	32	
+O.	 	1	D	1	G	2	H	2	I	1	L	1	N	1	O	1	P	1	T	2	W	1	Z	1	
+O1	0	1	
+O2	 	6	,	1	-	26	
+OC	+	3	
+OD	A	3	E	1	I	2	
+OE	 	1	S	9	
+OF	 	9	)	3	/	1	T	1	
+OG	R	1	
+OI	 	1	)	1	-	1	
+OJ	)	1	
+OL	)	1	A	6	
+OM	 	5	(	1	)	2	A	1	
+ON	 	1	T	1	U	1	
+OO	)	3	-	14	I	1	R	1	
+OP	)	1	E	1	
+OR	 	3	)	4	-	1	C	1	E	1	T	3	
+OS	 	9	)	4	,	1	-	8	H	6	
+OT	C	1	
+OV	(	1	A	1	B	4	S	12	
+OX	)	2	
+Ob	a	5	e	2	j	1	s	1	
+Oc	e	13	
+Od	y	1	
+Oe	g	2	i	1	k	81	t	14	z	1	
+Of	 	17	f	2	s	8	
+Oj	u	1	
+Ol	l	11	y	1	
+Om	 	220	a	3	b	12	d	30	g	3	r	1	w	2	
+On	a	3	d	90	g	10	l	7	m	2	s	20	t	47	z	45	
+Oo	i	1	k	220	m	1	r	2	s	103	
+Op	 	199	d	3	e	7	g	9	l	1	n	4	p	1	
+Or	a	2	b	3	d	1	g	20	s	1	t	1	
+Os	a	2	c	2	s	3	
+Ot	o	1	
+Ou	a	1	d	3	z	1	
+Ov	e	79	
+P 	-	1	F	1	a	3	d	2	e	2	g	1	h	2	i	2	m	3	n	2	o	1	r	1	s	1	t	2	u	1	v	6	w	3	z	1	
+P"	p	1	
+P'	s	2	
+P)	 	9	,	3	.	3	
+P+	 	1	-	3	
+P,	 	5	
+P-	,	1	c	1	d	2	l	6	o	1	r	1	
+P.	 	1	D	1	E	1	
+P/	/	3	
+P7	 	7	)	10	-	1	_	1	
+P8	 	1	)	2	
+P:	 	1	
+P;	 	1	
+PA	 	1	)	2	
+PB	O	2	
+PC	)	1	O	1	
+PE	 	4	,	3	-	10	L	1	T	2	
+PI	 	2	)	1	G	1	
+PL	O	2	
+PM	S	1	
+PO	 	2	)	5	-	1	L	1	M	1	R	3	
+PP	 	1	)	1	-	1	E	17	
+PR	 	1	O	2	
+PS	)	4	,	1	.	1	C	2	O	1	
+PT	)	1	
+PV	C	1	V	3	
+P]	)	1	
+Pa	c	8	d	1	k	111	l	41	n	2	o	2	p	3	r	1686	s	14	t	3	u	7	v	2	í	1	
+Pe	k	3	l	1	n	1	r	20	t	4	
+Ph	i	1	
+Pi	c	1	e	16	n	1	r	1	t	5	
+Pl	a	8	u	5	
+Po	e	5	g	3	l	80	o	21	r	110	s	10	t	9	u	1	v	1	
+Pr	a	7	e	45	i	6	o	43	í	16	
+Ps	-	1	
+Pu	b	4	e	1	n	4	s	1	u	2	
+Py	r	3	
+P”	 	1	
+QL	S	1	
+Qa	'	1	e	3	t	2	
+Qu	a	3	i	2	
+R 	"	1	3	1	L	2	[	2	a	2	b	1	d	2	e	9	h	2	i	4	k	1	m	1	n	2	o	4	p	1	t	2	v	2	w	4	z	1	
+R&	D	2	
+R)	 	10	,	2	.	1	;	1	
+R,	 	5	
+R-	F	6	b	1	f	1	g	2	i	1	m	1	p	2	t	1	
+R.	D	1	
+R;	 	1	
+RA	 	1	"	2	)	3	,	1	-	1	N	1	S	3	T	3	
+RB	)	3	
+RC	)	1	H	1	
+RD	,	1	
+RE	 	1	)	3	,	1	.	1	A	2	G	3	I	2	L	1	M	1	N	1	P	4	S	4	
+RF	I	2	
+RG	E	2	
+RI	C	3	P	1	
+RK	V	1	
+RO	 	9	)	6	,	1	-	4	G	1	M	4	N	1	V	5	
+RS	A	1	F	4	P	2	
+RT	)	1	+	3	E	1	
+RW	)	1	,	1	A	2	
+Ra	a	1008	b	1	d	7	h	5	i	1	j	7	m	2	n	1	p	5	r	1	s	1	v	2	ú	2	
+Re	a	1	b	1	c	17	d	16	e	2	f	3	g	89	h	24	i	6	k	149	m	2	n	2	p	47	r	1	s	9	u	3	y	1	
+Rh	ô	8	
+Ri	b	1	c	84	g	2	i	1	j	1	n	3	s	1	v	9	
+Ro	b	7	d	4	e	166	h	1	m	36	n	1	s	3	t	4	u	1	z	2	
+Ru	d	1	g	1	i	2	s	294	t	4	
+Ry	z	1	
+Rz	e	1	
+Ré	g	1	
+S 	(	3	D	1	G	1	I	4	a	1	d	6	e	17	g	3	h	2	i	5	o	6	s	1	v	2	w	3	z	1	
+S&	D	9	
+S'	 	1	
+S)	 	14	)	1	,	7	-	1	.	1	
+S,	 	14	
+S-	 	2	E	2	N	1	a	1	b	2	f	1	g	1	l	4	m	1	n	1	p	6	s	8	t	4	
+S.	 	5	D	2	I	2	
+S/	E	1	
+S?	V	1	
+SA	 	2	)	7	,	2	D	7	F	1	O	1	P	5	R	2	
+SB	A	6	L	1	
+SC	 	1	,	1	H	1	O	3	
+SD	 	1	,	1	
+SE	 	5	)	2	,	2	-	1	.	2	A	2	C	36	G	1	S	2	T	1	
+SF	 	5	)	13	,	4	F	7	
+SG	P	10	
+SH	A	6	
+SI	R	1	S	11	
+SM	 	2	)	2	.	1	A	1	I	1	
+SO	 	3	)	5	-	2	E	1	
+SP	P	1	]	1	
+SR	 	1	)	1	E	3	
+SS	 	4	)	5	,	1	-	12	.	2	R	1	
+SU	R	1	
+SV	O	2	
+Sa	a	1	b	2	c	7	d	1	f	1	h	1	i	4	j	4	l	9	m	35	n	14	o	4	r	49	t	3	u	1	v	1	ï	3	
+Sc	a	2	h	377	o	1	
+Se	a	1	c	5	e	3	i	1	j	1	l	3	m	4	n	1	o	1	p	1	r	24	s	2	y	20	
+Sh	a	6	e	1	i	2	
+Si	b	2	c	2	e	1	l	4	m	2	n	34	t	2	
+Sk	y	2	
+Sl	a	1	e	6	i	3	o	16	
+Sm	a	35	
+So	b	1	c	86	e	16	f	1	l	6	m	32	n	3	r	1	s	1	t	4	u	1	v	17	
+Sp	a	75	e	7	i	2	o	6	r	9	
+Sr	i	39	
+St	a	146	e	26	i	46	o	5	r	59	u	6	
+Su	b	3	c	1	d	102	e	1	g	1	p	1	s	2	
+Sv	e	1	
+Sw	i	2	o	4	
+Sy	e	1	l	2	m	3	n	1	r	49	s	9	
+Sz	e	2	á	4	
+Sá	n	3	
+Sã	o	20	
+T 	g	1	i	1	v	1	w	1	
+T)	 	5	,	1	.	3	
+T+	A	3	R	3	
+T,	 	1	
+T-	g	3	k	1	m	1	n	1	p	6	s	2	v	1	
+T2	 	1	-	1	
+TA	 	4	)	4	,	3	-	5	.	2	C	1	R	2	
+TB	.	1	
+TC	)	1	
+TD	 	1	I	1	
+TE	 	1	-	1	G	1	M	1	N	9	P	1	R	13	X	4	
+TF	 	3	)	2	,	1	T	1	
+TG	B	1	
+TI	'	2	,	4	
+TN	I	1	
+TO	 	25	)	10	,	6	-	23	.	7	M	3	R	1	X	2	
+TP	-	1	
+TR	A	1	E	5	I	1	
+TS	 	1	)	3	,	1	-	1	
+TT	)	1	E	2	
+TW	)	1	,	1	-	3	
+Ta	b	1	d	2	h	2	i	1	j	6	l	4	m	16	n	4	r	1	t	3	v	1	
+Te	 	2	c	3	g	75	k	1	l	4	n	238	r	45	v	17	x	2	z	6	
+Th	a	3	e	9	o	2	é	1	
+Ti	a	1	b	2	e	2	j	42	m	9	t	1	
+To	c	36	e	45	i	5	m	20	p	35	r	4	t	222	u	1	
+Tr	a	37	e	1	i	3	o	3	u	1	
+Ts	j	40	o	1	
+Tu	d	1	n	36	r	56	s	4	
+Tw	e	18	i	3	
+Ty	m	9	p	3	r	1	
+Tz	a	2	
+Tő	k	2	
+U 	(	6	-	14	1	1	2	32	E	1	R	1	S	1	Z	1	a	48	b	64	c	2	d	46	e	238	f	1	g	25	h	133	i	90	k	30	l	9	m	92	n	30	o	57	p	6	r	2	s	16	t	58	u	10	v	57	w	49	z	56	
+U)	 	11	,	3	
+U,	 	92	
+U-	 	3	2	3	C	1	J	3	K	1	M	1	N	1	O	1	R	8	V	4	a	21	b	156	c	4	d	11	e	2	f	24	g	16	h	3	i	36	k	6	l	82	m	37	n	39	o	8	p	13	r	18	s	28	t	5	u	7	v	22	w	46	
+U.	 	102	A	2	D	5	E	2	H	3	I	8	K	1	M	1	O	2	T	1	V	1	W	2	Z	1	
+U/	A	1	I	4	
+U:	 	7	
+U;	 	3	
+U?	 	3	
+UC	-	1	
+UD	G	1	M	1	
+UE	 	1	-	1	/	5	
+UF	O	3	
+UH	F	1	
+UK	 	1	I	4	
+UN	D	1	E	2	H	4	I	4	M	1	R	2	
+UR	 	3	A	3	E	4	O	5	
+US	 	2	D	2	S	1	
+UT	S	1	
+UX	-	1	
+U]	.	1	
+Ud	o	2	
+Ui	t	90	
+Ul	r	1	
+Un	i	1643	
+Ur	b	1	q	4	
+Uw	 	6	
+V 	-	2	4	1	L	1	b	1	e	1	i	2	s	1	v	2	
+V(	2	1	
+V)	 	1	,	1	.	1	
+V.	 	1	
+V/	H	1	
+V0	/	3	
+VA	,	1	-	1	L	1	
+VB	 	8	'	4	)	13	,	1	-	1	.	2	
+VC	)	1	
+VD	 	1	B	27	
+VE	U	3	
+VF	 	4	)	6	
+VI	 	2	-	1	I	3	
+VK	 	5	
+VN	 	44	)	1	,	12	-	56	.	11	/	2	O	1	
+VO	 	20	)	10	,	12	-	7	.	4	O	1	
+VP	.	1	
+VR	B	3	
+VS	 	30	,	6	-	2	.	6	?	1	E	12	
+VV	 	3	/	1	D	1	
+VW	E	8	
+Va	a	5	d	1	k	2	l	11	n	108	s	3	
+Ve	e	22	i	36	l	13	n	11	r	761	t	1	
+Vi	a	6	c	1	e	7	g	3	j	3	l	1	n	10	s	21	t	5	v	1	
+Vl	a	7	u	1	
+Vo	e	12	l	111	o	514	r	25	s	1	t	1	
+Vr	a	3	e	1	i	19	o	6	
+Vó	ó	2	
+W)	 	1	.	1	
+W,	 	3	
+W-	r	1	t	1	v	1	
+WA	 	1	)	1	
+WD	D	10	
+WE	N	3	U	9	
+WH	O	5	
+WK	O	11	
+WN	F	1	
+WO	)	1	
+WT	I	1	O	71	
+Wa	a	104	g	1	l	16	n	82	r	8	s	8	t	292	v	1	ł	2	
+We	 	973	b	7	d	4	e	5	g	3	i	1	l	55	n	4	r	65	s	31	t	20	
+Wi	e	22	j	473	k	4	l	21	n	1	s	1	t	18	
+Wo	j	1	l	2	r	21	
+X 	-	2	d	1	e	1	v	1	
+X)	 	1	.	1	
+X,	 	3	
+X-	p	1	
+X.	H	1	
+XI	 	2	I	1	X	1	
+XM	L	3	
+XT	+	3	
+XX	 	1	I	1	
+Y-	h	1	
+YR	O	4	
+Ya	n	1	
+Yo	r	3	u	2	
+Yu	l	1	
+Z 	v	1	
+Z-	R	2	
+Za	h	3	k	44	l	5	t	1	
+Ze	 	84	e	59	g	1	k	8	l	19	m	2	s	1	v	5	
+Zi	c	1	e	1	j	105	n	1	t	1	
+Zo	 	77	'	5	a	129	d	20	i	1	l	5	n	20	r	1	u	11	w	12	
+Zr	í	1	
+Zs	o	1	
+Zu	c	1	i	101	l	6	
+Zv	e	11	
+Zw	a	5	e	25	i	8	
+[.	.	7	
+[1	3	1	4	1	
+[H	e	1	
+[R	S	1	
+[S	E	36	
+[a	c	1	
+[b	e	1	
+[e	n	1	
+[g	e	1	
+[h	e	2	
+[m	o	2	
+[o	m	1	n	1	p	1	
+[v	a	1	e	2	
+\l	 	3	
+] 	-	3	a	1	b	3	d	2	g	1	h	1	i	2	m	1	o	4	t	1	v	2	w	2	
+])	.	1	
+],	 	1	
+].	 	1	
+_T	A	1	
+_d	e	3	
+_p	a	3	
+a 	"	11	'	1	(	25	-	26	1	7	2	254	3	1	4	2	5	5	6	1	7	2	8	2	9	11	A	5	B	13	C	4	D	7	E	9	F	10	G	9	H	7	I	4	J	1	K	1	L	8	M	14	N	8	P	16	R	6	S	8	T	8	V	8	W	5	a	154	b	109	c	13	d	365	e	364	f	8	g	90	h	191	i	204	j	8	k	65	l	20	m	123	n	87	o	181	p	21	r	19	s	56	t	212	u	28	v	388	w	124	y	1	z	144	à	1	é	2	
+a!	 	1	D	1	
+a"	 	3	,	3	b	1	
+a'	 	13	.	2	i	1	s	528	
+a)	 	7	,	3	.	1	
+a,	 	401	'	1	
+a-	 	4	2	1	E	1	M	2	P	3	a	5	b	1	c	5	d	2	g	2	i	4	k	1	l	1	m	7	n	1	p	24	r	3	s	2	z	1	
+a.	 	8	)	1	A	4	B	5	C	1	D	71	E	15	G	1	H	30	I	44	J	2	K	1	M	15	N	4	O	10	S	2	T	10	U	1	V	8	W	27	Z	4	e	3	v	1	
+a:	 	13	N	1	
+a;	 	5	
+a?	 	10	N	1	W	2	
+aa	,	2	d	1417	f	77	g	1405	i	65	k	1260	l	2301	m	458	n	11105	p	6	r	13835	s	369	t	4321	
+ab	 	4	,	1	a	26	b	5	e	90	i	383	l	4	n	1	o	176	r	47	s	139	u	71	y	7	č	1	
+ac	.	1	a	36	c	124	e	82	h	2379	i	150	k	25	o	4	q	63	r	110	t	1623	u	53	y	5	z	1	é	1	ă	1	
+ad	 	1334	)	1	,	134	-	5	.	71	:	7	;	3	?	2	a	173	b	3	d	97	e	1593	g	11	h	8	i	272	j	1	k	7	l	26	m	130	o	14	p	52	r	352	s	25	t	18	u	49	v	134	w	87	z	8	
+ae	 	3	,	1	d	3	g	1	l	1	n	1	r	1	s	4	
+af	 	415	!	1	,	27	-	1	.	21	;	2	?	1	b	22	c	1	d	84	e	52	f	114	g	502	h	340	i	85	k	55	l	45	m	6	n	22	o	29	p	6	r	60	s	172	t	61	v	233	w	74	z	108	
+ag	 	3072	!	1	'	1	)	1	,	116	-	55	.	78	/	1	:	13	?	5	a	68	b	7	d	189	e	2135	f	3	g	58	h	13	i	374	j	4	k	3	l	25	m	28	n	46	o	24	p	7	r	82	s	132	t	175	u	1	v	17	w	2	y	1	z	5	ó	1	
+ah	 	9	a	5	e	2	i	5	m	2	n	10	o	1	r	14	u	1	
+ai	 	7	,	3	.	2	b	2	d	13	e	32	f	1	i	2	l	119	m	11	n	31	o	3	r	849	s	9	t	16	v	2	w	1	
+aj	a	17	d	1	e	53	i	1	j	4	o	7	
+ak	 	953	"	1	)	1	,	45	-	1	.	39	:	2	;	2	?	1	a	15	b	25	c	4	e	2462	h	7	i	181	j	8	k	856	l	3	m	3	o	40	p	5	r	2	s	63	t	905	v	4	w	2	z	7	
+al	 	4919	'	2	)	4	,	110	-	43	.	69	:	4	?	2	a	149	b	79	c	6	d	579	e	3549	f	47	g	280	h	5	i	1604	k	43	l	2699	m	37	n	7	o	203	p	8	r	21	s	3801	t	473	u	269	v	145	w	3	y	108	z	5	
+am	 	210	)	1	,	19	-	1	.	10	?	1	a	65	b	248	d	62	e	3275	g	1	h	152	i	156	k	1	l	1	m	754	o	16	p	214	s	76	t	3	u	1	v	1	w	7	ü	3	
+an	 	35983	"	3	'	4	)	5	,	366	-	20	.	449	:	16	;	11	?	15	a	385	b	323	c	1736	d	9919	e	500	f	1	g	5432	h	146	i	1281	j	46	k	1406	l	72	m	113	n	910	o	36	p	334	q	1	r	7	s	1496	t	3061	u	155	v	352	w	207	y	1	z	416	ç	1	ţ	1	
+ao	-	1	e	4	l	2	o	2	s	5	t	2	u	11	
+ap	 	763	!	1	'	1	)	1	,	73	.	58	:	5	;	1	B	1	a	243	b	2	e	102	h	3	i	121	j	4	l	4	o	10	p	1617	r	41	s	128	t	35	u	3	v	1	w	2	”	2	
+aq	u	8	
+ar	 	6581	!	2	"	3	)	2	,	83	-	2	.	73	:	2	?	5	a	973	b	1056	c	37	d	2304	e	1208	f	12	g	91	h	178	i	2015	k	937	l	1961	m	709	n	236	o	1473	p	7	r	212	s	469	t	1528	u	96	v	550	w	5	y	10	z	14	í	1	
+as	 	611	)	2	,	49	.	46	:	2	;	3	?	2	a	3	b	11	c	14	d	10	e	296	g	19	h	35	i	423	j	31	k	27	l	10	m	37	o	6	p	241	s	746	t	1702	u	5	v	5	y	5	á	5	
+at	 	15522	!	2	'	1	)	25	,	280	-	18	.	180	:	7	;	3	?	6	a	64	b	52	c	8	d	4	e	4324	f	18	g	30	h	19	i	6885	j	3	k	5	l	5	m	29	n	5	o	235	p	2	r	852	s	1262	t	448	u	370	v	121	y	2	z	4	
+au	 	513	,	48	-	1	.	59	c	97	d	83	f	3	g	14	k	5	l	16	m	4	n	4	p	10	r	36	s	217	t	477	v	2	w	184	z	6	
+av	 	2	a	18	e	293	i	206	l	3	o	34	r	11	
+aw	 	4	a	12	e	6	
+ax	e	1	i	56	v	1	
+ay	 	6	,	2	.	1	a	1	d	3	e	3	r	1	y	3	
+az	a	18	e	23	i	20	o	4	p	1	z	3	
+aß	,	2	
+aë	l	37	
+aí	s	1	
+aï	d	4	e	17	n	72	r	3	s	1	t	2	
+aú	l	2	
+ał	ę	2	
+ań	s	1	
+aţ	i	1	
+b 	-	5	G	2	P	2	T	1	a	14	b	18	d	62	e	36	f	1	g	98	h	33	i	194	j	2	k	5	m	51	n	9	o	27	p	2	r	1	s	7	t	25	u	6	v	228	w	4	z	11	é	1	
+b"	 	1	
+b'	 	1	
+b)	 	4	,	1	
+b,	 	12	w	1	
+b-	F	1	b	8	s	1	t	4	v	1	w	1	
+b.	 	1	H	2	I	3	V	1	v	1	
+b:	 	1	
+bR	e	3	
+ba	 	8	,	1	a	800	b	3	c	48	d	6	g	1	i	10	j	1	k	25	l	129	m	5	n	889	r	490	s	522	t	367	y	1	z	5	
+bb	-	1	a	4	e	2672	i	6	p	138	y	75	
+bc	h	3	o	6	
+bd	 	4	.	1	a	1	u	1	
+be	a	48	b	12	c	1	d	1018	e	535	f	4	g	1861	h	1303	i	624	j	5	k	233	l	4876	m	64	n	4144	o	432	p	823	r	1426	s	3689	t	3529	u	240	v	1634	w	438	z	407	ë	42	ï	32	
+bi	 	2	a	2	d	1	e	1866	g	5	j	3439	l	550	n	737	o	105	s	44	t	190	z	1	ë	112	
+bj	e	56	
+bl	a	31	e	800	i	1101	o	88	u	2	y	1	
+bn	e	2	i	2	o	1	p	5	
+bo	 	5	a	4	c	1	d	188	e	371	g	3	k	2	l	24	m	8	n	274	o	130	r	313	s	259	t	17	u	799	v	201	x	1	z	3	
+bp	 	101	)	17	,	13	-	1	.	6	a	1	r	5	s	5	
+br	 	5	a	410	e	1258	i	88	o	251	u	1050	y	1	
+bs	 	4	c	1	d	5	e	9	i	109	o	126	t	60	u	11	
+bt	 	128	,	4	.	6	e	34	i	1	s	1	w	8	
+bu	c	3	d	96	e	1	f	1	i	641	k	6	l	10	n	22	r	1043	s	21	t	10	u	119	
+by	 	4	'	2	,	1	-	1	a	3	b	1	d	3	e	36	g	2	i	44	l	29	r	2	s	1	t	5	
+bz	u	2	
+bá	n	2	
+bé	t	1	
+bü	h	1	t	1	
+bč	í	1	
+c 	G	3	R	1	a	3	d	1	e	1	f	1	h	2	i	1	m	1	o	1	t	1	v	1	
+c'	s	2	
+c,	 	3	
+c-	d	1	o	1	
+c.	 	4	,	1	D	1	E	1	I	1	d	3	q	1	
+cA	v	1	
+cC	a	1	
+ca	 	74	'	2	)	2	,	9	-	1	.	4	a	23	b	8	d	35	g	2	i	7	l	47	m	31	n	21	o	1	p	104	r	26	s	7	t	514	u	1	ï	1	
+cc	a	1	e	253	h	1	i	14	o	12	r	5	u	3	
+ce	 	103	"	2	'	1	)	2	,	16	-	1	.	8	;	1	a	15	b	7	d	437	e	248	k	6	l	34	m	42	n	1173	p	139	r	190	s	562	t	6	u	15	v	38	
+ch	 	1914	!	2	"	2	'	2	,	41	-	7	.	15	:	1	a	2652	e	4082	g	1	i	1307	l	3	m	23	n	387	o	472	r	609	s	3	t	8888	u	464	v	1	w	6	z	49	é	6	
+ci	 	43	)	1	,	8	.	1	a	1098	d	16	e	761	f	225	j	80	l	58	n	9	o	6	p	212	r	36	s	14	t	183	u	1	v	46	ë	1097	ó	1	
+cj	e	1	
+ck	 	13	'	7	,	4	e	11	h	2	l	1	o	1	s	10	x	4	y	2	
+cl	a	105	e	89	i	22	o	2	u	248	
+co	 	82	'	69	,	2	-	13	.	1	:	1	a	11	b	17	c	5	d	102	f	37	g	12	h	355	k	5	l	403	m	1125	n	4313	o	2	p	8	r	244	s	30	u	11	v	5	w	2	ë	1	ö	224	
+cq	u	63	
+cr	a	544	e	541	i	987	o	171	u	171	è	3	
+cs	 	2	e	4	t	1	y	1	á	3	
+ct	 	603	"	3	'	9	)	1	,	48	-	4	.	37	:	4	?	1	a	36	b	108	c	5	e	1188	f	1	g	3	h	1	i	2300	k	2	l	4	m	2	o	857	p	10	r	142	s	9	u	526	v	6	
+cu	,	4	a	4	b	1	c	1	e	4	i	3	l	545	m	124	n	13	p	1	r	346	s	181	t	26	u	7	ü	1	
+cv	 	1	e	1	
+cw	i	1	
+cy	 	7	.	1	b	15	c	44	k	1	n	4	v	1	
+cz	 	3	,	3	o	2	p	1	y	2	
+cé	s	1	
+cí	a	3	
+cú	n	1	
+că	 	1	u	5	
+d 	"	10	'	7	(	90	-	165	.	1	1	14	2	32	3	8	4	1	5	4	6	2	8	10	9	2	A	14	B	17	C	11	D	6	E	44	F	4	G	8	H	4	I	5	J	5	K	75	L	6	M	4	N	3	O	1	P	3	R	3	S	10	T	3	U	1	V	1	W	2	[	5	a	637	b	633	c	59	d	1662	e	1903	f	43	g	516	h	754	i	1442	j	44	k	325	l	90	m	984	n	405	o	1895	p	84	r	72	s	204	t	1187	u	154	v	3001	w	922	z	789	Á	1	é	1	ü	1	
+d!	 	1	
+d"	 	8	,	6	.	12	s	1	
+d'	 	13	,	1	.	3	O	1	
+d(	e	1	
+d)	 	17	(	1	,	4	.	1	;	1	
+d,	 	2192	"	1	
+d-	 	41	A	53	D	1	E	10	I	6	K	11	O	3	S	73	W	1	b	3	c	2	d	1	h	6	i	1	n	1	p	1	r	1	s	2	z	1	
+d.	 	18	"	3	2	1	A	73	B	39	C	9	D	480	E	97	F	6	G	21	H	249	I	378	J	7	K	6	L	17	M	81	N	29	O	98	P	8	R	9	S	17	T	84	U	13	V	60	W	177	Z	38	h	1	v	1	w	1	
+d:	 	86	
+d;	 	51	d	1	
+d?	 	49	A	1	C	1	D	1	H	8	K	1	N	1	O	1	P	1	T	1	V	1	W	5	
+dO	p	1	
+dR	 	8	)	2	
+d]	,	1	
+da	 	221	"	3	'	5	,	30	.	13	:	1	;	1	a	2405	b	8	c	347	d	66	g	571	i	17	k	5	l	47	m	260	n	1805	p	12	r	143	s	12	t	11896	v	7	ń	1	
+db	a	172	e	49	o	507	r	37	u	1	
+dc	a	2	o	1	r	9	
+dd	 	1	a	27	e	1663	i	30	o	17	r	1	u	11	y	1	
+de	 	50388	"	5	'	2	)	3	,	199	-	14	.	92	:	44	;	4	?	5	a	27	b	403	c	98	d	254	e	1285	f	221	g	165	i	18	k	47	l	5737	m	708	n	14575	o	17	p	50	q	78	r	12055	s	259	t	100	u	52	v	82	w	66	x	7	z	2805	”	1	
+df	a	1	o	6	
+dg	a	4	e	260	r	12	
+dh	.	1	a	205	e	558	i	13	o	21	r	1	u	8	
+di	 	3	,	2	-	3	.	1	a	463	c	250	d	42	e	7767	f	90	g	4012	j	12	k	6	l	6	m	78	n	2052	o	140	p	58	r	193	s	507	t	2924	u	29	v	232	ë	7	ć	1	č	2	
+dj	a	1	e	16	u	1	
+dk	a	7	e	151	l	1	o	50	r	14	u	6	w	4	
+dl	a	1	e	11	i	3	o	27	
+dm	a	76	e	8	i	131	o	3	u	1	
+dn	a	2	e	7	i	9	o	1	
+do	 	30	)	1	,	4	-	2	.	2	?	3	b	1	c	140	d	22	e	2421	f	1	g	4	h	1	k	2	l	44	m	133	n	47	o	2701	p	10	r	55	s	41	t	1	u	41	v	3	w	9	x	6	
+dp	a	8	e	18	l	55	o	1	r	15	u	232	
+dr	a	1522	e	228	i	978	o	85	u	715	á	3	é	1	
+ds	 	1153	"	3	)	1	,	41	-	80	.	27	?	2	D	1	a	28	b	122	c	152	d	72	e	814	f	48	g	75	h	5	i	64	k	29	l	68	m	248	n	74	o	256	p	106	r	78	s	86	t	2213	u	20	v	48	w	19	y	1	z	27	
+dt	 	2493	)	2	,	110	.	150	:	7	;	4	?	3	a	1	e	26	h	1	i	1	o	17	s	3	v	3	w	1	”	2	
+du	 	5	a	4	b	59	c	892	e	57	g	1	i	883	l	48	m	53	n	4	p	15	r	582	s	640	u	470	w	52	y	1	
+dv	a	6	e	69	i	124	l	5	o	24	r	3	
+dw	a	20	e	274	i	201	o	29	
+dy	 	16	,	4	a	1	n	37	s	1	
+dz	a	523	i	2	j	46	o	1	
+dá	m	1	á	2	
+dé	 	2	
+dí	t	1	
+dö	l	1	
+d”	 	5	)	1	,	1	.	3	
+e 	"	45	'	66	(	115	-	142	.	2	0	1	1	37	2	125	3	14	4	6	5	19	6	9	7	13	8	14	9	10	A	272	B	223	C	2067	D	123	E	4907	F	150	G	248	H	112	I	237	J	37	K	43	L	62	M	139	N	151	O	145	P	223	Q	1	R	1307	S	404	T	88	U	1593	V	691	W	153	Z	108	[	2	a	4703	b	9300	c	3123	d	6282	e	7188	f	1392	g	4818	h	4924	i	5471	j	589	k	3484	l	4327	m	6799	n	2815	o	7178	p	4145	q	9	r	4360	s	6173	t	5120	u	1323	v	11851	w	4618	x	2	z	2955	à	1	é	10	ü	4	
+e!	 	6	.	1	N	1	
+e"	 	21	,	5	.	12	b	2	v	1	
+e'	 	27	,	9	-	1	.	2	:	1	?	1	
+e)	 	22	,	4	.	7	
+e+	-	1	
+e,	 	2109	"	1	d	1	h	1	
+e-	 	83	,	3	A	10	G	4	I	1	J	1	K	1	P	5	S	1	T	5	U	41	Z	3	a	4	b	1	c	4	d	1	e	56	f	1	g	2	h	7	i	34	m	5	o	8	p	1	s	6	u	19	v	1	z	1	
+e.	 	22	"	3	.	1	2	1	A	36	B	15	C	16	D	259	E	59	F	1	G	7	H	140	I	208	J	5	K	5	L	7	M	58	N	15	O	35	P	10	R	4	S	10	T	45	U	8	V	29	W	93	Z	33	a	1	h	38	n	2	”	1	
+e/	 	1	a	2	h	6	m	1	
+e:	 	122	
+e;	 	28	d	1	
+e?	 	32	A	1	C	1	H	1	M	1	T	1	V	1	W	2	
+eD	e	1	
+eH	e	1	
+e]	 	1	
+ea	 	14	,	6	.	2	a	35	b	1	c	277	d	5	f	2	g	81	i	83	k	3	l	203	m	45	n	157	p	1	r	31	s	9	t	108	u	861	v	9	
+eb	 	817	,	11	.	3	:	1	a	524	b	2604	e	722	i	1247	l	82	o	227	p	1	r	1400	s	11	t	135	u	31	z	2	
+ec	 	4	,	1	a	17	c	1	e	231	h	3771	i	415	k	6	l	43	o	2005	r	101	s	4	t	2548	u	70	y	20	z	1	
+ed	 	1566	"	2	'	1	)	2	,	94	-	3	.	123	;	1	?	4	a	507	b	51	d	60	e	5502	g	87	h	4	i	1668	j	1	k	180	l	4	m	3	o	216	r	901	s	772	t	169	u	569	v	11	w	31	y	1	z	37	
+ee	 	1175	!	2	'	6	,	29	-	4	.	16	:	4	;	1	?	1	b	34	d	1132	f	2380	g	158	h	31	j	1	k	355	l	3792	m	889	n	16749	p	71	r	7533	s	1933	t	283	u	43	v	6	w	9	ë	62	
+ef	 	764	"	1	'	3	)	1	,	37	.	16	1	2	5	1	:	1	=	3	?	2	a	25	b	13	c	8	d	73	e	347	f	1451	g	2	h	1	i	189	j	1	k	2	l	7	m	1	n	3	o	93	p	14	r	13	s	26	t	3002	u	11	v	24	w	2	č	7	
+eg	 	510	"	1	)	1	,	19	-	7	.	24	:	1	?	2	a	1024	b	16	d	866	e	5764	f	1	g	920	h	2	i	2324	k	4	l	111	m	4	n	28	o	166	p	1	r	1675	s	4	t	201	u	114	v	42	w	4	
+eh	 	2	,	1	a	455	e	687	i	9	m	5	n	25	o	902	r	3	u	26	
+ei	 	438	,	70	-	8	.	36	:	7	?	1	a	5	b	5	c	2	d	7885	e	105	f	2	g	693	h	8	i	2	j	5	k	428	l	1064	m	29	n	1366	o	9	p	64	r	27	s	441	t	2866	v	1	w	3	z	57	
+ej	 	1	a	6	d	1	e	3	m	1	u	19	ó	1	
+ek	 	1259	"	1	'	2	,	99	-	6	.	49	:	1	?	2	a	69	b	2	e	3816	g	2	h	26	i	85	j	6	k	1082	l	57	m	2	n	7	o	1107	p	5	r	233	s	612	t	372	u	4	v	1	w	70	”	2	
+el	 	6142	!	3	"	2	'	3	)	2	,	212	-	47	.	171	:	8	;	11	?	10	a	3258	b	109	c	7	d	3365	e	8362	f	817	g	406	h	102	i	9669	j	5	k	855	l	3027	m	157	n	150	o	694	p	409	r	27	s	1875	t	609	u	110	v	179	w	53	z	112	
+em	 	868	!	1	"	2	)	3	,	62	-	1	.	42	:	3	;	3	?	1	a	938	b	130	c	1	d	696	e	5607	g	9	i	985	k	2	l	10	m	657	n	2	o	690	p	56	r	17	s	9	t	167	u	1	v	6	
+en	 	101612	!	32	"	68	'	48	)	82	,	7344	-	113	.	8317	/	28	:	332	;	135	?	259	A	2	B	4	C	1	D	2	E	1	G	1	I	1	K	1	M	1	O	2	P	1	R	1	S	2	V	3	]	3	a	938	b	399	c	101	d	5862	e	2416	f	11	g	1638	h	776	i	2525	j	5	k	1901	l	1515	m	136	n	476	o	1311	p	85	q	5	r	399	s	5732	t	8137	u	275	v	513	w	1272	z	374	è	6	é	1	ė	1	”	9	
+eo	 	17	)	2	,	4	-	9	.	2	;	1	b	1	c	2	d	2	e	31	f	2	g	49	i	4	l	53	m	12	n	12	o	437	p	28	r	145	s	11	t	1	u	5	v	16	
+ep	 	290	"	1	)	1	,	12	-	3	.	6	/	1	:	2	a	1120	b	1	d	1	e	811	g	18	h	2	i	42	j	3	l	147	o	61	p	108	r	308	s	190	t	250	u	123	v	2	w	1	
+eq	u	191	
+er	 	17421	!	2	"	9	'	16	)	6	,	677	-	20	.	210	/	13	:	14	;	6	?	11	I	1	M	1	a	1807	b	1598	c	133	d	5451	e	11026	f	76	g	2058	h	1829	i	5219	j	95	k	5443	l	1809	m	1783	n	2749	o	1257	p	923	r	599	s	8819	t	2051	u	437	v	1976	w	1838	y	1	z	1867	è	4	”	2	
+es	 	4569	!	1	"	5	'	2	)	12	,	343	-	1	.	271	/	3	:	6	;	9	?	3	a	40	b	45	c	1466	d	18	e	3770	f	1	g	21	h	9	i	521	j	2	k	67	l	868	m	91	n	22	o	334	p	733	r	2	s	731	t	5608	u	345	v	63	w	1	y	81	z	10	”	1	
+et	 	34020	!	1	"	1	'	2	)	2	,	198	-	146	.	184	:	6	;	4	?	10	D	3	W	1	a	692	b	60	c	14	d	6	e	5205	f	2	g	638	h	112	i	260	j	34	k	11	l	10	m	7	n	38	o	107	p	4	r	2200	s	500	t	909	u	46	v	7	w	147	y	1	z	81	”	1	
+eu	 	105	,	32	-	33	.	9	/	3	;	2	a	15	b	75	c	8	d	12	e	41	f	6	g	265	h	3	i	28	k	46	l	4	m	8	n	1196	o	10	p	12	r	1736	s	123	t	60	v	41	w	1322	z	207	
+ev	 	17	,	4	-	1	a	1259	e	5740	i	986	l	8	o	2226	r	568	s	1	u	28	
+ew	 	15	'	1	,	2	a	171	e	918	i	237	o	298	r	2	s	1	t	2	u	102	
+ex	 	51	)	2	,	9	-	6	.	3	?	1	a	16	c	65	e	33	i	105	o	1	p	163	t	649	v	1	
+ey	 	7	,	2	b	10	c	20	e	1	n	1	o	1	s	3	
+ez	 	8	,	1	-	12	a	248	b	1	e	4425	i	1285	k	1	o	454	u	125	w	40	
+eß	 	9	,	4	?	1	
+eë	b	1	e	74	f	2	i	60	l	38	m	1	n	402	r	166	t	4	v	22	x	9	
+eï	d	4	l	1	m	22	n	221	s	3	
+eü	n	1	
+eş	-	1	
+eš	-	1	
+e”	 	1	.	1	
+f 	"	15	'	6	(	6	-	16	1	16	2	12	3	11	4	4	5	2	6	1	7	2	8	2	9	2	A	2	B	4	C	6	D	2	E	17	F	2	G	3	H	3	I	6	J	4	L	6	M	4	N	3	O	2	P	5	R	4	S	1	a	228	b	146	c	16	d	422	e	252	f	11	g	99	h	261	i	198	j	36	k	53	l	40	m	151	n	102	o	179	p	39	r	31	s	77	t	261	u	32	v	308	w	153	z	127	
+f!	 	1	
+f"	 	1	
+f'	 	2	,	2	
+f)	 	1	.	1	
+f,	 	107	
+f-	c	1	
+f.	 	10	"	2	A	3	B	2	D	12	E	2	G	2	H	11	I	13	M	1	N	5	R	1	T	1	V	2	W	7	Z	3	
+f1	"	2	
+f5	"	1	
+f:	 	1	
+f;	 	2	
+f=	-	3	
+f?	 	3	Z	1	
+fa	 	2	a	16	b	45	c	170	i	78	l	22	m	38	n	11	r	15	s	98	t	39	u	5	v	3	x	1	
+fb	a	12	e	19	o	14	r	8	
+fc	e	1	i	1	o	7	r	1	u	1	y	1	
+fd	 	159	,	17	.	24	;	1	a	5	d	14	e	324	g	1	h	2	i	4	k	8	l	1	o	15	p	5	r	25	s	69	t	2	v	5	w	6	z	30	
+fe	 	4	+	1	b	28	c	454	d	20	e	35	f	4	i	459	l	251	m	3	n	1222	o	2	r	390	s	48	t	1	u	13	w	1	
+ff	 	7	a	2	e	1552	i	451	l	3	s	1	
+fg	a	23	e	493	h	8	i	2	l	1	o	20	r	4	
+fh	a	334	e	2	o	11	
+fi	 	5	,	1	.	1	a	9	c	573	d	5	e	235	g	6	j	15	l	31	n	1700	o	1	r	4	s	85	t	62	x	1	ë	9	
+fj	a	5	e	2	
+fk	a	8	e	3	n	1	o	51	w	7	
+fl	a	13	e	121	i	126	o	21	u	7	y	5	
+fm	a	6	e	1	u	1	
+fn	a	6	e	18	i	1	u	1	
+fo	b	5	c	18	e	3	k	3	l	28	m	6	n	350	o	21	p	9	r	718	s	10	t	3	u	91	
+fp	e	1	i	1	r	45	u	3	
+fr	a	338	e	76	i	94	o	114	u	21	
+fs	 	206	,	1	.	1	a	1	b	1	c	61	d	1	e	4	g	2	i	1	k	7	l	115	m	8	o	2	p	50	s	1	t	130	u	2	v	7	w	1	
+ft	 	2638	"	1	)	2	,	167	.	122	:	18	;	3	?	1	]	1	a	1	e	455	i	84	o	5	p	1	r	4	u	1	w	2	
+fu	d	1	i	2	l	1	m	2	n	384	r	10	s	11	t	1	u	1	
+fv	a	218	e	31	o	4	r	16	
+fw	a	113	e	58	i	37	
+fy	l	1	s	24	t	5	
+fz	a	4	e	10	i	9	o	80	u	1	w	6	
+fč	o	7	
+g 	"	10	'	7	(	124	-	90	.	2	0	2	1	15	2	45	3	13	4	1	5	2	6	4	A	6	B	6	C	3	D	4	E	10	F	2	G	5	H	3	I	10	J	1	L	1	M	1	O	2	P	1	S	13	T	2	V	7	W	2	X	1	Z	1	[	5	a	577	b	681	c	34	d	1349	e	1641	f	78	g	665	h	839	i	1401	j	83	k	306	l	143	m	902	n	593	o	1579	p	92	r	61	s	413	t	1889	u	152	v	7372	w	799	x	1	z	774	è	1	é	13	
+g!	 	1	D	1	T	1	
+g"	 	39	)	1	,	10	.	10	?	1	
+g'	 	16	,	6	-	1	.	3	
+g)	 	16	,	5	.	7	:	1	
+g,	 	1180	
+g-	 	10	2	1	A	4	B	2	C	6	D	6	F	11	G	4	J	3	K	1	L	2	M	5	P	3	S	6	V	1	W	2	Z	1	a	1	i	2	o	1	p	2	r	1	t	1	
+g.	 	12	.	1	A	36	B	11	C	3	D	206	E	46	G	9	H	114	I	136	J	2	K	3	L	8	M	42	N	16	O	44	P	2	R	7	S	4	T	23	U	4	V	35	W	61	Y	1	Z	24	h	3	r	1	
+g/	V	1	
+g:	 	49	I	1	M	1	
+g;	 	25	
+g?	 	29	"	1	A	1	H	1	I	1	L	1	M	2	
+gB	e	2	
+gW	a	1	
+ga	 	105	'	141	,	18	-	13	.	1	a	1707	b	3	c	4	d	151	e	1	f	17	g	24	l	213	m	2	n	1267	r	500	s	77	t	248	u	1	v	150	y	1	z	1	
+gb	a	31	e	93	i	1	l	3	o	3	r	9	u	63	
+gc	e	1	l	4	o	1	r	1	
+gd	 	1207	"	5	'	1	,	191	.	216	:	10	;	5	?	6	]	1	a	4	b	2	c	2	e	574	f	2	g	2	h	206	i	2	m	1	o	4	p	3	r	42	s	1	u	21	w	26	z	3	
+ge	 	3292	"	1	'	2	)	3	,	44	-	3	.	6	a	191	b	3189	c	302	d	1003	e	1270	f	110	g	656	h	711	i	6	j	10	k	628	l	5792	m	1672	n	17749	o	200	p	481	r	3247	s	2410	t	592	u	19	v	4013	w	958	z	1672	ë	81	ï	218	ü	1	
+gf	a	4	e	1	r	2	u	2	
+gg	a	5	e	1025	i	234	l	4	o	2	r	8	
+gh	 	3	-	7	a	19	e	1401	i	9	o	37	r	1	t	9	
+gi	 	8	a	10	c	13	d	30	e	1072	f	28	g	18	j	6	m	50	n	2419	o	635	p	1	s	732	t	152	u	6	ë	64	
+gj	a	4	e	2	
+gk	a	3	e	31	i	1	o	13	r	5	u	2	w	2	
+gl	a	22	e	128	i	23	o	66	u	5	
+gm	a	114	e	24	i	3	o	1	
+gn	 	1	a	98	e	117	i	26	o	26	
+go	 	17	'	13	,	1	.	1	d	9	e	1228	g	1	l	24	n	41	o	13	p	22	r	96	s	11	t	1	u	38	v	134	y	1	ï	1	
+gp	a	5	e	1	l	5	o	2	r	9	u	34	
+gr	a	1557	e	802	i	1649	o	3917	u	6	é	1	
+gs	 	125	'	1	,	9	-	40	.	9	;	1	a	97	b	294	c	195	d	68	e	38	f	47	g	73	h	44	i	83	j	151	k	93	l	66	m	200	n	41	o	99	p	474	r	95	s	185	t	454	u	40	v	190	w	7	y	4	z	22	
+gt	 	649	)	1	,	97	.	115	:	16	;	5	?	2	]	1	a	3	e	81	i	27	o	10	r	51	u	27	
+gu	e	9	i	2	l	83	m	56	n	134	r	8	s	8	t	1	ï	3	
+gv	a	11	e	55	i	7	l	9	o	7	r	1	u	31	
+gw	a	25	e	53	i	4	
+gy	 	2	m	1	p	46	ö	1	
+gz	a	25	e	4	i	2	u	1	
+gé	 	2	m	1	v	1	é	1	
+gó	n	1	
+g”	.	1	
+h 	-	3	A	1	B	1	C	2	D	2	E	4	K	1	L	2	M	1	S	3	V	1	Z	1	a	123	b	252	c	12	d	96	e	152	f	5	g	80	h	93	i	146	j	3	k	64	l	18	m	129	n	117	o	139	p	26	r	21	s	45	t	127	u	25	v	143	w	48	z	59	
+h!	 	1	I	1	
+h"	)	1	,	1	
+h'	,	1	.	1	
+h,	 	45	
+h-	2	1	B	3	H	1	P	2	b	1	l	4	t	5	
+h.	A	2	D	1	E	1	G	1	H	4	I	2	O	3	V	1	W	1	
+h:	 	1	
+ha	 	5	-	3	.	1	a	903	b	7	c	3	d	485	e	1	f	125	g	11	i	9	k	30	l	322	m	31	n	2529	o	6	p	1851	r	315	s	2	t	56	u	19	v	213	z	9	
+hd	e	1	r	1	
+he	 	2496	'	1	)	1	,	62	.	1	:	1	a	1	b	3564	c	78	d	1143	e	3831	f	209	g	3	i	4011	k	10	l	852	m	166	n	641	o	23	p	160	q	2	r	1878	s	362	t	20113	u	111	v	41	z	16	
+hg	e	1	
+hi	 	6	,	1	.	1	a	7	c	6	e	981	f	2	g	10	j	344	k	407	l	542	m	33	n	133	p	28	r	21	s	58	t	14	v	2	z	1	ë	5	ş	1	
+hl	y	3	
+hm	a	9	e	6	i	14	o	2	
+hn	 	22	,	14	-	5	.	1	:	1	e	5	i	182	o	206	
+ho	 	11	,	8	.	1	c	9	d	99	e	991	f	26	g	429	k	7	l	90	m	25	n	107	o	1145	p	75	r	235	s	1	t	35	u	1702	v	8	w	6	
+hr	 	1	,	1	.	1	a	38	e	88	i	521	o	22	
+hs	 	1	t	2	
+ht	 	2648	!	3	"	3	'	1	)	1	,	167	-	9	.	175	:	11	;	4	?	5	]	1	a	13	b	104	c	1	d	2	e	3093	f	1	g	13	h	53	i	1014	k	25	l	450	m	21	n	15	o	139	p	7	r	6	s	673	t	16	v	250	w	26	z	11	
+hu	 	1	b	1	d	1	f	1	i	573	l	732	m	105	n	1261	r	1	s	1	t	1	w	62	
+hv	o	1	
+hw	a	5	e	1	o	2	
+hy	 	3	b	1	d	1	g	6	l	1	p	23	s	2	
+hz	-	7	.	2	e	49	
+hé	 	2	r	1	s	4	t	3	
+hô	n	8	
+i 	"	2	(	2	-	16	1	23	2	106	D	1	K	2	L	33	M	2	N	11	R	10	T	2	V	1	a	30	b	25	c	4	d	71	e	142	f	1	g	26	h	26	i	59	j	4	k	12	l	5	m	11	n	13	o	40	p	4	r	5	s	8	t	48	u	7	v	71	w	29	z	46	
+i'	s	4	
+i)	 	4	)	6	
+i,	 	150	
+i-	 	8	A	4	E	3	M	1	a	1	b	2	c	4	e	2	l	2	m	2	o	1	p	1	u	3	
+i.	 	3	A	3	B	1	C	1	D	14	E	5	H	15	I	14	L	1	M	1	N	2	O	3	T	3	W	4	Z	1	e	1	
+i/	L	1	
+i:	 	8	
+i?	 	1	
+iL	e	3	
+iT	u	1	
+ia	 	483	!	1	'	1	)	1	,	44	-	5	.	32	:	2	;	1	?	4	a	373	b	13	d	1	g	6	i	13	l	1200	m	1	n	70	p	1	r	24	s	40	t	284	u	1	v	1	w	5	
+ib	.	1	a	3	b	2	e	168	i	183	l	2	o	2	r	2	u	17	
+ic	 	6	,	2	a	513	c	1	e	274	h	4017	i	475	k	7	o	204	r	59	s	2	t	152	u	86	y	4	z	2	ă	5	
+id	 	4258	"	9	'	6	)	6	,	533	-	90	.	384	:	12	;	10	?	14	a	222	d	1522	e	2107	g	1	h	46	i	1168	j	1	k	2	m	33	o	12	r	7	s	3266	t	102	u	61	v	1	w	5	z	45	”	3	
+ie	 	15118	!	3	"	20	'	15	)	14	,	1056	-	186	.	789	/	9	:	53	;	19	?	17	H	1	a	37	b	476	c	65	d	2146	e	528	f	879	g	153	h	21	i	1	j	2	k	1687	l	506	m	260	n	3642	o	28	p	345	q	2	r	2376	s	2353	t	4618	u	1947	v	1450	w	29	z	275	ë	337	
+if	 	1	a	42	e	43	f	10	i	520	o	44	t	197	u	4	
+ig	 	2208	!	1	"	3	'	1	)	2	,	107	.	56	:	7	;	2	?	4	a	131	b	17	d	917	e	4240	g	155	h	1370	i	860	j	1	l	4	m	5	n	146	o	15	r	253	s	65	t	239	u	10	v	2	w	22	
+ih	a	7	i	2	o	1	
+ii	 	1	)	6	i	3	k	1	n	8	
+ij	 	5636	'	1	)	1	,	76	-	3	.	42	:	1	;	1	?	4	a	21	b	63	c	8	d	2938	e	633	f	676	g	634	h	273	i	3	k	11001	l	332	m	27	n	7166	o	6	p	218	r	2	s	899	t	369	u	1	v	990	w	85	z	1290	
+ik	 	3197	'	1	)	1	,	39	.	14	:	1	;	1	a	193	b	182	e	704	g	2	h	1	i	18	k	1591	l	1	m	22	n	1	o	16	r	1	s	14	t	557	u	3	w	22	z	9	ä	1	õ	1	
+il	 	1060	,	15	-	2	.	12	M	1	a	209	b	1	d	68	e	114	f	1	g	7	h	2	i	2180	j	306	l	1586	m	11	n	2	o	36	p	2	s	40	t	42	v	3	z	4	
+im	 	51	,	3	-	1	.	1	a	382	b	2	d	20	e	235	h	1	i	262	l	1	m	281	o	11	p	198	s	8	t	133	u	252	v	1	w	1	z	1	
+in	 	11922	!	1	"	3	'	8	)	5	,	43	-	17	.	44	:	4	?	1	a	1847	b	129	c	221	d	2958	e	836	f	582	g	24350	h	148	i	1092	j	4	k	263	l	48	m	53	n	1406	o	10	p	13	r	48	s	2107	t	1510	u	52	v	848	w	76	y	1	z	604	ă	1	”	2	
+io	 	114	'	307	,	13	-	10	.	12	a	78	b	2	d	254	e	39	f	7	g	3	l	22	m	8	n	1823	o	3	p	2	r	234	s	35	t	66	u	2	v	11	x	4	
+ip	 	108	,	6	.	2	a	95	b	2	e	109	i	25	l	119	o	6	p	50	r	3	s	3	t	7	u	8	v	1	z	1	
+iq	u	26	
+ir	 	163	,	3	-	2	.	1	a	45	b	1	c	37	e	904	i	13	k	7	l	1	m	5	o	10	p	3	r	4	s	10	t	6	u	1	
+is	 	8138	!	2	"	1	)	2	,	598	-	53	.	563	:	28	;	12	?	16	a	419	b	108	c	3599	d	110	e	961	f	4	g	14	h	130	i	908	j	2	k	21	l	119	m	416	n	2	o	21	p	35	q	1	r	15	s	3773	t	2098	u	48	v	46	w	75	y	1	
+it	 	6842	!	1	'	3	)	3	,	201	-	15	.	146	:	14	;	2	?	8	V	1	a	628	b	224	c	4	d	304	e	4930	f	5	g	980	h	12	i	2055	j	2	k	44	l	102	m	86	n	23	o	281	p	22	r	22	s	800	t	775	u	589	v	815	w	105	y	7	z	172	é	90	ė	2	
+iu	 	1	m	88	r	1	s	8	
+iv	 	1	a	73	e	897	i	511	o	1	é	8	
+iw	a	1	i	3	
+ix	 	6	.	3	e	1	p	9	
+iy	a	1	e	5	
+iz	 	4	a	26	e	135	i	3	j	11	o	20	
+iè	r	26	
+ië	 	448	"	2	)	1	,	94	-	1	.	68	/	3	:	2	;	1	?	2	O	1	l	1024	n	338	r	79	
+iñ	a	3	
+ió	n	1	
+ić	 	1	
+ič	 	5	,	1	.	2	i	1	o	1	
+iş	i	1	o	2	
+iū	t	1	
+j 	"	3	'	1	(	31	-	14	2	1	5	1	A	2	B	2	C	1	D	2	E	18	F	3	G	7	H	2	I	3	J	1	K	1	L	2	P	5	S	8	T	1	U	1	V	2	W	1	Z	3	a	213	b	199	c	22	d	1246	e	352	f	15	g	142	h	829	i	214	j	9	k	86	l	40	m	291	n	177	o	317	p	42	r	43	s	97	t	267	u	45	v	362	w	210	z	305	é	1	
+j'	 	1	
+j)	 	1	
+j,	 	80	
+j-	 	2	,	1	
+j.	A	1	D	13	E	3	G	1	H	8	I	7	L	1	O	3	P	1	U	1	V	1	W	3	
+j:	 	2	
+j;	 	1	
+j?	 	4	
+ja	 	13	'	6	,	18	-	2	.	2	a	908	c	9	d	4	g	6	h	2	m	21	n	93	p	1	r	404	u	1	z	1	
+jb	e	62	r	1	
+jc	i	1	o	8	
+jd	 	853	,	25	.	15	:	1	;	2	a	6	e	900	f	1	h	1	i	289	j	3	k	6	m	1	p	18	r	442	s	318	t	44	v	15	
+je	 	557	"	1	'	2	)	2	,	45	-	9	.	23	:	1	?	1	a	1	b	1	c	391	e	59	g	12	k	1	l	11	m	1	n	215	r	38	s	43	t	18	u	52	v	34	
+jf	 	129	,	7	.	10	d	15	e	192	h	4	j	2	m	1	o	19	s	120	t	176	v	1	
+jg	 	5	,	1	a	16	e	491	i	51	s	2	t	68	
+jh	a	93	e	176	o	4	
+ji	k	2	n	5	z	1	
+jj	a	4	
+jk	 	4719	'	2	)	3	,	129	-	1	.	88	:	24	;	2	?	3	a	9	b	55	d	36	e	4018	g	6	h	1060	i	124	k	1	m	3	o	14	s	419	t	276	v	2	w	14	
+jl	 	181	,	2	.	2	a	14	d	13	e	106	i	3	p	7	s	5	
+jm	 	1	a	20	e	5	o	1	s	1	
+jn	 	5344	!	3	"	1	)	3	,	390	-	1	.	474	:	22	;	9	?	13	a	84	b	7	c	1	d	43	e	165	f	2	g	4	h	333	i	23	l	84	m	4	o	7	p	5	r	2	s	115	t	22	v	8	w	4	z	3	”	1	
+jo	b	4	d	3	e	186	i	2	n	330	r	2	u	28	v	6	
+jp	 	25	,	3	e	150	h	1	l	4	o	2	r	16	s	1	t	16	
+jr	e	1	o	1	
+js	 	383	"	1	,	73	-	25	.	36	:	1	;	2	?	1	a	1	b	7	c	2	d	6	e	56	f	1	g	2	h	7	i	8	m	8	n	3	o	1	p	8	s	45	t	214	u	1	v	6	w	1	
+jt	 	29	,	1	.	3	a	1	b	1	e	23	g	3	i	254	r	7	s	48	u	1	
+ju	b	1	i	413	l	54	n	107	r	140	s	41	
+jv	a	3	e	687	i	41	l	5	o	254	r	1	
+jw	a	25	e	16	i	43	o	1	
+jz	a	1	e	616	i	272	o	401	
+jó	n	1	
+k 	"	8	'	10	(	13	-	48	0	1	2	4	3	3	4	2	5	4	6	1	9	1	A	8	B	4	C	9	D	2	E	56	F	2	G	5	H	3	I	3	J	1	K	12	L	9	M	14	O	5	P	11	R	6	S	15	T	6	V	1	W	2	X	1	Z	2	a	681	b	1180	c	63	d	2178	e	1131	f	39	g	676	h	1439	i	1091	j	35	k	289	l	206	m	788	n	574	o	1062	p	224	r	161	s	413	t	652	u	224	v	2141	w	1068	z	834	é	4	
+k!	W	1	
+k"	 	4	)	1	,	1	
+k'	 	10	,	4	
+k)	 	8	,	1	.	1	:	1	
+k,	 	424	
+k-	 	10	E	1	M	1	a	1	p	5	
+k.	 	4	A	8	B	5	D	69	E	17	G	3	H	38	I	52	K	3	M	9	N	3	O	12	P	1	R	1	T	8	U	3	V	11	W	27	Z	8	e	1	
+k:	 	33	
+k;	 	9	
+k?	 	8	T	1	
+ka	 	77	'	3	,	15	.	13	:	2	a	344	b	9	c	2	d	745	g	3	k	10	l	101	m	203	n	1618	p	100	r	68	s	59	t	27	u	18	v	1	
+kb	 	15	"	1	)	3	,	1	-	15	.	1	a	269	e	6	i	2	l	1	o	22	r	1	
+kc	e	1	h	1	o	3	
+kd	i	12	o	39	
+ke	 	4880	"	3	,	63	-	1	.	2	e	380	g	2	i	10	k	24	l	3248	m	3	n	7817	o	1	q	1	r	1778	s	5	t	380	u	408	v	1	y	1	
+kg	e	303	r	27	
+kh	a	1	e	1067	o	30	
+ki	 	19	,	6	.	2	/	1	L	3	e	215	f	1	g	42	j	214	l	17	m	1	n	2552	o	1	p	4	s	139	ë	3	
+kj	a	1	e	20	o	1	
+kk	a	7	e	3158	i	808	o	271	u	4	
+kl	a	322	e	492	i	215	o	219	u	1	ó	1	
+km	 	4	2	1	a	34	e	11	i	2	o	16	
+kn	a	7	e	211	i	9	o	24	
+ko	 	32	'	2	,	7	.	2	c	23	d	1	e	71	f	10	k	2	l	21	m	3481	n	100	o	380	p	200	r	337	s	389	u	11	v	14	z	69	
+kp	a	1	e	2	l	8	o	3	r	35	
+kq	u	5	
+kr	a	411	e	279	i	657	o	16	u	15	
+ks	 	364	"	1	,	7	-	13	.	4	/	5	?	1	a	7	b	32	c	35	d	1	e	243	f	20	g	59	h	4	i	12	j	1	k	2	l	1	m	3	o	3	p	53	r	41	s	13	t	519	u	14	v	15	w	4	y	5	
+kt	 	1881	!	2	"	5	'	2	)	1	,	313	-	2	.	398	:	9	;	10	?	10	]	1	a	14	b	4	c	1	d	15	e	596	g	6	h	7	i	246	k	1	l	2	m	5	o	43	p	3	r	64	s	5	t	19	v	7	w	3	”	2	
+ku	b	1	d	2	i	1	l	1	n	2043	r	5	s	59	u	1	
+kv	e	9	i	1	l	2	o	3	r	1	
+kw	a	453	e	518	i	293	o	2	
+kx	 	3	,	1	
+ky	 	6	,	1	a	1	
+kz	a	99	e	11	i	85	o	4	u	1	
+kä	i	1	
+ké	s	2	
+kó	m	4	
+kõ	 	1	
+kú	n	1	
+ký	,	1	
+kū	n	1	
+k”	.	2	
+l 	"	15	'	9	(	15	-	40	0	2	1	44	2	40	3	19	4	14	5	12	6	4	7	10	8	12	9	6	A	17	B	41	C	30	D	5	E	103	F	42	G	11	H	6	I	19	J	4	K	15	L	2	M	36	N	3	O	2	P	7	R	18	S	14	T	9	V	4	W	1	a	418	b	893	c	64	d	1249	e	845	f	31	g	558	h	625	i	1153	j	44	k	259	l	181	m	559	n	401	o	750	p	160	q	2	r	116	s	291	t	584	u	200	v	1915	w	497	z	559	é	4	
+l!	 	3	
+l"	.	2	
+l'	 	5	s	1	
+l)	 	6	(	1	
+l,	 	384	/	1	
+l-	 	40	,	3	A	6	B	8	D	2	E	1	K	1	N	10	P	1	Q	4	R	4	d	3	e	6	f	3	m	1	o	4	p	1	s	1	t	3	z	1	
+l.	 	8	.	2	A	11	B	10	C	3	D	65	E	12	F	1	G	1	H	36	I	36	K	1	L	3	M	17	N	3	O	16	P	2	R	1	T	5	U	4	V	9	W	19	Z	7	e	3	
+l:	 	12	
+l;	 	12	
+l?	 	10	B	1	W	2	
+lM	o	1	
+la	 	34	,	11	-	2	a	1363	b	22	c	150	d	28	f	40	g	2157	h	2	i	37	k	150	l	9	m	44	n	6804	o	1	p	43	r	274	s	515	t	1082	u	78	v	47	w	10	y	8	z	8	ß	2	ţ	1	
+lb	a	101	e	95	l	2	o	1	r	10	u	15	
+lc	a	2	h	1	o	6	r	3	s	1	z	1	
+ld	 	2013	"	7	'	3	)	3	,	230	-	3	.	321	:	19	;	6	?	10	a	64	b	20	c	7	d	16	e	1205	f	1	g	6	h	59	i	222	k	4	l	4	m	20	n	9	o	333	p	9	r	12	s	27	t	70	u	27	v	7	w	142	z	9	”	5	
+le	 	6825	"	1	'	3	)	1	,	126	-	25	.	51	/	1	?	1	a	98	b	16	c	524	d	843	e	1570	f	23	g	1902	h	3	i	3298	k	193	l	12	m	2891	n	7680	o	31	p	8	r	932	s	562	t	112	u	102	v	1237	w	1	x	128	y	3	z	113	
+lf	 	304	,	17	.	17	?	1	a	7	b	15	c	1	d	232	e	1	f	1	h	2	i	1	j	4	l	1	o	3	r	5	s	241	t	20	v	8	w	1	
+lg	 	161	,	1	.	2	:	2	a	173	d	54	e	1479	i	58	o	5	r	190	s	5	t	31	v	1	
+lh	a	10	e	82	i	1	o	30	u	13	
+li	 	67	,	13	-	6	.	6	a	93	b	101	c	892	d	2290	e	1141	f	88	g	1451	j	10291	k	43	l	32	m	296	n	4688	o	5	p	8	q	13	r	1	s	970	t	1597	v	1	y	5	ë	63	
+lj	 	2	,	2	a	132	o	179	
+lk	 	185	,	7	-	1	.	6	?	1	a	222	e	471	i	209	l	1	m	1	o	144	p	3	q	5	r	2	s	104	t	6	u	2	v	1	w	4	
+ll	 	49	,	5	-	3	.	1	a	190	e	7171	i	1757	m	3	n	35	o	62	p	3	t	1	u	13	y	2	á	1	é	1	ő	1	
+lm	 	4	,	2	-	1	a	174	e	10	f	1	m	1	o	9	p	4	s	22	u	1	
+ln	a	40	e	105	i	40	u	9	
+lo	 	7	'	1	a	1	b	137	c	25	d	2	e	245	f	47	g	455	i	52	k	162	m	143	n	90	o	828	p	438	r	42	s	558	t	524	u	33	v	83	w	38	y	2	z	101	ş	8	
+lp	 	197	,	8	.	11	:	1	?	1	a	13	b	84	d	3	e	271	l	7	m	17	o	5	p	7	r	137	t	30	u	4	v	13	z	1	
+lr	a	2	e	21	i	18	o	6	u	5	
+ls	 	4590	"	1	'	1	)	2	,	56	-	16	.	37	:	3	;	4	?	1	a	72	b	75	c	10	d	1	e	253	g	15	h	2	i	9	j	1	k	3	l	15	m	76	n	16	o	186	p	115	r	6	s	14	t	718	v	18	w	6	y	7	z	1	
+lt	 	442	"	3	'	26	,	52	.	50	:	2	;	1	?	3	a	359	d	1	e	126	h	7	i	339	j	4	k	1	m	1	o	31	r	257	s	1	u	416	y	1	à	1	
+lu	 	2	a	203	b	6	c	253	d	19	e	57	f	1	i	891	k	127	m	15	n	11	o	1	r	26	s	265	t	333	u	92	x	2	
+lv	a	72	e	254	i	3	l	4	o	31	r	2	u	6	
+lw	a	40	e	39	i	13	o	1	
+ly	 	10	"	1	,	1	a	1	c	1	g	1	m	1	r	1	s	107	t	4	w	1	z	4	
+lz	 	1	,	5	a	12	e	31	i	65	o	13	w	2	
+lá	n	1	š	5	
+lä	 	1	,	2	
+lé	n	1	é	1	
+lí	n	1	
+lò	 	1	
+ló	 	5	s	1	
+lė	n	1	
+lĳ	n	2	
+lő	 	1	
+m 	"	15	'	5	(	18	-	20	.	1	0	1	1	8	2	3	3	5	4	1	5	2	9	3	A	12	B	6	C	1	E	31	F	9	G	12	H	2	I	4	K	5	M	2	N	3	O	2	P	4	R	3	S	7	T	4	V	1	Z	5	a	264	b	258	c	55	d	1945	e	860	f	20	g	187	h	835	i	509	j	27	k	94	l	46	m	381	n	190	o	453	p	103	r	41	s	173	t	726	u	84	v	831	w	203	z	338	é	4	ó	1	ü	1	
+m!	K	1	
+m"	 	1	.	1	
+m'	 	3	,	1	
+m)	 	5	,	1	
+m,	 	180	"	1	
+m-	 	7	V	9	k	2	o	1	v	1	
+m.	 	14	"	1	A	5	B	1	D	16	E	3	F	1	H	6	I	19	M	8	N	1	O	1	S	1	T	1	V	2	W	10	Z	3	
+m2	 	1	
+m:	 	4	
+m;	 	4	
+m?	 	8	
+m]	 	1	
+ma	 	365	'	365	,	40	-	7	.	35	:	2	;	2	a	4298	b	1	c	286	d	11	f	6	g	203	i	27	j	2	k	1069	l	217	m	2	n	852	p	7	r	967	s	51	t	1000	u	1	v	1	x	55	y	1	z	8	ï	1	
+mb	a	37	e	140	i	222	l	7	o	39	r	6	s	5	t	38	u	43	
+mc	e	2	o	1	r	1	
+md	 	378	'	1	)	2	,	185	.	117	:	7	;	3	?	1	a	870	b	1	e	185	i	5	o	12	r	3	
+me	 	1534	"	2	'	2	,	87	-	7	.	42	:	1	;	1	?	1	b	5	c	227	d	463	e	3591	f	4	g	2	i	90	k	5	l	515	m	11	n	12045	o	6	p	2	r	1381	s	160	t	5159	u	3	v	244	w	3	z	3	
+mf	 	1	e	1	
+mg	a	29	e	145	r	1	
+mh	a	1	e	154	o	11	u	1	
+mi	 	5	'	3	,	1	-	1	a	2	c	63	d	1450	e	522	g	423	j	1456	l	942	m	1	n	2993	o	4	r	4	s	4485	t	203	u	3	x	9	ş	2	
+mk	b	36	e	11	l	1	o	24	r	1	u	1	w	4	
+ml	a	3	i	19	o	9	
+mm	a	680	e	649	i	3178	o	4	u	262	
+mn	e	2	i	3	o	9	
+mo	 	15	'	14	,	1	-	1	.	1	:	1	b	176	c	454	d	258	e	5360	f	2	g	1533	i	1	k	12	l	3	m	365	n	432	o	44	p	3	r	136	s	25	t	107	u	5	z	2	
+mp	 	77	!	1	,	4	.	9	?	3	a	85	e	240	i	23	j	2	l	165	o	84	r	116	s	20	t	29	u	49	z	12	
+mr	 	1	e	18	i	13	o	15	u	1	
+ms	 	68	)	1	,	8	.	6	?	1	a	1	b	1	c	27	e	8	i	2	k	1	l	13	p	2	r	25	t	1928	
+mt	 	432	"	1	,	66	.	74	:	2	;	2	?	5	a	1	e	140	o	8	r	9	s	1	u	1	
+mu	i	3	j	2	l	389	m	62	n	331	r	5	s	37	t	5	u	6	z	7	
+mv	a	209	e	22	o	4	r	9	
+mw	e	13	i	17	o	1	
+my	 	1	s	1	t	1	
+mz	a	1	e	72	i	3	
+má	n	5	
+mé	 	18	,	1	é	6	
+mó	e	1	
+mü	l	3	
+mе	d	1	
+m”	 	2	
+n 	"	72	'	63	(	240	,	1	-	661	.	11	0	6	1	186	2	479	3	74	4	52	5	42	6	31	7	55	8	34	9	41	A	132	B	309	C	161	D	133	E	1177	F	97	G	223	H	100	I	191	J	118	K	99	L	286	M	119	N	84	O	93	P	177	Q	1	R	298	S	293	T	83	U	7	V	70	W	37	X	2	Y	1	Z	75	[	7	a	6660	b	6405	c	1572	d	32698	e	12260	f	794	g	6151	h	12169	i	6584	j	483	k	2347	l	1555	m	6474	n	3094	o	11463	p	1929	q	3	r	1451	s	3515	t	6699	u	1524	v	15588	w	7053	x	1	z	4103	Á	2	à	2	á	1	è	1	é	56	ü	3	κ	1	
+n!	 	18	"	2	D	4	E	1	I	2	M	2	N	1	W	6	
+n"	 	29	,	12	.	33	:	1	a	1	d	1	p	2	
+n'	 	32	)	2	,	13	-	6	.	6	s	3	t	1	
+n)	 	51	(	5	,	22	.	19	:	1	e	2	
+n,	 	8303	"	1	r	1	
+n-	 	48	,	2	B	5	C	1	D	5	E	13	K	14	O	30	P	3	Q	2	R	3	b	3	c	3	d	10	e	2	f	1	g	15	h	1	i	1	k	1	l	2	m	1	o	4	p	8	r	6	s	1	t	7	v	3	w	3	
+n.	 	151	"	13	'	4	(	1	)	2	.	11	6	1	9	1	A	357	B	178	C	54	D	2158	E	470	F	20	G	84	H	1066	I	1698	J	34	K	20	L	66	M	422	N	191	O	429	P	38	Q	1	R	22	S	65	T	362	U	40	V	274	W	937	Z	219	a	2	b	1	c	1	d	1	e	2	h	4	i	1	m	1	r	3	t	1	v	1	”	2	
+n/	V	7	b	1	i	1	o	17	s	1	w	1	
+n:	 	373	A	1	B	1	I	1	N	1	
+n;	 	153	I	2	d	2	
+n?	 	215	"	2	A	1	B	4	C	3	D	6	E	2	H	9	I	11	K	5	M	5	O	2	S	1	T	6	U	1	V	1	W	15	Z	2	
+nA	a	1	l	1	
+nB	W	1	e	3	o	1	
+nC	r	1	
+nD	a	1	e	1	
+nE	e	1	
+nG	e	1	
+nI	n	1	
+nK	r	1	
+nM	i	1	
+nO	n	1	o	1	
+nP	a	1	
+nR	e	1	
+nS	a	1	c	1	
+nV	e	3	
+n]	 	3	
+na	 	515	"	1	'	2	)	1	,	32	-	3	.	10	a	2126	b	96	c	102	d	762	f	288	g	96	h	1	i	61	j	9	k	43	l	1582	m	1006	n	1587	p	11	r	119	s	34	t	1687	u	272	v	60	y	1	z	2	ï	6	
+nb	a	222	e	545	i	22	l	20	o	74	r	39	u	24	
+nc	 	3	a	31	e	397	h	38	i	1579	k	2	l	205	o	38	r	176	t	281	u	332	y	10	z	3	ú	1	
+nd	 	3676	!	1	"	3	'	2	)	7	,	363	-	39	.	283	:	13	;	5	?	12	a	1199	b	571	c	3	d	18	e	15975	g	83	h	468	i	1538	j	9	k	19	l	5	m	11	o	137	p	235	r	162	s	1294	t	128	u	444	v	51	w	149	y	1	z	1	
+ne	 	1439	"	2	)	2	,	64	-	27	.	32	:	3	;	1	?	3	a	1	b	10	c	7	d	27	e	1027	f	24	g	151	h	1	i	170	k	14	l	540	m	1868	n	5289	o	31	p	6	r	1311	s	181	t	462	u	14	v	142	w	4	x	4	y	11	z	9	š	1	
+nf	a	5	e	69	i	2	l	104	o	496	r	197	u	5	
+ng	 	15048	!	1	"	56	'	22	)	23	,	869	-	9	.	661	:	26	;	21	?	24	B	2	W	1	a	379	b	139	c	7	d	48	e	10376	f	4	g	15	h	74	i	216	k	4	l	21	m	9	n	7	o	35	p	16	r	1550	s	2833	t	204	u	11	v	10	w	12	y	1	z	22	”	1	
+nh	a	164	e	971	i	2	o	276	u	9	
+ni	 	137	,	22	-	2	.	6	a	31	b	1	c	97	d	4	e	7448	f	61	g	805	h	2	j	29	k	17	l	14	m	107	n	2296	o	3	p	31	q	10	s	1714	t	593	u	35	v	632	y	1	z	1	ë	264	
+nj	a	10	e	45	u	26	
+nk	 	525	,	19	-	1	.	16	:	1	a	217	b	26	d	12	e	1245	g	2	i	34	j	2	l	19	n	6	o	1075	p	2	r	128	s	184	t	53	v	1	w	11	z	85	
+nl	a	695	e	166	i	942	o	90	u	10	y	2	
+nm	a	60	e	141	i	152	o	108	
+nn	 	6	,	7	-	14	.	1	a	36	e	3591	i	719	o	557	u	15	y	1	
+no	 	28	,	3	-	13	b	30	c	64	d	732	e	470	f	5	g	1186	l	208	m	2447	n	53	o	617	p	60	r	392	s	27	t	64	u	13	v	653	w	9	z	1	
+np	 	4	)	1	a	371	e	18	i	2	l	22	o	8	r	43	u	9	
+nq	u	6	
+nr	.	43	a	20	e	414	i	88	o	7	u	17	á	1	
+ns	 	3380	!	1	"	3	'	1	)	1	,	81	-	48	.	56	:	3	;	2	?	3	a	124	b	50	c	992	d	23	e	1762	f	13	g	27	h	9	i	327	j	7	k	21	l	144	m	59	n	32	o	227	p	966	r	22	s	26	t	2763	u	476	v	34	w	41	y	16	z	30	
+nt	 	4509	!	1	"	3	'	2	)	24	,	316	-	9	.	226	/	1	:	15	;	4	?	4	]	1	a	858	b	70	c	1	d	34	e	4406	f	1	g	10	h	91	i	2257	j	26	k	33	l	22	m	65	n	14	o	109	p	17	r	1274	s	470	t	18	u	91	v	131	w	2273	y	1	z	22	á	15	
+nu	 	823	!	1	'	1	,	27	.	4	?	1	a	37	c	82	e	6	i	285	l	31	m	8	n	1	s	7	t	217	u	11	w	3	ï	12	
+nv	a	188	e	828	i	16	l	166	o	680	r	66	u	128	
+nw	a	26	e	883	i	257	o	429	r	3	
+ny	 	2	'	1	,	2	a	1	i	2	k	2	
+nz	 	3	,	3	.	10	a	401	e	1680	i	503	k	1	o	51	w	5	
+ná	 	1	
+nç	a	1	
+nè	v	6	
+né	n	1	
+nó	g	2	
+nú	 	1	
+nă	u	1	
+nė	,	1	
+nţ	a	1	
+n”	 	5	,	1	.	6	
+o 	"	1	'	1	(	5	-	12	2	1	A	5	B	10	C	3	D	6	E	1	F	6	G	25	K	2	L	5	M	11	N	2	P	5	R	1	S	3	T	20	V	2	X	1	a	68	b	101	c	3	d	125	e	91	f	9	g	79	h	49	i	71	j	9	k	33	l	26	m	53	n	57	o	62	p	31	r	9	s	105	t	53	u	14	v	163	w	65	y	2	z	70	
+o'	 	2	n	59	s	440	
+o)	 	4	
+o,	 	113	
+o-	 	8	,	5	A	1	E	3	K	5	N	1	b	5	c	2	d	3	e	106	f	6	g	1	i	7	n	1	o	36	p	7	r	2	s	2	u	1	
+o.	 	7	A	3	C	1	D	18	G	2	H	4	I	8	K	1	L	2	M	6	N	1	O	2	P	1	T	1	W	6	Z	2	
+o:	 	5	
+o;	 	4	
+o?	 	2	p	3	
+oa	a	1	c	88	d	1	l	956	m	1	n	5	p	1	r	7	t	55	
+ob	 	1	.	1	a	64	b	83	e	224	i	218	j	53	l	744	o	10	r	2	s	45	u	15	y	29	
+oc	 	3	-	2	.	3	a	43	c	2	e	1243	h	433	i	823	k	9	o	74	r	467	s	1	t	36	u	139	v	1	w	1	y	3	
+od	 	119	,	17	-	2	.	9	?	1	a	438	d	5	e	657	g	5	h	8	i	867	j	1	k	1	l	2	m	14	n	2	o	45	p	2	r	34	s	127	t	1	u	867	v	2	w	1	z	439	
+oe	 	981	"	1	,	27	-	1	.	14	:	1	?	1	b	15	d	2158	f	455	g	1359	i	832	j	10	k	2058	l	1648	m	434	n	1615	p	1137	r	2218	s	180	t	5175	u	4	v	291	w	197	z	310	
+of	 	1744	'	1	)	1	,	19	.	12	a	8	b	3	c	2	d	309	e	51	f	408	i	138	k	8	l	15	o	22	p	30	r	8	s	22	t	46	u	3	v	3	w	130	y	1	z	2	
+og	 	1520	'	1	,	35	-	2	.	15	:	2	;	2	?	1	a	26	b	4	d	60	e	2161	f	1	g	9	h	2	i	463	j	1	k	1	l	4	m	96	n	34	o	7	p	28	r	831	s	90	t	79	u	6	w	18	z	1	
+oh	a	10	d	1	e	374	n	7	o	6	
+oi	 	26	,	2	.	6	a	3	b	2	d	14	e	59	g	1	i	4	j	1	n	5	r	16	s	4	t	168	
+oj	a	3	c	1	e	307	k	6	u	57	
+ok	 	2993	,	20	.	7	:	2	;	1	a	118	b	1	c	1	e	231	j	1	k	361	l	2	o	1	p	2	r	3	s	2	t	43	v	2	
+ol	 	526	)	1	,	30	-	1	.	10	;	1	a	44	b	8	c	1	d	413	e	620	f	16	g	1273	h	25	i	1070	j	4	k	430	l	785	m	17	o	348	p	21	r	2	s	160	t	45	u	433	v	37	w	36	y	3	á	5	í	1	ò	1	
+om	 	6955	'	1	)	2	,	64	-	12	.	23	:	1	?	6	]	1	a	161	b	69	d	860	e	2551	f	1	g	144	h	14	i	2037	k	35	l	13	m	3046	o	43	p	368	r	20	s	1936	t	295	u	10	v	218	w	21	z	74	é	19	
+on	 	461	'	2	)	3	,	66	-	27	.	39	:	1	?	1	a	1750	b	80	c	719	d	7300	e	1323	f	238	g	1253	h	17	i	352	j	26	k	78	l	174	m	129	n	210	o	1779	p	19	r	67	s	1944	t	3235	u	10	v	253	w	34	y	2	z	1214	
+oo	,	1	b	1	c	1	d	641	f	542	g	695	i	222	k	2806	l	210	m	104	n	461	p	487	r	20082	s	228	t	631	
+op	 	7588	!	1	'	1	)	1	,	54	-	6	.	32	]	1	a	1391	b	94	c	4	d	165	e	6030	f	4	g	682	h	53	i	49	j	4	k	61	l	751	m	143	n	220	o	62	p	186	r	189	s	221	t	365	u	39	v	125	w	20	y	1	z	197	
+or	 	11929	'	1	)	1	,	116	-	7	.	86	:	4	;	3	?	3	a	492	b	578	c	7	d	9697	e	792	f	15	g	2183	h	27	i	1149	j	3	k	304	l	205	m	1983	n	154	o	38	p	88	r	284	s	1503	t	1836	u	287	v	87	w	356	y	1	z	1082	
+os	 	104	)	1	,	11	-	1	.	5	a	10	b	131	c	14	d	7	e	43	f	4	g	7	h	113	i	378	j	15	k	9	l	20	m	11	n	21	o	80	p	34	s	592	t	670	u	2	v	1	w	1	y	28	é	4	ł	3	
+ot	 	3235	,	39	-	20	.	15	:	7	;	1	?	1	a	137	b	3	d	10	e	1405	g	18	h	18	i	1158	j	5	k	1	l	4	m	13	n	4	o	133	p	1	s	283	t	84	u	17	v	2	w	1	y	2	
+ou	 	1075	,	10	a	41	c	3	d	2399	f	1	g	1	i	10	k	1	l	20	m	1	n	20	p	3	r	49	s	16	t	178	v	26	w	1795	č	1	
+ov	 	3	,	2	-	3	.	1	a	517	e	6235	g	11	i	92	j	18	n	1	o	68	p	3	s	9	á	4	
+ow	 	7	-	23	.	1	a	17	e	288	h	4	i	7	l	5	n	2	p	1	s	11	
+ox	 	3	)	3	a	4	e	2	i	8	y	1	
+oy	a	4	e	1	
+oz	a	2	e	181	i	1	l	1	o	126	y	10	
+oã	o	2	
+oë	f	1	
+oï	n	1	s	1	
+oö	p	6	r	219	
+oč	n	9	
+oş	 	6	,	1	.	1	
+oš	 	2	
+p 	"	3	'	6	(	4	-	22	.	1	1	48	2	57	3	21	4	6	5	2	6	2	7	3	8	2	9	9	A	12	B	4	C	5	D	1	E	146	F	3	G	5	H	1	I	3	J	1	L	2	M	6	N	2	O	1	P	1	R	4	S	6	T	3	U	1	V	4	W	2	a	322	b	356	c	43	d	2533	e	699	f	35	g	323	h	1292	i	322	j	16	k	120	l	95	m	175	n	137	o	322	p	98	r	73	s	110	t	675	u	69	v	697	w	326	z	248	é	17	
+p!	 	3	
+p"	l	1	
+p'	,	1	.	1	
+p)	 	16	,	3	.	2	
+p,	 	179	
+p-	 	3	B	1	R	1	S	1	i	1	m	1	s	3	t	3	u	1	
+p.	 	20	A	6	B	3	D	25	E	3	H	14	I	15	K	1	L	1	M	8	N	3	O	5	S	2	T	6	U	1	V	3	W	12	Z	5	
+p/	E	1	
+p:	 	10	/	3	
+p;	 	1	
+p?	 	2	I	1	K	1	
+pB	e	1	
+p]	 	1	
+pa	 	1101	!	1	"	3	'	11	)	1	,	108	-	26	.	136	:	6	;	1	?	5	a	517	b	3	c	212	d	24	g	49	i	1	k	585	l	220	n	475	p	23	r	1531	s	821	t	78	u	3	
+pb	a	9	e	41	i	2	o	43	r	114	
+pc	'	2	e	1	o	5	
+pd	a	48	e	4	i	4	o	7	r	107	u	5	y	2	
+pe	 	134	"	1	,	9	.	3	:	1	a	100	c	934	d	13	e	1502	g	12	i	20	k	2	l	1318	n	2599	p	1	r	1547	s	3516	t	35	u	6	z	1	
+pf	a	2	i	2	
+pg	a	30	e	672	o	1	r	6	
+ph	 	2	a	8	e	37	n	2	o	13	y	1	
+pi	,	1	c	3	d	21	e	79	g	29	j	203	l	21	n	96	o	10	r	26	s	17	t	113	ë	6	
+pj	e	13	
+pk	a	1	n	1	o	51	r	3	w	5	
+pl	a	1168	e	757	i	560	o	526	u	51	y	4	
+pm	a	9	e	134	i	17	
+pn	a	15	e	52	i	156	o	1	
+po	 	13	c	14	d	2	e	68	f	2	g	52	l	662	m	4	n	63	o	99	p	41	r	750	s	398	t	153	u	3	v	7	w	3	
+pp	 	1	a	36	e	1394	i	85	l	3	o	440	r	12	u	2	y	1	è	1	
+pr	a	571	e	1162	i	738	o	4797	u	28	ú	2	
+ps	 	16	'	1	-	11	.	4	a	9	b	55	c	23	d	1	e	14	f	1	g	8	i	4	k	18	l	60	m	5	o	156	p	23	r	2	s	2	t	148	u	1	v	14	w	3	y	7	z	2	
+pt	 	215	"	2	,	35	-	2	.	41	:	1	;	2	?	4	a	31	e	165	i	255	o	4	r	145	
+pu	b	259	i	4	l	86	n	672	r	5	s	2	t	38	u	11	y	5	z	1	
+pv	a	77	e	26	i	1	l	2	o	47	u	2	
+pw	a	7	e	17	i	1	
+py	 	1	r	1	
+pz	a	14	e	55	i	141	o	1	
+pè	l	1	
+p”	 	2	
+q.	 	1	
+qu	a	97	e	118	i	83	o	17	é	4	ê	5	
+r 	"	18	'	25	(	37	-	82	.	4	0	1	1	54	2	342	3	18	4	16	5	9	6	14	7	3	8	11	9	7	:	1	A	68	B	118	C	59	D	69	E	229	F	56	G	101	H	23	I	31	J	20	K	41	L	58	M	45	N	11	O	28	P	63	Q	1	R	61	S	85	T	32	U	1	V	37	W	24	Z	17	[	1	a	1203	b	1530	c	322	d	7699	e	2982	f	146	g	1283	h	3317	i	1889	j	175	k	537	l	394	m	1604	n	1055	o	2363	p	398	r	284	s	762	t	1588	u	289	v	2817	w	1565	z	1295	è	1	é	48	Š	4	
+r!	 	3	I	1	
+r"	 	10	.	3	?	1	
+r'	 	10	,	6	-	1	.	3	;	1	
+r)	 	4	,	2	.	5	;	1	s	1	
+r,	 	1020	"	1	.	1	
+r-	 	15	/	1	D	1	d	1	e	1	g	7	i	2	p	12	z	1	
+r.	 	51	"	2	'	2	A	17	B	8	C	3	D	104	E	23	G	5	H	58	I	73	K	3	L	2	M	19	N	11	O	24	P	1	R	1	S	7	T	14	U	3	V	10	W	33	Z	7	
+r/	h	10	v	3	
+r:	 	22	
+r;	 	8	I	1	
+r?	 	16	I	2	K	1	M	1	O	1	W	1	
+rI	n	1	
+rM	e	1	
+ra	 	228	'	3	)	1	,	14	-	5	.	10	:	1	?	1	a	1850	b	55	c	1235	d	274	f	276	g	1560	h	1	i	27	j	46	k	564	l	983	m	867	n	2716	o	10	p	429	r	47	s	198	t	2180	u	60	v	22	w	1	z	6	ë	37	ï	81	
+rb	a	333	e	1655	i	660	l	26	o	427	r	166	u	21	á	2	
+rc	 	1	a	19	e	72	h	24	i	50	k	4	o	8	r	2	s	3	t	1	u	32	z	2	í	3	
+rd	 	2595	"	1	'	3	(	1	)	3	,	382	-	73	.	431	:	16	;	14	?	20	O	1	a	228	b	95	d	15	e	9479	g	3	h	4	i	1423	j	2	k	1	m	4	n	7	o	335	p	5	r	464	s	23	t	2155	u	50	v	4	w	32	y	1	”	2	
+re	 	3587	"	1	)	1	,	54	-	5	.	25	:	2	?	2	]	1	a	778	b	21	c	2374	d	1306	e	2299	f	1165	g	3108	i	1555	j	2	k	2029	l	1124	m	98	n	8818	o	7	p	139	q	42	r	276	s	1758	t	213	u	137	v	289	w	4	x	1	z	14	ë	257	ş	1	
+rf	 	7	.	1	a	10	d	4	e	23	f	5	g	23	i	9	k	5	o	90	s	11	t	3	u	10	
+rg	 	192	"	1	'	1	,	30	-	3	.	10	a	850	d	147	e	2814	g	16	h	4	i	546	o	67	p	4	r	255	s	19	t	73	u	84	v	30	w	21	y	2	
+rh	a	691	e	1020	i	27	o	286	u	17	
+ri	 	111	,	7	.	7	a	438	b	18	c	1333	d	146	e	1298	f	247	g	549	j	4880	k	243	l	49	m	168	n	4918	o	489	p	105	r	2	s	1640	t	1214	u	23	v	68	z	17	è	25	ë	124	ñ	3	
+rj	a	98	
+rk	 	634	!	1	"	1	'	1	)	6	,	45	-	8	.	51	:	1	;	2	?	1	a	18	b	10	d	3	e	1801	g	317	h	2	i	1238	k	1	l	330	m	10	n	211	o	432	p	25	r	76	s	74	t	1308	u	5	v	5	w	28	z	96	ó	4	ū	1	
+rl	 	3	.	3	a	361	d	2	e	2517	i	1097	o	239	u	28	y	3	
+rm	 	221	'	1	,	3	-	1	.	4	a	670	b	1	c	2	d	94	e	1539	g	11	i	1221	k	1	l	1	o	473	s	35	t	139	u	79	v	1	z	1	á	4	
+rn	 	96	,	3	.	1	a	1117	b	2	c	113	d	3	e	1313	f	2	g	4	i	205	k	1	o	84	p	4	r	18	s	197	t	4	v	3	w	5	
+ro	 	233	'	20	)	1	,	36	-	135	.	25	;	1	a	65	b	911	c	1254	d	859	e	1638	f	255	g	830	j	317	k	520	l	890	m	1280	n	1584	o	806	p	6832	r	357	s	97	t	2155	u	871	v	284	w	1	x	1	y	2	z	130	ï	1	š	2	
+rp	 	132	,	6	-	2	.	9	:	2	a	38	b	20	c	2	d	2	e	193	i	11	l	319	o	21	r	200	s	7	t	37	u	11	v	12	w	2	
+rq	u	4	
+rr	 	2	a	88	e	774	i	361	o	142	u	88	y	2	
+rs	 	2297	"	4	'	2	)	3	,	283	-	6	.	228	:	6	;	6	?	2	a	13	b	31	c	1701	d	3	e	363	g	7	h	4	i	213	k	13	l	1782	m	9	n	74	o	367	p	382	r	33	s	18	t	3115	u	5	v	30	w	15	y	7	z	16	ʺ	1	
+rt	 	1032	!	1	"	9	'	2	)	3	,	97	-	4	.	157	1	2	2	1	:	7	;	2	?	5	]	1	a	111	b	29	c	1	d	63	e	1363	f	2	g	70	h	6	i	908	j	9	k	87	l	2	m	29	n	315	o	240	p	14	r	374	s	137	t	10	u	426	v	42	w	5	y	1	z	49	”	1	
+ru	a	28	b	10	c	706	d	7	e	1	g	454	i	1572	k	615	l	2	m	656	n	35	p	84	r	3	s	235	t	42	u	1	w	7	x	1	z	3	ï	5	
+rv	a	948	e	248	i	77	l	21	o	1220	r	8	u	113	y	2	
+rw	a	594	e	709	i	744	o	152	r	1	
+ry	 	9	)	1	-	1	:	1	o	1	u	2	
+rz	a	624	e	212	i	1402	o	1084	u	16	w	25	y	1	
+rá	d	1	s	3	
+rã	o	2	
+rä	s	1	
+rè	c	3	s	5	
+ré	 	1	s	1	v	1	
+rí	a	1	n	17	
+ró	k	1	
+rö	m	21	
+rú	n	3	
+r”	 	2	
+s 	"	12	&	1	'	7	(	76	-	151	.	2	0	1	1	33	2	42	3	8	4	7	5	10	6	2	7	3	8	3	A	97	B	31	C	73	D	34	E	77	F	36	G	39	H	28	I	25	J	14	K	4	L	22	M	32	N	13	O	40	P	684	R	37	S	57	T	6	U	6	V	30	W	22	Z	3	[	2	a	1103	b	1184	c	171	d	3627	e	3351	f	48	g	1301	h	1851	i	1678	j	75	k	324	l	238	m	1150	n	918	o	2112	p	241	q	2	r	171	s	378	t	1178	u	413	v	3379	w	1317	z	820	é	35	Š	7	
+s!	 	3	-	1	
+s"	 	7	,	4	.	8	?	1	i	1	
+s'	 	8	)	1	,	1	:	1	
+s)	 	29	(	2	,	7	.	6	:	3	
+s,	 	1821	"	1	.	1	
+s-	 	242	,	10	/	1	A	6	B	2	C	3	D	3	E	28	F	1	G	1	I	2	K	5	L	1	M	2	N	1	T	1	b	3	c	2	f	2	g	28	k	1	m	1	o	2	p	11	q	1	r	1	s	18	t	4	v	1	
+s.	 	445	"	2	.	1	A	35	B	19	C	3	D	240	E	49	G	9	H	131	I	176	J	5	K	3	L	6	M	38	N	25	O	48	P	5	R	4	S	7	T	34	U	7	V	32	W	98	Z	34	h	2	i	1	v	1	
+s/	A	8	N	5	g	3	
+s:	 	58	
+s;	 	42	
+s?	 	32	D	2	H	1	I	1	K	1	M	1	W	1	
+sD	i	1	
+sa	 	28	'	1	)	2	,	10	.	2	a	64	b	155	c	126	d	34	f	4	g	29	k	70	l	48	m	1049	n	151	p	5	r	371	s	15	t	476	u	16	v	3	y	1	
+sb	a	122	e	739	i	7	l	3	o	94	r	75	u	62	ü	1	
+sc	a	68	e	86	h	9448	i	65	l	23	o	247	r	125	u	161	y	10	
+sd	 	15	,	1	a	107	e	18	i	88	o	70	r	30	u	13	
+se	 	5074	!	1	'	1	,	24	-	4	.	16	?	2	D	1	a	11	c	750	d	5	e	428	f	60	g	7	i	26	k	15	l	1133	m	70	n	3588	p	39	q	64	r	1048	s	102	t	15	u	9	v	3	w	2	x	9	y	5	
+sf	a	52	e	33	i	41	o	37	r	2	u	3	
+sg	a	25	e	287	i	3	o	1	r	87	
+sh	 	7	,	1	a	33	e	146	i	54	m	1	o	158	r	13	t	62	u	31	w	2	
+si	 	2	a	10	b	2	c	205	d	189	e	3558	f	16	g	110	k	1	l	2	m	36	n	1207	o	67	s	1107	t	959	u	1	v	30	x	9	ë	53	
+sj	 	1	,	2	.	1	:	1	a	160	e	89	i	2	o	1	t	2	v	1	
+sk	 	8	a	119	e	21	i	41	l	23	o	25	r	30	u	69	w	40	y	4	
+sl	a	2655	e	585	i	272	o	519	u	809	
+sm	,	1	a	354	e	579	i	203	o	74	u	41	е	1	
+sn	a	30	e	350	i	131	o	143	
+so	 	34	,	25	.	5	?	1	a	1	b	14	c	735	d	1	e	115	f	35	i	2	j	2	l	642	m	263	n	430	o	300	p	178	r	130	t	1	u	4	v	350	w	5	
+sp	a	966	e	1443	i	119	l	154	o	390	r	1556	u	46	
+sq	u	1	
+sr	a	89	e	210	i	24	o	15	u	31	
+ss	 	55	,	3	-	15	a	669	b	6	c	188	e	2690	f	13	g	1	i	3532	l	4	m	3	n	4	o	41	p	4	t	373	u	13	y	89	
+st	 	3174	!	3	"	6	'	4	)	15	,	206	-	38	.	223	:	13	;	5	?	10	]	1	a	6293	b	76	c	8	d	4	e	13989	g	225	h	24	i	2561	j	5	k	3	l	43	m	31	n	1	o	580	p	17	r	3640	s	298	t	13	u	642	v	28	w	13	y	3	z	16	é	1	”	1	
+su	a	4	b	139	c	157	e	19	g	26	i	78	l	394	m	465	n	12	p	22	r	21	s	47	t	3	u	3	
+sv	a	40	e	259	i	99	l	3	o	214	r	28	
+sw	a	108	e	46	i	35	o	2	
+sy	,	1	c	7	f	1	l	1	m	58	n	66	s	627	
+sz	 	4	-	3	a	9	c	1	e	53	i	43	l	5	o	30	p	2	u	2	
+sá	k	5	n	3	
+sé	 	4	
+sł	a	3	
+sʺ	 	1	
+s”	,	1	.	1	
+t 	"	45	&	1	'	49	(	65	-	191	.	3	0	2	1	61	2	118	3	25	4	22	5	22	6	15	7	14	8	9	9	10	A	88	B	115	C	172	D	40	E	1666	F	41	G	164	H	176	I	183	J	45	K	32	L	22	M	160	N	32	O	53	P	982	R	143	S	266	T	26	U	6	V	342	W	32	X	1	Z	21	[	4	a	3168	b	4512	c	721	d	10789	e	5893	f	600	g	3989	h	5178	i	4912	j	290	k	1151	l	960	m	2898	n	2358	o	4984	p	1260	q	2	r	819	s	1855	t	2860	u	1074	v	8276	w	3894	z	2832	é	51	ü	1	ʺ	1	
+t!	 	9	A	1	I	1	L	1	S	1	W	1	
+t"	 	13	,	3	.	6	b	4	m	1	p	1	s	1	v	8	
+t'	 	34	)	1	,	3	-	13	.	1	?	1	s	1	
+t)	 	37	(	4	)	1	,	9	.	25	:	2	;	1	I	2	
+t,	 	2412	"	1	,	1	
+t-	 	21	,	6	2	1	A	2	B	21	D	2	E	24	J	1	L	3	M	3	P	4	R	13	S	1	T	1	U	12	a	3	b	10	c	9	d	10	e	7	f	6	g	15	h	6	i	5	l	8	m	3	n	12	o	2	p	4	r	7	s	4	t	35	u	2	v	5	
+t.	 	23	"	3	.	1	A	76	B	44	C	11	D	498	E	112	F	1	G	17	H	294	I	434	J	9	K	7	L	12	M	127	N	41	O	98	P	12	R	3	S	23	T	96	U	14	V	83	W	222	Z	55	e	1	o	1	
+t/	C	1	m	1	
+t1	_	2	
+t2	_	1	
+t:	 	139	
+t;	 	51	P	1	
+t?	 	55	D	1	F	1	G	1	H	2	I	2	K	2	M	3	O	1	V	2	W	7	Z	2	
+tD	o	3	
+tV	e	1	
+tW	a	1	
+t]	 	7	
+ta	 	112	'	3	)	2	,	19	-	1	.	5	?	2	a	2509	b	356	c	88	d	122	e	7	f	74	g	98	h	6	i	647	k	115	l	1282	m	16	n	1355	o	2	p	343	r	277	s	80	t	2604	u	13	v	19	w	1	x	1	
+tb	a	233	e	243	i	11	l	5	o	32	r	188	u	19	
+tc	.	7	a	7	e	4	h	8	i	2	l	2	o	6	r	7	
+td	a	264	e	30	i	8	o	16	r	47	u	78	
+te	 	15018	'	2	)	2	,	107	-	10	.	34	:	9	;	2	?	5	a	32	b	4	c	427	d	263	e	1824	f	10	g	2486	h	1	i	2378	k	793	l	5394	m	1532	n	16907	o	1	p	26	r	9245	s	341	t	25	u	1626	v	273	w	16	x	327	z	17	”	1	
+tf	a	8	i	1	o	19	r	1	u	1	
+tg	a	419	e	1552	i	10	o	1	r	14	
+th	 	8	,	2	-	3	a	45	d	1	e	179	i	21	n	1	o	200	r	1	u	25	y	4	
+ti	 	7	,	5	-	11	:	1	a	256	b	60	c	302	d	10	e	10966	f	97	g	1737	j	1805	k	270	l	125	m	336	n	2955	o	1550	p	30	r	5	s	988	t	321	v	430	z	1	ë	221	
+tj	e	95	
+tk	a	7	e	22	i	8	n	1	o	165	r	6	u	1	w	3	
+tl	a	74	e	111	i	458	o	20	u	2	ĳ	2	
+tm	a	179	e	20	i	5	o	78	u	12	
+tn	a	23	e	341	i	21	o	30	y	1	
+to	 	85	'	15	,	5	-	13	.	1	:	2	?	1	a	2	b	41	c	220	e	3444	f	362	g	6	h	2	i	13	k	18	l	64	m	98	n	309	o	218	p	111	r	1629	s	11	t	2585	u	56	v	22	w	5	x	7	č	9	
+tp	:	3	a	10	e	11	h	2	l	26	o	2	r	38	u	13	
+tr	a	2619	e	4115	i	888	o	1651	u	1181	ã	1	ö	21	
+ts	 	1122	'	1	)	3	,	48	-	66	.	39	/	8	:	5	?	3	a	7	b	131	c	555	d	6	e	340	f	2	g	70	h	28	i	50	j	8	k	34	l	277	m	36	n	73	o	68	p	157	r	11	s	131	t	1001	u	11	v	150	w	17	y	27	z	34	”	1	
+tt	,	2	a	62	e	1988	i	345	o	48	p	3	r	20	t	1	
+tu	a	457	b	13	d	149	e	140	g	112	i	371	k	183	l	23	m	17	n	7	r	505	s	1069	t	138	u	990	w	1	
+tv	-	2	a	317	e	208	i	27	l	38	o	821	r	6	
+tw	 	4	-	2	.	2	a	56	e	961	i	1630	o	736	r	3	
+ty	 	11	)	1	p	46	
+tz	 	1	a	11	e	151	i	95	m	1	o	98	
+tà	 	1	
+tá	n	15	
+tä	l	3	
+té	 	74	,	6	.	3	s	9	v	1	
+tė	)	1	-	1	
+t”	)	1	-	1	.	4	;	1	
+u 	(	6	-	12	.	1	1	1	2	2	A	1	B	1	C	2	D	2	E	5	F	2	H	1	K	1	L	2	P	3	R	1	S	1	a	175	b	123	c	9	d	362	e	381	f	5	g	132	h	302	i	245	j	12	k	103	l	27	m	208	n	135	o	226	p	22	r	20	s	42	t	192	u	48	v	344	w	194	z	218	é	2	
+u!	"	1	
+u'	 	2	
+u,	 	180	
+u-	 	6	,	1	e	21	i	4	o	1	p	1	
+u.	 	9	A	3	B	2	D	20	E	4	H	6	I	12	M	2	N	1	O	3	R	1	T	3	V	2	W	9	Z	4	
+u/	s	3	
+u:	 	4	
+u;	 	2	
+u?	 	1	'	1	
+ua	 	8	a	31	c	5	d	1	g	9	i	1	k	1	l	24	n	58	r	67	s	7	t	707	
+ub	 	7	'	1	.	1	R	3	a	17	b	60	c	6	e	75	i	3	j	2	l	288	p	5	r	11	s	124	t	1	
+uc	a	14	c	161	e	167	h	302	i	169	j	1	k	2	l	84	o	4	r	100	t	1222	u	1	
+ud	 	132	,	7	-	3	.	3	:	1	a	103	b	23	d	4	e	1679	f	3	g	77	i	637	k	5	o	5	r	3	s	39	t	135	u	22	v	1	y	19	
+ue	 	16	,	2	c	16	e	65	f	21	i	5	l	171	n	115	r	43	s	2	t	1	z	1	
+uf	a	4	f	7	t	1	u	2	
+ug	 	121	)	2	,	2	.	8	a	86	b	20	d	256	e	62	g	104	h	13	k	45	l	5	n	1	o	2	r	1	s	95	t	15	u	9	v	19	w	3	z	4	é	3	
+uh	a	3	e	2	n	2	
+ui	 	7	,	6	c	41	d	1365	e	1	f	2	g	385	j	1	k	996	l	99	m	229	n	151	p	2	s	748	t	6789	v	31	z	98	è	1	
+uj	a	2	
+uk	 	406	"	3	'	1	,	11	.	13	:	1	;	1	?	1	a	6	e	6	g	1	j	5	k	341	m	1	o	1	p	7	r	2	t	154	u	26	w	22	z	1	
+ul	 	19	,	7	-	1	a	133	b	1	d	450	e	432	g	172	i	171	k	35	l	1034	p	349	r	1	s	41	t	952	u	5	z	6	ė	1	
+um	 	272	'	2	,	22	-	3	.	12	;	1	a	116	b	37	c	1	d	8	e	1050	g	7	i	7	k	3	l	5	m	6	n	10	o	15	p	46	r	9	s	4	t	5	u	10	v	17	”	2	
+un	 	1829	"	1	)	1	,	21	.	22	?	1	a	142	b	6	c	180	d	451	e	326	g	24	i	550	k	2	m	17	n	1878	o	41	p	13	r	3	s	141	t	886	v	10	
+uo	.	1	m	4	n	1	p	1	r	1	t	16	v	4	
+up	 	17	-	3	a	1	b	6	d	3	e	24	l	1	o	1	p	6	r	23	s	4	t	87	u	3	v	1	
+ur	 	825	"	2	'	4	)	4	,	138	-	10	.	66	:	2	?	3	a	73	b	21	c	6	d	200	e	1538	f	97	g	812	h	7	i	404	k	53	l	276	m	7	n	35	o	6953	p	5	r	357	s	215	t	187	u	1	v	24	w	1	z	401	ã	1	
+us	 	775	"	1	,	68	-	8	.	32	:	1	?	1	a	17	b	3	c	14	d	10	e	15	f	1	h	29	i	273	j	2	k	1	l	246	m	2	o	2	p	11	r	2	s	1301	t	636	u	62	v	16	z	3	
+ut	 	193	'	2	)	1	,	7	-	1	.	10	?	1	a	123	e	221	h	7	i	471	j	5	m	5	o	426	p	4	r	10	s	21	t	173	v	5	z	1	
+uu	n	4	r	1604	s	20	t	122	
+uv	a	1	e	32	i	2	l	1	o	6	r	27	
+uw	 	1103	,	37	-	31	.	22	?	1	a	3	b	255	d	130	e	1618	f	14	g	22	h	1	i	77	k	42	l	17	m	14	o	12	p	41	r	41	s	96	t	65	v	3	w	5	z	1	
+ux	 	1	-	3	e	11	
+uy	 	1	,	3	.	2	
+uz	a	2	e	215	i	8	k	1	z	1	è	6	
+ué	 	4	
+uê	t	5	
+uï	n	4	s	4	t	12	
+uñ	i	4	
+uü	m	1	
+uč	e	1	
+v 	M	1	O	1	b	1	e	5	h	2	m	2	n	3	o	4	t	3	v	1	z	1	
+v,	 	6	
+v-	R	1	b	1	p	2	z	2	
+v.	 	2	1	1	H	1	
+va	 	15	,	3	a	924	b	1	c	23	d	9	g	1	i	3	k	78	l	1158	n	28639	r	167	s	545	t	958	
+vd	R	10	
+ve	 	1139	!	1	,	24	a	557	c	31	d	7	e	907	f	1	g	4	h	2	i	758	l	583	m	29	n	4728	p	1	r	20301	s	712	t	7	z	51	
+vg	o	11	
+vi	a	166	b	1	c	51	d	83	e	289	g	161	i	1	j	102	l	13	n	1702	o	1	r	7	s	634	t	397	z	2	ë	24	č	8	
+vj	e	18	
+vl	a	172	e	23	i	42	o	263	u	96	
+vn	a	1	
+vo	 	37	,	1	-	3	.	4	;	1	c	24	e	2753	g	5	i	1	l	2606	n	111	o	13807	r	1541	s	1	t	2	u	320	
+vp	r	3	
+vr	a	970	e	269	i	749	o	536	u	25	
+vs	 	2	'	1	k	7	
+vu	e	2	i	67	l	264	r	6	u	3	
+vy	n	2	
+vá	 	3	,	1	
+vé	-	1	b	2	g	1	k	1	l	2	r	1	s	1	
+vó	ó	106	
+w 	'	1	(	1	-	3	A	42	B	10	C	3	D	7	E	4	F	18	G	20	H	19	I	4	J	4	K	7	L	21	M	30	N	4	O	2	P	10	R	11	S	22	T	9	V	2	W	13	Y	4	a	37	b	48	c	16	d	134	e	100	f	5	g	27	h	25	i	52	k	11	l	22	m	54	n	19	o	48	p	25	r	9	s	49	t	35	u	6	v	97	w	20	z	24	Ţ	5	
+w'	 	1	
+w,	 	39	
+w-	 	27	,	3	Z	1	r	1	t	1	u	23	
+w.	A	1	B	2	D	4	G	2	H	2	I	4	M	2	N	1	O	1	W	4	Z	1	e	3	g	1	z	1	
+w?	 	1	
+wa	 	2	a	4182	b	5	c	293	d	2	g	30	i	1	k	168	l	326	m	42	n	565	p	57	r	395	s	476	t	1084	u	1	z	3	
+wb	a	115	e	139	o	1	
+wd	 	74	,	12	.	21	;	2	?	1	e	20	
+we	 	4440	!	1	"	1	'	1	,	50	.	1	b	13	c	1	d	174	e	1364	g	811	i	143	k	111	l	1650	m	1	n	729	r	4390	s	455	t	1356	v	2	x	1	z	481	
+wf	o	14	
+wg	e	12	o	1	r	9	
+wh	e	1	o	5	
+wi	c	258	e	160	g	2	j	3417	k	1408	l	1824	m	1	n	327	s	139	t	26	
+wk	e	37	o	4	u	1	
+wl	e	21	o	1	
+wm	a	6	e	2	i	4	o	2	
+wn	 	1	s	1	
+wo	b	4	e	32	g	35	l	1	n	179	o	1420	p	1	r	6296	v	1	
+wp	l	2	r	40	
+wr	a	42	e	7	i	8	o	1	
+ws	 	15	,	2	.	2	:	1	e	35	g	3	k	9	m	21	p	1	t	16	u	1	z	2	
+wt	 	20	,	4	.	4	e	3	j	2	o	3	r	31	
+wu	r	4	s	102	
+wv	e	2	o	1	
+ww	.	3	e	5	w	3	
+wz	i	1	
+wé	l	5	
+x 	-	2	a	5	b	1	d	2	e	7	g	4	h	2	i	7	m	2	n	1	o	1	p	8	r	4	s	2	t	7	v	7	w	1	z	1	
+x)	 	4	.	1	
+x,	 	10	
+x-	a	1	f	1	m	1	p	5	v	1	
+x.	B	1	D	1	H	1	I	1	M	1	V	1	
+x?	I	1	
+xa	a	4	c	15	m	1	
+xc	e	34	l	22	u	10	
+xe	 	17	.	1	c	12	e	2	l	1	m	10	n	5	r	6	s	1	
+xi	b	84	c	3	d	2	m	55	n	2	s	8	t	15	
+xo	r	1	
+xp	a	13	e	28	l	77	o	63	r	1	
+xt	 	79	,	4	.	2	e	205	i	203	r	164	
+xv	e	2	
+xy	 	1	
+y 	-	1	A	3	C	1	F	1	G	1	H	2	I	7	K	2	L	1	M	4	N	2	P	1	R	1	S	2	W	1	a	5	b	3	d	2	e	12	f	1	g	5	h	4	i	6	m	1	n	2	o	14	p	2	s	1	t	2	u	2	v	4	w	2	z	1	
+y"	z	1	
+y'	s	3	
+y)	 	1	:	1	
+y,	 	18	
+y-	o	1	v	1	
+y.	D	2	S	1	V	1	
+y:	 	2	
+ya	 	3	a	1	c	3	d	3	h	1	l	2	r	3	s	1	
+yb	a	9	e	15	o	1	r	1	u	1	
+yc	e	1	h	27	l	44	
+yd	 	2	.	1	i	3	r	1	
+ye	'	1	d	2	e	1	i	21	n	15	v	7	
+yf	u	1	
+yg	a	1	i	6	r	2	
+yi	 	1	a	1	e	1	n	1	s	42	
+yk	,	1	a	1	w	1	
+yl	 	25	,	1	-	1	.	2	a	1	o	1	v	3	w	1	
+ym	a	1	b	37	e	2	m	17	o	9	p	6	
+yn	 	2	a	37	c	1	d	1	e	60	i	4	o	4	t	2	u	2	
+yo	'	1	n	5	t	2	
+yp	e	42	i	8	o	22	r	13	t	46	
+yr	,	1	e	5	i	51	r	1	
+ys	 	1	a	5	e	103	i	26	s	1	t	639	
+yt	 	1	e	6	h	1	i	2	n	1	o	5	
+yu	r	3	s	2	
+yv	e	1	
+yw	o	1	
+yy	a	3	
+yz	j	1	o	4	
+yö	n	1	r	4	s	1	
+yń	s	2	
+yő	r	8	
+z 	A	1	D	3	L	1	P	3	a	2	b	2	d	2	e	2	f	1	g	3	h	2	i	1	n	1	o	2	s	1	t	2	v	1	z	1	
+z'	n	8	
+z,	 	14	
+z-	S	12	W	2	b	17	p	1	
+z.	 	1	)	4	D	2	H	1	I	2	N	1	O	1	T	1	V	1	
+za	 	14	,	3	?	1	a	671	c	9	d	7	g	29	k	1115	l	1317	m	604	n	35	r	1	s	3	t	9	v	4	ï	2	
+zb	e	1	
+zc	z	1	
+ze	 	5473	'	2	,	22	-	1	.	10	:	2	?	1	c	1	d	2	e	523	g	774	i	118	k	521	l	888	m	8	n	1444	r	104	s	102	t	876	u	1	v	125	
+zi	 	3	'	1	,	1	.	2	a	5	c	1609	e	2045	g	362	j	6062	l	6	m	1	n	480	o	2	r	1	t	782	ë	12	
+zj	a	44	i	2	k	1	n	11	
+zk	a	1	o	1	ý	1	
+zl	o	1	ó	5	
+zm	a	1	
+zo	 	610	'	54	,	2	-	2	.	7	:	1	;	1	a	815	c	125	d	460	e	1087	f	1	g	86	i	7	j	54	l	25	m	24	n	1406	o	4	r	873	u	1458	v	104	w	271	z	11	
+zp	a	2	o	1	r	1	
+zu	c	10	i	210	l	880	s	1	u	5	
+zw	a	299	e	26	i	8	
+zy	 	9	,	1	:	1	ń	2	
+zz	e	2	o	2	
+zá	j	4	
+zè	s	6	
+zé	é	1	
+zó	 	4	
+°C	.	1	
+Ád	á	1	
+Ág	n	4	
+Éé	n	2	
+ß 	b	1	d	1	e	1	h	1	i	3	w	2	
+ß,	 	6	
+ß?	 	1	
+à 	1	1	4	1	9	3	d	1	e	1	l	3	
+à-	l	1	
+àt	 	3	
+á 	d	1	e	1	i	1	z	1	
+á,	 	1	
+ád	,	1	
+áj	e	4	
+ák	 	1	,	4	
+ál	,	1	a	1	l	2	
+ám	 	1	á	1	
+án	 	5	,	2	.	1	a	15	c	3	y	3	
+ár	 	1	,	1	m	4	ó	1	
+ás	 	3	z	5	
+áá	r	2	
+áš	i	5	
+ão	 	24	
+ä 	d	1	
+ä,	 	2	
+äi	n	1	
+äl	ä	3	
+än	d	1	
+äs	s	1	
+ça	i	1	
+èc	h	3	
+èl	 	1	
+èn	 	3	
+èr	e	26	
+ès	 	5	,	4	?	1	e	1	
+èv	e	6	
+é 	"	1	(	3	-	5	G	1	M	3	[	1	a	1	b	1	d	5	e	16	g	1	h	1	i	2	j	1	k	1	m	2	n	1	o	3	s	1	t	2	u	1	v	51	w	1	z	2	
+é,	 	7	
+é-	u	1	
+é.	 	1	D	1	I	1	
+éb	e	1	i	2	
+éc	h	2	
+ég	e	1	i	1	
+ék	w	1	
+él	 	5	e	2	
+ém	o	1	
+én	 	283	-	1	.	2	:	1	d	1	e	1	g	1	l	5	v	1	
+ér	 	5	,	1	.	1	è	1	
+és	 	16	,	1	e	1	
+ét	 	3	e	1	
+éu	 	1	
+év	.	1	e	2	
+éé	b	1	n	261	r	6	
+êt	e	5	
+ë 	(	2	-	6	.	1	4	1	[	1	a	21	b	15	d	20	e	155	f	1	g	13	h	32	i	33	k	6	l	4	m	11	n	11	o	24	r	2	s	6	t	30	u	1	v	13	w	13	z	26	
+ë"	 	2	
+ë)	 	1	
+ë,	 	94	
+ë-	L	1	
+ë.	 	56	A	1	D	2	H	2	I	2	O	3	V	2	
+ë/	B	1	K	1	T	1	
+ë:	 	2	
+ë;	 	1	
+ë?	 	2	
+ëO	v	1	
+ëb	d	1	
+ëe	l	9	r	65	
+ëf	f	3	
+ëi	g	1	n	43	s	16	
+ël	 	18	'	1	,	2	.	5	?	1	e	1059	i	13	
+ëm	p	1	
+ën	 	373	"	3	'	1	)	1	,	47	.	56	;	2	?	1	d	1	e	6	g	5	h	2	s	1	t	241	
+ër	 	5	a	1	e	209	f	1	g	1	i	8	l	1	s	19	
+ët	i	4	
+ëv	a	20	e	1	o	1	
+ëx	e	2	p	7	
+ía	 	1	,	1	-	2	
+ík	o	1	
+ín	 	1	c	16	y	1	
+ís	 	1	
+ít	 	1	
+ïd	 	3	e	5	
+ïe	f	4	k	2	n	10	v	1	
+ïl	l	1	
+ïm	p	22	
+ïn	a	1	d	10	e	77	f	38	i	1	n	1	s	6	t	111	v	53	
+ïr	o	3	
+ïs	.	1	m	1	o	3	t	4	
+ït	e	12	i	2	
+ña	s	3	
+ñi	z	4	
+ò 	R	1	
+ó 	A	2	B	1	K	1	T	1	a	1	l	1	v	2	
+óe	t	1	
+óf	 	2	
+óg	 	2	
+ók	a	1	
+óm	e	4	
+ón	 	2	.	1	
+óp	e	1	
+ór	 	107	,	1	
+ós	 	1	a	1	
+óó	r	108	
+ôn	e	8	
+õ 	G	1	
+öd	ö	1	
+ög	e	1	
+ök	m	7	
+öl	l	2	
+öm	 	15	,	5	.	1	
+ön	c	3	g	1	
+öp	e	6	
+ör	d	219	g	2	i	2	
+ös	p	1	
+öt	e	1	
+öv	i	1	é	1	
+øk	k	2	
+ú 	b	1	
+úl	 	2	
+ún	 	2	,	2	n	1	
+üb	e	10	n	2	
+üh	n	1	
+ül	e	7	s	3	
+üm	 	1	
+ün	i	1	t	1	
+ür	b	1	
+üt	i	7	t	1	
+ý,	 	1	
+ă 	e	1	
+ăs	e	1	
+ău	 	4	'	1	.	1	
+ć 	e	1	
+č 	(	1	b	1	o	1	v	1	w	1	
+č,	 	1	
+č.	 	2	
+če	k	1	
+či	ū	1	
+čn	i	9	
+čo	v	8	
+čí	k	1	
+ė)	,	1	
+ė,	 	1	
+ė-	M	1	
+ėn	i	1	
+ęs	a	2	
+ĳn	 	2	
+ła	w	3	
+łę	s	2	
+ńs	k	3	
+ő 	i	1	
+ők	é	2	
+őr	i	8	
+ş 	b	1	e	1	h	1	i	1	o	1	z	1	
+ş,	 	1	
+ş-	L	1	
+ş.	 	1	
+şi	n	1	
+şo	a	2	
+Še	f	7	m	6	
+š 	Š	2	
+š-	d	1	
+ši	k	5	
+Ţi	c	5	
+ţa	 	1	
+ţi	,	1	
+ūn	a	1	
+ūt	z	1	
+ʺ 	g	1	
+ʺh	u	1	
+Απ	ο	1	
+Β7	-	2	
+Κα	τ	1	
+Υπ	έ	1	
+ά"	;	1	
+άλ	η	1	
+έρ	"	1	
+ή"	.	1	
+ατ	ά	2	
+η/	i	1	
+ηψ	η	1	
+κα	τ	1	
+λη	ψ	1	
+οχ	ή	1	
+πέ	ρ	1	
+πο	χ	1	
+ρ"	 	1	
+τά	"	1	λ	1	
+χή	"	1	
+ψη	/	1	
+еd	e	1	
+” 	I	2	N	1	d	1	e	3	g	1	h	1	i	3	o	1	t	5	v	2	w	1	
+”)	 	2	
+”,	 	3	
+”-	v	1	
+”.	 	14	"	1	B	1	O	1	U	1	
+”;	"	1	

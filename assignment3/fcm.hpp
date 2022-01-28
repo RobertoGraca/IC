@@ -52,10 +52,26 @@ public:
             string character = "";
             character += x;
 
-            if ((int)x < -1)
+            switch ((int)x)
             {
+            case -17:
                 x = ifs.get();
                 character += x;
+                x = ifs.get();
+                character += x;
+                break;
+            case -30:
+                x = ifs.get();
+                character += x;
+                x = ifs.get();
+                character += x;
+                break;
+            default:
+                if ((int)x > -1)
+                    break;
+                x = ifs.get();
+                character += x;
+                break;
             }
 
             // reads multi-character characters
@@ -152,7 +168,26 @@ public:
 
         while (getline(ifs, line))
         {
-            size_t pos = line.find("\t");
+            vector<string> spl = split(line, '\t');
+            string ctx = spl[0];
+
+            for (auto i = ctx.cbegin(); i != ctx.cend(); i++)
+            {
+                string s = "";
+                s += *i;
+                this->alphabet.insert(s);
+            }
+            this->count_ctx.emplace(ctx, 0);
+
+            map<string, int> tmp;
+            for (int i = 1; i < spl.size(); i = i + 2)
+            {
+                tmp.emplace(spl[i], stoi(spl[i + 1]));
+                this->count_ctx[ctx] += stoi(spl[i + 1]);
+                this->alphabet.insert(spl[i]);
+            }
+            this->index.emplace(ctx, tmp);
+            /* size_t pos = line.find("\t");
             string ctx = line.substr(0, pos);
             this->k = ctx.length();
             line.erase(line.cbegin(), line.cbegin() + pos + 1);
@@ -181,7 +216,7 @@ public:
                 this->count_ctx[ctx] += count;
                 this->alphabet.insert(symbol);
             }
-            this->index.emplace(ctx, tmp);
+            this->index.emplace(ctx, tmp); */
         }
         ifs.close();
     }
@@ -193,9 +228,7 @@ public:
         {
             cout << endl
                  << "Context = " << i->first << endl;
-            cout << i->first.length() << endl;
-            if (i->first.length() != this->k)
-                exit(2);
+
             for (auto j = i->second.cbegin(); j != i->second.cend(); j++)
             {
                 if (j->first == "\n")
@@ -331,6 +364,24 @@ public:
             else
                 cout << *i << endl;
         }
+    }
+
+    vector<string> split(string s, char c)
+    {
+        vector<string> spl;
+        string tmp = "";
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s[i] == c)
+            {
+                spl.push_back(tmp);
+                tmp = "";
+                i++;
+            }
+            tmp += s[i];
+        }
+        // spl.push_back(tmp);
+        return spl;
     }
 
     void reset_fcm()
