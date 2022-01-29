@@ -18,6 +18,7 @@ public:
         // read reference text file
         // ref_text.read_file(reference);
 
+        // load reference text from cache
         ref_text.load_index(reference);
 
         // open target text file
@@ -104,7 +105,6 @@ public:
 
     float get_estimated_bits()
     {
-        // TODO: Check if it is necessary to round the estimated number of bits to the closest int
         return this->estimated_n_bits;
     }
 };

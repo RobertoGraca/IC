@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 {
     if (argc != 5)
     {
-        cout << "USAGE: ./findlang <reference_texts_directory> <target_text> <order_model> <smoothing_parameter>" << endl;
+        cout << "USAGE: ./findlang <reference_texts_directory> <target_text_file> <context_size> <smoothing_percentage>" << endl;
         exit(1);
     }
 

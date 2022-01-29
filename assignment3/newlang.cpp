@@ -1,14 +1,15 @@
 #include "fcm.hpp"
 #include <iostream>
 
-// g++ newlang.cpp -o newlang
-// ./newlang Russian.utf8        -- assumes that the file to be read is already in the "langs" directory and is named accordingly
+// USAGE:
+// $ g++ newlang.cpp -o newlang
+// $ ./newlang Russian.utf8         -- assumes that the file to be read is already in the "langs" directory and is named accordingly
 
 int main(int argc, char **argv)
 {
     if (argc != 2)
     {
-        cout << "USAGE: ./add_new_lang <new_language_file>" << endl;
+        cout << "USAGE: ./newlang <new_language_file>" << endl;
         exit(1);
     }
     string path = "langs/";
@@ -26,7 +27,7 @@ int main(int argc, char **argv)
     }
 
     cout << endl
-         << "Added " << argv[1] << " to the system." << endl;
+         << "Added " << argv[1] << " to the cache." << endl;
 
     return 0;
 }
