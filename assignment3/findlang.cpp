@@ -2,8 +2,8 @@
 #include <dirent.h>
 
 // USAGE:
-// $ g++ findlang.cpp
-// $ ./a.out cache example.txt 4 50
+// $ g++ findlang.cpp -o findlang
+// $ ./findlang cache example.txt 4 50
 
 int main(int argc, char **argv)
 {
@@ -28,6 +28,7 @@ int main(int argc, char **argv)
         /* print all the files and directories within directory */
         while ((ent = readdir(dir)) != NULL)
         {
+            // gets the path for the current file/language dataset
             path = ent->d_name;
 
             if (path == ".." || path == ".")

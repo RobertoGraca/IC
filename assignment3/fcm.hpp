@@ -288,7 +288,7 @@ public:
         return this->count_ctx[ctx];
     }
 
-    // TODO: new, need to verify this
+    // accesses the index[] and returns 1 if c exists after ctx in the reference text, 0 if not
     int get_index(string ctx, string c)
     {
         return this->index[ctx].count(c);
