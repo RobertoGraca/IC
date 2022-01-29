@@ -22,7 +22,7 @@ int main(int argc, char **argv)
              << "Computing index for context size " << i << endl;
         FCM fcm(i, 50);
         fcm.read_file(path);
-        fcm.write_index("cache/k" + to_string(i) + "/" + argv[1] + ".txt");
+        fcm.write_index("cache/k" + to_string(i) + "/" + argv[1]);
     }
 
     cout << endl
