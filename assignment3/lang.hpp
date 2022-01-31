@@ -11,12 +11,15 @@ public:
         string ctx = "";
         vector<string> make_ctx(k, "");
         char p;
+        int count_symbols = 0;
 
         // create a model of the reference text
         FCM ref_text(k, alpha);
 
         // read reference text file
         // ref_text.read_file(reference);
+
+        // TODO: Check if the reference text already exists in cache. If so, use it. If not, added to it.
 
         // load reference text from cache
         ref_text.load_index(reference);
@@ -60,25 +63,21 @@ public:
                 break;
             }
 
-            // cout << "---------- Context: " << ctx << " ----------" << endl;
             if (ref_text.get_context(ctx) == ctx)
             {
                 // check if the symbol exists after the context in the reference text
                 if (ref_text.get_index(ctx, c) != 0)
                 {
-                    // cout << "---------- BREAKPOINT 1 ----------" << endl;
                     estimated_n_bits += (float)(-log2(ref_text.get_symbol_probability(ctx, c)));
                 }
                 else
                 {
-                    // cout << "---------- BREAKPOINT 2 ----------" << endl;
                     estimated_n_bits += (float)(-log2(
                         alpha / ((float)ref_text.get_ctx_num_occurrunces(ctx) + alpha * (float)ref_text.get_alphabet_size())));
                 }
             }
             else
             {
-                // cout << "---------- BREAKPOINT 3 ----------" << endl;
                 estimated_n_bits += (float)(-log2(1.0 / (float)ref_text.get_alphabet_size()));
             }
 
@@ -93,14 +92,19 @@ public:
             {
                 ctx += make_ctx[i];
             }
+
+            count_symbols++;
         }
+
+        // calculate the estimated number of bits per symbol
+        estimated_n_bits = estimated_n_bits / count_symbols;
 
         // close target text file
         ifs.close();
 
         ref_text.reset_fcm();
 
-        cout << "Estimated number of bits: " << estimated_n_bits << endl;
+        cout << "Estimated number of bits per symbol: " << estimated_n_bits << endl;
     }
 
     float get_estimated_bits()
