@@ -15,7 +15,7 @@ Search using finite context model
 ```bash
 ./findlang langs <target_text_file> <context_size> <smoothing_percentage>
 ```
-*Note: The target text files to test this class are stored in directory "examples"
+*Note: The target text files to test this program are stored in directory "examples"
 
 
 ## Add new language to cache
