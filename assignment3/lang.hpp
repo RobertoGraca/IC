@@ -22,7 +22,10 @@ public:
         // TODO: Check if the reference text already exists in cache. If so, use it. If not, added to it.
 
         // load reference text from cache
-        ref_text.load_index(reference);
+        if (reference.substr(0, 5) == "cache")
+            ref_text.load_index(reference);
+        else
+            ref_text.read_file(reference);
 
         // open target text file
         ifstream ifs(target);

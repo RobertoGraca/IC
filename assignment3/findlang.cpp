@@ -3,7 +3,8 @@
 
 // USAGE:
 // $ g++ findlang.cpp -o findlang
-// $ ./findlang cache example.txt 4 50
+// $ ./findlang cache example.txt 4 50 - to search using cache
+// $ ./findlang langs example.txt 4 50 - to search using the fcm
 
 int main(int argc, char **argv)
 {
@@ -20,8 +21,11 @@ int main(int argc, char **argv)
     map<float, string> langs;
 
     directory = argv[1];
-    directory += "/k";
-    directory += argv[3];
+    if (directory == "cache")
+    {
+        directory += "/k";
+        directory += argv[3];
+    }
 
     if ((dir = opendir(directory.c_str())) != NULL)
     {
