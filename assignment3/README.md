@@ -25,7 +25,6 @@ g++ newlang.cpp -o newlang
 ```
 
 How to run newlang.cpp
-run (search using cache)
 ```bash
 ./newlang <new_language_file>
 ```
