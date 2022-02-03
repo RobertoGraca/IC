@@ -35,8 +35,7 @@ How to compile fcm_demo.cpp
 g++ fcm_demo.cpp -o fcm_demo
 ```
 
-How to run newlang.cpp
-run (search using cache)
+How to run fcm_demo.cpp
 ```bash
 ./fcm_demo 
 ```
