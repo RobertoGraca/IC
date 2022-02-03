@@ -5,13 +5,13 @@ How to compile findlang.cpp
 g++ findlang.cpp -o findlang
 ```
 
-How to run findlang.cpp
-run (search using cache)
+How to run findlang.cpp <br>
+Search using cache
 ```bash
 ./findlang cache <target_text_file> <context_size> <smoothing_percentage>
 ```
 
-run (search using finite context model)
+Search using finite context model
 ```bash
 ./findlang langs <target_text_file> <context_size> <smoothing_percentage>
 ```
