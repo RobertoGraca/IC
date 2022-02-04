@@ -15,16 +15,12 @@ public:
 
         // create a model of the reference text
         FCM ref_text(k, alpha);
-
-        // read reference text file
-        // ref_text.read_file(reference);
-
-        // TODO: Check if the reference text already exists in cache. If so, use it. If not, added to it.
-
-        // load reference text from cache
+        
         if (reference.substr(0, 5) == "cache")
+            // load reference text from cache
             ref_text.load_index(reference);
         else
+            // read reference text file
             ref_text.read_file(reference);
 
         // open target text file
