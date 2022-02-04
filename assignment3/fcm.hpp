@@ -226,18 +226,23 @@ public:
     {
         for (auto i = this->index.cbegin(); i != this->index.cend(); i++)
         {
-            cout << endl
-                 << "Context = " << i->first << endl;
+            if (i->first == " ")
+                cout << endl
+                     << "Context = \\w" << endl;
+            else
+                cout << endl
+                     << "Context = " << i->first << endl;
 
             for (auto j = i->second.cbegin(); j != i->second.cend(); j++)
             {
                 if (j->first == "\n")
-                    cout << "\\n - " << j->second << endl;
+                    cout << "\\n - " << j->second << "\t";
                 else if (j->first == " ")
-                    cout << "\\w - " << j->second << endl;
+                    cout << "\\w - " << j->second << "\t";
                 else
-                    cout << j->first << " - " << j->second << endl;
+                    cout << j->first << " - " << j->second << "\t";
             }
+            cout << endl;
         }
     }
 
@@ -357,12 +362,16 @@ public:
 
     void show_alphabet()
     {
+        int cont = 1;
         for (auto i = this->alphabet.cbegin(); i != this->alphabet.cend(); i++)
         {
             if (*i == " ")
-                cout << "\\w" << endl;
+                cout << "\\w"
+                     << "\t";
             else
-                cout << *i << endl;
+                cout << *i << "\t";
+            if (cont++ % 8 == 0)
+                cout << endl;
         }
     }
 
