@@ -37,7 +37,7 @@ g++ updatelang.cpp -o updatelang
 
 How to run updatelang.cpp
 ```bash
-./updatelang <language_to_update>.utf8 <language_new_file>
+./updatelang <language_to_update> <language_new_file>
 ```
 
 ## Test FCM class
