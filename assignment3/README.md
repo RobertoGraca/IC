@@ -29,6 +29,17 @@ How to run newlang.cpp
 ./newlang <new_language_file>
 ```
 
+## Update cache language
+How to compile updatelang.cpp
+```bash
+g++ updatelang.cpp -o updatelang
+```
+
+How to run updatelang.cpp
+```bash
+./updatelang <language_to_update>.utf8 <language_new_file>
+```
+
 ## Test FCM class
 How to compile fcm_demo.cpp
 ```bash
